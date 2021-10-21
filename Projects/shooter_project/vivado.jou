@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 17 10:18:29 2021
+# Process ID: 12036
+# Current directory: C:/DESD/shooter_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1392 C:\DESD\shooter_project\shooter_project.xpr
+# Log file: C:/DESD/shooter_project/vivado.log
+# Journal file: C:/DESD/shooter_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/shooter_project/shooter_project.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/shooter_project/shooter_project.runs/impl_1/joyToSerial.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/shooter_project/shooter_project.runs/impl_1/joyToSerial.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager

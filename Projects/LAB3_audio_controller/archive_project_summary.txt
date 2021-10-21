@@ -1,0 +1,526 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = LAB3_audio_controller
+Directory = C:/DESD/LAB3_audio_controller
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - INCLUDED RUNS
+---------------------------
+The run results were included for the following runs in the archived project:-
+
+<synth_1>
+<design_1_AXI4Stream_UART_0_0_synth_1>
+<design_1_util_vector_logic_0_0_synth_1>
+<design_1_clk_wiz_0_0_synth_1>
+<design_1_edge_detector_1_0_synth_1>
+<design_1_debouncer_0_0_synth_1>
+<design_1_debouncer_1_0_synth_1>
+<design_1_edge_detector_0_0_synth_1>
+<design_1_depacketizer_0_0_synth_1>
+<design_1_mute_controller_0_0_synth_1>
+<design_1_moving_average_filter_0_0_synth_1>
+<design_1_packetizer_0_0_synth_1>
+<design_1_volume_controller_1_0_synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<design_1_AXI4Stream_UART_0_0>
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_M00_AXIS_RX.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_S00_AXIS_TX.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Engine.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Manager.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0.vhd
+
+<design_1_clk_wiz_0_0>
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_mmcm.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_mmcm.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_mmcm.vh
+
+<design_1_debouncer_0_0>
+None
+
+<design_1_debouncer_1_0>
+None
+
+<design_1_depacketizer_0_0>
+None
+
+<design_1_edge_detector_0_0>
+None
+
+<design_1_edge_detector_1_0>
+None
+
+<design_1_moving_average_filter_0_0>
+None
+
+<design_1_mute_controller_0_0>
+None
+
+<design_1_packetizer_0_0>
+None
+
+<design_1_util_vector_logic_0_0>
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v
+
+<design_1_volume_controller_1_0>
+None
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_M00_AXIS_RX.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_S00_AXIS_TX.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Engine.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Manager.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0.vhd
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_mmcm.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_mmcm.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_pll.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_mmcm.vh
+c:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF/PrjAr/_X_/LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v
+
+<utils_1>
+None
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./LAB3_audio_controller.srcs/sources_1/new/depacketizer.vhd
+./LAB3_audio_controller.srcs/sources_1/new/packetizer.vhd
+./LAB3_audio_controller.srcs/sources_1/new/moving_average_filter.vhd
+./LAB3_audio_controller.srcs/sources_1/new/volume_controller.vhd
+./LAB3_audio_controller.srcs/sources_1/new/mute_controller.vhd
+./LAB3_audio_controller.srcs/sources_1/new/debouncer.vhd
+./LAB3_audio_controller.srcs/sources_1/new/edge_detector.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/design_1.bd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/sim/design_1_depacketizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/synth/design_1_depacketizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_board.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_M00_AXIS_RX.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_S00_AXIS_TX.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Engine.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Manager.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/sim/design_1_AXI4Stream_UART_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/synth/design_1_AXI4Stream_UART_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/sim/design_1_packetizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/synth/design_1_packetizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/sim/design_1_moving_average_filter_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/synth/design_1_moving_average_filter_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/sim/design_1_volume_controller_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/synth/design_1_volume_controller_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/synth/design_1_mute_controller_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/sim/design_1_debouncer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/synth/design_1_debouncer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/sim/design_1_debouncer_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/synth/design_1_debouncer_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/sim/design_1_edge_detector_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/synth/design_1_edge_detector_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/sim/design_1_edge_detector_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/synth/design_1_edge_detector_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.xml
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/synth/design_1.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/sim/design_1.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/design_1_ooc.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/sim/design_1.protoinst
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+
+<constrs_1>
+./LAB3_audio_controller.srcs/constrs_1/imports/new/basys3_master_xdc.xdc
+
+<sim_1>
+./LAB3_audio_controller.srcs/sim_1/new/tb_mute_controller.vhd
+
+<utils_1>
+None
+
+<design_1_AXI4Stream_UART_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_board.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_M00_AXIS_RX.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0_S00_AXIS_TX.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Engine.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/UART_Manager.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/a968/hdl/AXI4Stream_UART_v1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/sim/design_1_AXI4Stream_UART_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/synth/design_1_AXI4Stream_UART_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_AXI4Stream_UART_0_0/design_1_AXI4Stream_UART_0_0.xml
+
+<design_1_util_vector_logic_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.xml
+
+<design_1_clk_wiz_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_7s_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_pll.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ipshared/4fba/mmcm_pll_drp_func_us_plus_mmcm.vh
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+
+<design_1_edge_detector_1_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/sim/design_1_edge_detector_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/synth/design_1_edge_detector_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_1_0/design_1_edge_detector_1_0.xml
+
+<design_1_debouncer_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/sim/design_1_debouncer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/synth/design_1_debouncer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_0_0/design_1_debouncer_0_0.xml
+
+<design_1_debouncer_1_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/sim/design_1_debouncer_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/synth/design_1_debouncer_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0.xml
+
+<design_1_edge_detector_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/sim/design_1_edge_detector_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/synth/design_1_edge_detector_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_edge_detector_0_0/design_1_edge_detector_0_0.xml
+
+<design_1_depacketizer_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/sim/design_1_depacketizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/synth/design_1_depacketizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_depacketizer_0_0/design_1_depacketizer_0_0.xml
+
+<design_1_mute_controller_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/sim/design_1_mute_controller_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/synth/design_1_mute_controller_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_mute_controller_0_0/design_1_mute_controller_0_0.xml
+
+<design_1_moving_average_filter_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/sim/design_1_moving_average_filter_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/synth/design_1_moving_average_filter_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_moving_average_filter_0_0/design_1_moving_average_filter_0_0.xml
+
+<design_1_packetizer_0_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/sim/design_1_packetizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/synth/design_1_packetizer_0_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_packetizer_0_0/design_1_packetizer_0_0.xml
+
+<design_1_volume_controller_1_0>
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.xci
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/sim/design_1_volume_controller_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.dcp
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_stub.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_stub.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_sim_netlist.v
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0_sim_netlist.vhdl
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/synth/design_1_volume_controller_1_0.vhd
+./LAB3_audio_controller.srcs/sources_1/bd/design_1/ip/design_1_volume_controller_1_0/design_1_volume_controller_1_0.xml
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+./LAB3_audio_controller.ipdefs/repository_0/axi4-stream-uart
+
+<design_1_AXI4Stream_UART_0_0>
+None
+
+<design_1_util_vector_logic_0_0>
+None
+
+<design_1_clk_wiz_0_0>
+None
+
+<design_1_edge_detector_1_0>
+None
+
+<design_1_debouncer_0_0>
+None
+
+<design_1_debouncer_1_0>
+None
+
+<design_1_edge_detector_0_0>
+None
+
+<design_1_depacketizer_0_0>
+None
+
+<design_1_mute_controller_0_0>
+None
+
+<design_1_moving_average_filter_0_0>
+None
+
+<design_1_packetizer_0_0>
+None
+
+<design_1_volume_controller_1_0>
+None
+
+./LAB3_audio_controller.board/basys3
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/vivado.jou
+Archived Location = ./LAB3_audio_controller/vivado.jou
+
+Source File = C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/vivado.log
+Archived Location = ./LAB3_audio_controller/vivado.log
+

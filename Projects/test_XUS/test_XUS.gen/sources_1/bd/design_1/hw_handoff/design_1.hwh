@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 12 21:45:52 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="kintexu" BOARD="xilinx.com:kcu1500:part0:1.2" DEVICE="xcku115" NAME="design_1" PACKAGE="flvb2104" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="AsyncInput_0" SIGIS="data" SIGNAME="External_Ports_AsyncInput_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_XUS_Virtu_0" PORT="AsyncInput"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_XUS_Virtu_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_XUS_Virtu_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="255" NAME="M00_AXIS_Undeco_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_XUS_Virtu_0_m00_axis_undeco_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_XUS_Virtu_0" PORT="m00_axis_undeco_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M00_AXIS_Undeco_0_tvalid" SIGIS="undef" SIGNAME="AXI4Stream_XUS_Virtu_0_m00_axis_undeco_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_XUS_Virtu_0" PORT="m00_axis_undeco_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="AXI4Stream_XUS_Virtu_0_M00_AXIS_Undeco" NAME="M00_AXIS_Undeco_0" TYPE="INITIATOR">
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="32"/>
+      <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+      <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+      <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_clk_0"/>
+      <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TDATA" PHYSICAL="M00_AXIS_Undeco_0_tdata"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="M00_AXIS_Undeco_0_tvalid"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="10" FULLNAME="/AXI4Stream_XUS_Virtu_0" HWVERSION="1.0" INSTANCE="AXI4Stream_XUS_Virtu_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI4Stream_XUS_VirtualTDL" VLNV="DigiLAB:ip:AXI4Stream_XUS_VirtualTDL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="SIM_VS_IMP" VALUE="IMP"/>
+        <PARAMETER NAME="NUM_TAP_TDL" VALUE="256"/>
+        <PARAMETER NAME="NUM_TAP_PRE_TDL" VALUE="16"/>
+        <PARAMETER NAME="TYPE_TDL_0" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_1" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_2" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_3" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_4" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_5" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_6" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_7" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_8" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_9" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_10" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_11" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_12" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_13" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_14" VALUE="C"/>
+        <PARAMETER NAME="TYPE_TDL_15" VALUE="C"/>
+        <PARAMETER NAME="DEBUG_MODE" VALUE="FALSE"/>
+        <PARAMETER NAME="FILE_PATH_NAME_CO_DELAY" VALUE="/home/nicola/Documents/Vivado/Projects/Time-to-Digital_Converter/TappedDelayLine/TappedDelayLine.srcs/sim_1/new/CO_O_Delay.txt"/>
+        <PARAMETER NAME="FILE_PATH_NAME_O_DELAY" VALUE="/home/nicola/Documents/Vivado/Projects/Time-to-Digital_Converter/TappedDelayLine/TappedDelayLine.srcs/sim_1/new/CO_O_Delay.txt"/>
+        <PARAMETER NAME="NUMBER_OF_TDL" VALUE="1"/>
+        <PARAMETER NAME="BUFFERING_STAGE" VALUE="FALSE"/>
+        <PARAMETER NAME="MIN_VALID_TAP_POS" VALUE="0"/>
+        <PARAMETER NAME="STEP_VALID_TAP_POS" VALUE="1"/>
+        <PARAMETER NAME="MAX_VALID_TAP_POS" VALUE="255"/>
+        <PARAMETER NAME="VALID_POSITION_TAP_INIT" VALUE="271"/>
+        <PARAMETER NAME="VALID_NUMBER_OF_TDL_INIT" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_0" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_1" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_2" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_3" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_4" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_5" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_6" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_7" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_8" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_9" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_10" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_11" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_12" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_13" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_14" VALUE="0"/>
+        <PARAMETER NAME="OFFSET_TAP_TDL_15" VALUE="0"/>
+        <PARAMETER NAME="BIT_SMP_TDL" VALUE="256"/>
+        <PARAMETER NAME="BIT_SMP_PRE_TDL" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_AXI4Stream_XUS_Virtu_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AsyncInput" SIGIS="data" SIGNAME="External_Ports_AsyncInput_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AsyncInput_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m00_axis_undeco_tvalid" SIGIS="undef" SIGNAME="AXI4Stream_XUS_Virtu_0_m00_axis_undeco_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="M00_AXIS_Undeco_0_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="255" NAME="m00_axis_undeco_tdata" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_XUS_Virtu_0_m00_axis_undeco_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="M00_AXIS_Undeco_0_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="AXI4Stream_XUS_Virtu_0_M00_AXIS_Undeco" NAME="M00_AXIS_Undeco" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="NUM_READ_OUTSTANDING"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="32"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_clk_0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m00_axis_undeco_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m00_axis_undeco_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

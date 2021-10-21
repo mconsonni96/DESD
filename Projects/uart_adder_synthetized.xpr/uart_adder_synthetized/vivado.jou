@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 17:43:37 2021
+# Process ID: 16396
+# Current directory: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16372 C:\DESD\Projects\uart_adder_synthetized.xpr\uart_adder_synthetized\uart_adder_synthetized.xpr
+# Log file: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized/vivado.log
+# Journal file: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized/uart_adder_synthetized.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1

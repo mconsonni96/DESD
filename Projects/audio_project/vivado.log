@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 17 10:05:37 2021
+# Process ID: 15088
+# Current directory: C:/DESD/audio_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17404 C:\DESD\audio_project\audio_project.xpr
+# Log file: C:/DESD/audio_project/vivado.log
+# Journal file: C:/DESD/audio_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/audio_project/audio_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:14 . Memory (MB): peak = 1125.922 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/audio_project/audio_project.srcs/sources_1/bd/audio_bd/audio_bd.bd}
+Reading block design file <C:/DESD/audio_project/audio_project.srcs/sources_1/bd/audio_bd/audio_bd.bd>...
+Adding component instance block -- TimeEngineers:ip:pmod_i2s2:1.0 - pmod_i2s2_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- TimeEngineers:ip:Pmod_JSTK2:1.0 - Pmod_JSTK2_0
+Adding component instance block -- xilinx.com:module_ref:moving_average:1.0 - moving_average_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:LED_controller:1.0 - LED_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:audio_balance:1.0 - audio_balance_0
+Successfully read diagram <audio_bd> from block design file <C:/DESD/audio_project/audio_project.srcs/sources_1/bd/audio_bd/audio_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1227.836 ; gain = 101.914
+regenerate_bd_layout
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 17 10:18:19 2021...

@@ -1,0 +1,125 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2_AR72614 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Tue Jun  9 09:38:25 2020
+| Host         : debianDesktop running 64-bit Debian GNU/Linux bullseye/sid
+| Command      : report_control_sets -verbose -file top_bd_wrapper_control_sets_placed.rpt
+| Design       : top_bd_wrapper
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   170 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             167 |           41 |
+| No           | No                    | Yes                    |              25 |           11 |
+| No           | Yes                   | No                     |              89 |           33 |
+| Yes          | No                    | No                     |             153 |           50 |
+| Yes          | No                    | Yes                    |             166 |           35 |
+| Yes          | Yes                   | No                     |             198 |           53 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |                                              Enable Signal                                             |                                                                  Set/Reset Signal                                                                  | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  top_bd_i/debouncer_0/U0/debounced_int_reg_LDC_i_1_n_0 |                                                                                                        | top_bd_i/debouncer_0/U0/debounced_int_reg_LDC_i_2_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/debouncer_1/U0/debounced_int_reg_LDC_i_1_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/debouncer_1/U0/debounced_int_reg_LDC_i_2_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/debouncer_0/U0/debounced_int_reg_LDC_i_1_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/debouncer_0/U0/debounced_int_reg_LDC_i_2_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/debouncer_1/U0/debounced_int_reg_LDC_i_1_n_0 |                                                                                                        | top_bd_i/debouncer_1/U0/debounced_int_reg_LDC_i_2_n_0                                                                                              |                1 |              1 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/FSM_sequential_state[2]_i_1_n_0                                             | reset_IBUF                                                                                                                                         |                1 |              3 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/packetizer_0/U0/FSM_sequential_state[2]_i_1_n_0                                               | reset_IBUF                                                                                                                                         |                2 |              3 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                1 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/rx_baud_tick                                 |                                                                                                                                                    |                1 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                2 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/m_axis_tlast_int0                                                           | top_bd_i/depacketizer_0/U0/tx_words_counter[4]_i_1_n_0                                                                                             |                2 |              5 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/rx_bytes_counter0                                                           |                                                                                                                                                    |                3 |              6 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/packetizer_0/U0/words_counter0                                                                |                                                                                                                                                    |                3 |              6 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/p_0_in[15]                                                                  | top_bd_i/depacketizer_0/U0/data_sr[0][15]_i_1_n_0                                                                                                  |                1 |              7 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/p_0_in[7]                                                                   |                                                                                                                                                    |                2 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/data_stream_in[7]_i_1_n_0                              | reset_IBUF                                                                                                                                         |                1 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_fwft.ram_regout_en | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                4 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/E[0]                                         | reset_IBUF                                                                                                                                         |                2 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/uart_tx_count[2]_i_1_n_0                     | reset_IBUF                                                                                                                                         |                3 |             10 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/uart_rx_data_vec                             | reset_IBUF                                                                                                                                         |                4 |             11 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                5 |             12 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                3 |             12 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             15 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             15 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        | reset_IBUF                                                                                                                                         |                5 |             16 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/mute_controller_0/U0/m_axis_tdata0                                                            | top_bd_i/mute_controller_0/U0/m_axis_tdata[15]_i_1_n_0                                                                                             |                3 |             16 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/volume_controller_0/U0/saturator/m_axis_tdata[15]_i_2_n_0                                     | top_bd_i/volume_controller_0/U0/multiplier/SR[0]                                                                                                   |                3 |             16 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/packetizer_0/U0/high_byte0                                                                    |                                                                                                                                                    |                5 |             16 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/all_pass/m_axis_tdata0                                              |                                                                                                                                                    |                4 |             17 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/debouncer_1/U0/counter_0                                                                      | reset_IBUF                                                                                                                                         |                5 |             20 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/debouncer_0/U0/counter_0                                                                      | reset_IBUF                                                                                                                                         |                5 |             20 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/volume_controller_0/U0/multiplier/volume_level_int                                            | reset_IBUF                                                                                                                                         |                4 |             20 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/moving_average/r_shift_register[0]_1                                |                                                                                                                                                    |                3 |             22 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/moving_average/l_shift_register[0]_0                                |                                                                                                                                                    |                4 |             22 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/volume_controller_0/U0/saturator/E[0]                                                         |                                                                                                                                                    |               12 |             25 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      |                                                                                                        | reset_IBUF                                                                                                                                         |               10 |             30 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/depacketizer_0/U0/data_sr_reg[1]0                                                             |                                                                                                                                                    |                4 |             32 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/moving_average/m_axis_tdata_old0                                    |                                                                                                                                                    |                9 |             33 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                9 |             34 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/moving_average/l_shift_register[0]_0                                | reset_IBUF                                                                                                                                         |                9 |             42 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/moving_average_filte_0/U0/moving_average/r_shift_register[0]_1                                | reset_IBUF                                                                                                                                         |                6 |             42 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |               12 |             45 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1                      |                                                                                                        |                                                                                                                                                    |               20 |             82 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2                      |                                                                                                        |                                                                                                                                                    |               21 |             85 |
++--------------------------------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

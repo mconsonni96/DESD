@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  1 15:17:39 2020
+# Process ID: 1168
+# Current directory: C:/DESD/DESD20200901_template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16868 C:\DESD\DESD20200901_template\DESD20200901_template.xpr
+# Log file: C:/DESD/DESD20200901_template/vivado.log
+# Journal file: C:/DESD/DESD20200901_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/DESD20200901_template/DESD20200901_template.xpr
+update_compile_order -fileset sources_1
+archive_project C:/DESD/DESD_20200901_template_OK.xpr.zip -temp_dir C:/DESD/DESD20200901_template/.Xil/Vivado-1168-NicolaPC -force -include_local_ip_cache -include_config_settings

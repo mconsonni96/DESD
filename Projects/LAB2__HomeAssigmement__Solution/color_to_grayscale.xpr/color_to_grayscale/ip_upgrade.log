@@ -1,0 +1,37 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Mar  6 11:53:23 2021
+| Host         : DESKTOP-0BA32RO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'top_bd_util_vector_logic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of top_bd_util_vector_logic_0_0 (xilinx.com:ip:util_vector_logic:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Mar  6 11:53:23 2021
+| Host         : DESKTOP-0BA32RO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'top_bd_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of top_bd_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 6)
+

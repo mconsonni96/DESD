@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LAB3_depack_pack.srcs/sources_1/new/mute_controller.vhd" \
+"../../../../LAB3_depack_pack.srcs/sim_1/new/tb_mute_controller.vhd" \
+
+# Do not sort compile order
+nosort

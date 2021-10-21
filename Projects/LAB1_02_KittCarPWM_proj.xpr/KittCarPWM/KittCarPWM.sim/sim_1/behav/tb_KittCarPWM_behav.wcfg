@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_KittCarPWM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_KittCarPWM" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="28641666666fs"></ZoomStartTime>
+      <ZoomEndTime time="31471666667fs"></ZoomEndTime>
+      <Cursor1Time time="31000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="162"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_KittCarPWM/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/dut_SWs" type="array">
+      <obj_property name="ElementShortName">dut_SWs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_SWs[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/dut_LEDs" type="array">
+      <obj_property name="ElementShortName">dut_LEDs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_LEDs[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/dut_KittCarPWM/sync" type="logic">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/dut_KittCarPWM/kitt_car" type="array">
+      <obj_property name="ElementShortName">kitt_car[7:0]</obj_property>
+      <obj_property name="ObjectShortName">kitt_car[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/dut_KittCarPWM/tail" type="array">
+      <obj_property name="ElementShortName">tail[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tail[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/RESET_WND" type="other">
+      <obj_property name="ElementShortName">RESET_WND</obj_property>
+      <obj_property name="ObjectShortName">RESET_WND</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/TB_CLK_INIT" type="logic">
+      <obj_property name="ElementShortName">TB_CLK_INIT</obj_property>
+      <obj_property name="ObjectShortName">TB_CLK_INIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/TB_RESET_INIT" type="logic">
+      <obj_property name="ElementShortName">TB_RESET_INIT</obj_property>
+      <obj_property name="ObjectShortName">TB_RESET_INIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_SIMULATION_VS_IMPLEMENTATION" type="array">
+      <obj_property name="ElementShortName">DUT_SIMULATION_VS_IMPLEMENTATION[1:3]</obj_property>
+      <obj_property name="ObjectShortName">DUT_SIMULATION_VS_IMPLEMENTATION[1:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_CLK_PERIOD_NS" type="other">
+      <obj_property name="ElementShortName">DUT_CLK_PERIOD_NS</obj_property>
+      <obj_property name="ObjectShortName">DUT_CLK_PERIOD_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_MIN_KITT_CAR_STEP_MS" type="other">
+      <obj_property name="ElementShortName">DUT_MIN_KITT_CAR_STEP_MS</obj_property>
+      <obj_property name="ObjectShortName">DUT_MIN_KITT_CAR_STEP_MS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_NUM_OF_SWS" type="other">
+      <obj_property name="ElementShortName">DUT_NUM_OF_SWS</obj_property>
+      <obj_property name="ObjectShortName">DUT_NUM_OF_SWS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_TAIL_LENGTH" type="other">
+      <obj_property name="ElementShortName">DUT_TAIL_LENGTH</obj_property>
+      <obj_property name="ObjectShortName">DUT_TAIL_LENGTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCarPWM/DUT_NUM_OF_LEDS" type="other">
+      <obj_property name="ElementShortName">DUT_NUM_OF_LEDS</obj_property>
+      <obj_property name="ObjectShortName">DUT_NUM_OF_LEDS</obj_property>
+   </wvobject>
+</wave_config>

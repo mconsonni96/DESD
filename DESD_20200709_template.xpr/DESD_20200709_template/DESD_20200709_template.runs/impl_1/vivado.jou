@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Aug 29 20:03:46 2020
+# Process ID: 8020
+# Current directory: C:/DESD/DESD_20200709_template.xpr/DESD_20200709_template/DESD_20200709_template.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/DESD/DESD_20200709_template.xpr/DESD_20200709_template/DESD_20200709_template.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/DESD/DESD_20200709_template.xpr/DESD_20200709_template/DESD_20200709_template.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.55336",
+   "Default View_TopLeft":"-152,-264",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 7 -x 1740 -y 280 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port input_signal_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus data_in_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus dout_0 -pg 1 -lvl 7 -x 1740 -y 150 -defaultsOSRD
+preplace inst data_sampler_0 -pg 1 -lvl 4 -x 970 -y 210 -defaultsOSRD
+preplace inst debouncer_0 -pg 1 -lvl 2 -x 370 -y 130 -defaultsOSRD
+preplace inst edge_detector_0 -pg 1 -lvl 3 -x 670 -y 110 -defaultsOSRD
+preplace inst AXI4Stream_UART_0 -pg 1 -lvl 5 -x 1280 -y 270 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 70 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 670 -y 280 -defaultsOSRD
+preplace inst data_out_0 -pg 1 -lvl 6 -x 1590 -y 150 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 NJ 80
+preplace netloc reset_1 1 0 5 20 140 230 50 510 210 820J 300 1120J
+preplace netloc clk_wiz_0_clk_out1 1 1 5 220 40 520 30 840 120 1110 140 1460J
+preplace netloc util_vector_logic_0_Res 1 3 3 840 310 1100 150 1440J
+preplace netloc input_signal_0_1 1 0 2 NJ 150 NJ
+preplace netloc debouncer_0_debounced 1 2 1 N 130
+preplace netloc edge_detector_0_edge_detected 1 3 1 830 110n
+preplace netloc data_in_0_1 1 0 4 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc data_out_0_dout 1 6 1 N 150
+preplace netloc AXI4Stream_UART_0_UART 1 5 2 NJ 280 NJ
+preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 5 1 1450 130n
+preplace netloc data_sampler_0_m_axis 1 4 1 N 210
+levelinfo -pg 1 0 120 370 670 970 1280 1590 1740
+pagesize -pg 1 -db -bbox -sgen -160 0 1880 400
+"
+}
+

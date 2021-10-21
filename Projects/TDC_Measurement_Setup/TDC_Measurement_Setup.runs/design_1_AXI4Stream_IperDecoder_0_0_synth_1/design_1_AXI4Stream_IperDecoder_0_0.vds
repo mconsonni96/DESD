@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 13 13:45:04 2021
+# Process ID: 37103
+# Current directory: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_0_synth_1
+# Command line: vivado -log design_1_AXI4Stream_IperDecoder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI4Stream_IperDecoder_0_0.tcl
+# Log file: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_0_synth_1/design_1_AXI4Stream_IperDecoder_0_0.vds
+# Journal file: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_AXI4Stream_IperDecoder_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core/ip-repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx_Vitis/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI4Stream_IperDecoder_0_0, cache-ID = 356bfbffd9ba95c7.
+config_ip_cache: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2399.102 ; gain = 0.000 ; free physical = 3453 ; free virtual = 10358
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 13 13:45:32 2021...

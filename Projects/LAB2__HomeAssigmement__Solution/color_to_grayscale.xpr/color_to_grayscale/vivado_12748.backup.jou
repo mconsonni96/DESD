@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Mar  6 11:51:30 2021
+# Process ID: 12748
+# Current directory: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17764 C:\DESD\Projects\LAB2__HomeAssigmement__Solution\color_to_grayscale.xpr\color_to_grayscale\color_to_grayscale.xpr
+# Log file: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/vivado.log
+# Journal file: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {top_bd_util_vector_logic_0_0 top_bd_clk_wiz_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {top_bd_util_vector_logic_0_0 top_bd_clk_wiz_0_0}] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

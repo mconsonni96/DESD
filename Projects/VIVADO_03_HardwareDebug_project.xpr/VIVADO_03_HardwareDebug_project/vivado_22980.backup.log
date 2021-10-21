@@ -1,0 +1,180 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Mar 11 18:27:18 2020
+# Process ID: 22980
+# Current directory: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15920 C:\Users\nicol\Desktop\POLIMI\Didattica\VIVADO\VIVADO - 03 - Hardware Debug\VIVADO_02_HardwareDebug_project\VIVADO_02_HardwareDebug_project.xpr
+# Log file: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/vivado.log
+# Journal file: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project'
+INFO: [Project 1-313] Project file moved from 'C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 02 - Hardware Debug/VIVADO_02_HardwareDebug_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 890.898 ; gain = 242.660
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1184.473 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+Finished Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1263.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1417.047 ; gain = 446.078
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+Finished Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1911.133 ; gain = 50.246
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Mar 11 18:39:50 2020] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.runs/synth_1/runme.log
+[Wed Mar 11 18:39:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Mar 11 18:50:42 2020] Launched synth_1...
+Run output will be captured here: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2151.715 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+Finished Parsing XDC File [C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.srcs/constrs_1/new/counter.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2151.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*count*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*res*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {count_OBUF[0]} {count_OBUF[1]} {count_OBUF[2]} {count_OBUF[3]} {count_OBUF[4]} {count_OBUF[5]} {count_OBUF[6]} {count_OBUF[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list reset_IBUF ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2151.715 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2151.715 ; gain = 0.000
+[Wed Mar 11 18:55:54 2020] Launched impl_1...
+Run output will be captured here: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/VIVADO_02_HardwareDebug_project.runs/impl_1/runme.log
+save_project_as VIVADO_03_HardwareDebug_project C:/media/VIVADO_03_HardwareDebug_project -force
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2151.715 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2151.715 ; gain = 0.000
+[Wed Mar 11 19:05:22 2020] Launched impl_1...
+Run output will be captured here: C:/media/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2151.715 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D17A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3259.613 ; gain = 1107.898
+set_property PROGRAM.FILE {C:/media/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.runs/impl_1/counter.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/media/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.runs/impl_1/counter.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/media/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.runs/impl_1/counter.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Mar-11 19:17:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Mar-11 19:17:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/media/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+archive_project C:/media/VIVADO_03_HardwareDebug_project.xpr.zip -temp_dir {C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/.Xil/Vivado-22980-NicolaPC} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/.Xil/Vivado-22980-NicolaPC' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/.Xil/Vivado-22980-NicolaPC/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: C:/Users/nicol/Desktop/POLIMI/Didattica/VIVADO/VIVADO - 03 - Hardware Debug/VIVADO_02_HardwareDebug_project/.Xil/Vivado-22980-NicolaPC/PrjAr/VIVADO_03_HardwareDebug_project/VIVADO_03_HardwareDebug_project.cache/ip/2019.2/6801d77a25ce53d2/dbg_hub_sim_netlist.vhdl
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+archive_project C:/media/VIVADO_03_HardwareDebug_project.xpr.zip -temp_dir C:/temp -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/temp' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'

@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/new/KittCar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/new/KittCar_v2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar_v2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/imports/new/tb_KittCar_v2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCar_v2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/new/KittCar_v1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar_v1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/imports/new/tb_KittCar_v1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCar_v1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/new/KittCar_v0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar_v0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 01 - KittCar/KittCar/KittCar.srcs/sources_1/imports/new/tb_KittCar_v0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCar_v0'

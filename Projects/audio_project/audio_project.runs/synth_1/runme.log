@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log audio_bd_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_bd_wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source audio_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1126.539 ; gain = 0.000
+Command: synth_design -top audio_bd_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1504
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1162.969 ; gain = 36.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'audio_bd_wrapper' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:33]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_0_io0_iobuf' of component 'IOBUF' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:82]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_0_io1_iobuf' of component 'IOBUF' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:89]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_0_sck_iobuf' of component 'IOBUF' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:96]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx2/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'SPI_0_ss_iobuf_0' of component 'IOBUF' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:103]
+INFO: [Synth 8-3491] module 'audio_bd' declared at 'c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:14' bound to instance 'audio_bd_i' of component 'audio_bd' [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'audio_bd' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:45]
+INFO: [Synth 8-3491] module 'audio_bd_LED_controller_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_LED_controller_0_0_stub.vhdl:5' bound to instance 'LED_controller_0' of component 'audio_bd_LED_controller_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_LED_controller_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_LED_controller_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'audio_bd_Pmod_JSTK2_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_Pmod_JSTK2_0_0_stub.vhdl:5' bound to instance 'Pmod_JSTK2_0' of component 'audio_bd_Pmod_JSTK2_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_Pmod_JSTK2_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_Pmod_JSTK2_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'audio_bd_audio_balance_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_audio_balance_0_0_stub.vhdl:5' bound to instance 'audio_balance_0' of component 'audio_bd_audio_balance_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_audio_balance_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_audio_balance_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'audio_bd_clk_wiz_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'audio_bd_clk_wiz_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_clk_wiz_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'audio_bd_debouncer_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_debouncer_0_0_stub.vhdl:5' bound to instance 'debouncer_0' of component 'audio_bd_debouncer_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_debouncer_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_debouncer_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'audio_bd_debouncer_1_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_debouncer_1_0_stub.vhdl:5' bound to instance 'debouncer_1' of component 'audio_bd_debouncer_1_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:380]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_debouncer_1_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_debouncer_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'audio_bd_edge_detector_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_edge_detector_0_0_stub.vhdl:5' bound to instance 'edge_detector_0' of component 'audio_bd_edge_detector_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_edge_detector_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_edge_detector_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'audio_bd_edge_detector_1_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_edge_detector_1_0_stub.vhdl:5' bound to instance 'edge_detector_1' of component 'audio_bd_edge_detector_1_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:394]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_edge_detector_1_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_edge_detector_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'audio_bd_moving_average_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_moving_average_0_0_stub.vhdl:5' bound to instance 'moving_average_0' of component 'audio_bd_moving_average_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_moving_average_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_moving_average_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'audio_bd_mute_controller_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_mute_controller_0_0_stub.vhdl:5' bound to instance 'mute_controller_0' of component 'audio_bd_mute_controller_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:416]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_mute_controller_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_mute_controller_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'audio_bd_pmod_i2s2_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_pmod_i2s2_0_0_stub.vhdl:5' bound to instance 'pmod_i2s2_0' of component 'audio_bd_pmod_i2s2_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:431]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_pmod_i2s2_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_pmod_i2s2_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'audio_bd_util_vector_logic_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_util_vector_logic_0_0_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'audio_bd_util_vector_logic_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:453]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_util_vector_logic_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_util_vector_logic_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'audio_bd_volume_controller_0_0' declared at 'C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_volume_controller_0_0_stub.vhdl:5' bound to instance 'volume_controller_0' of component 'audio_bd_volume_controller_0_0' [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:458]
+INFO: [Synth 8-638] synthesizing module 'audio_bd_volume_controller_0_0' [C:/DESD/audio_project/audio_project.runs/synth_1/.Xil/Vivado-9160-DESKTOP-0BA32RO/realtime/audio_bd_volume_controller_0_0_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'audio_bd' (2#1) [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/synth/audio_bd.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'audio_bd_wrapper' (3#1) [C:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/hdl/audio_bd_wrapper.vhd:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.281 ; gain = 93.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.281 ; gain = 93.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.281 ; gain = 93.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1220.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_pmod_i2s2_0_0/audio_bd_pmod_i2s2_0_0/audio_bd_pmod_i2s2_0_0_in_context.xdc] for cell 'audio_bd_i/pmod_i2s2_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_pmod_i2s2_0_0/audio_bd_pmod_i2s2_0_0/audio_bd_pmod_i2s2_0_0_in_context.xdc] for cell 'audio_bd_i/pmod_i2s2_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0_in_context.xdc] for cell 'audio_bd_i/clk_wiz_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0_in_context.xdc] for cell 'audio_bd_i/clk_wiz_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_util_vector_logic_0_0/audio_bd_util_vector_logic_0_0/audio_bd_util_vector_logic_0_0_in_context.xdc] for cell 'audio_bd_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_util_vector_logic_0_0/audio_bd_util_vector_logic_0_0/audio_bd_util_vector_logic_0_0_in_context.xdc] for cell 'audio_bd_i/util_vector_logic_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_Pmod_JSTK2_0_0/audio_bd_Pmod_JSTK2_0_0/audio_bd_Pmod_JSTK2_0_0_in_context.xdc] for cell 'audio_bd_i/Pmod_JSTK2_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_Pmod_JSTK2_0_0/audio_bd_Pmod_JSTK2_0_0/audio_bd_Pmod_JSTK2_0_0_in_context.xdc] for cell 'audio_bd_i/Pmod_JSTK2_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_moving_average_0_0/audio_bd_moving_average_0_0/audio_bd_moving_average_0_0_in_context.xdc] for cell 'audio_bd_i/moving_average_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_moving_average_0_0/audio_bd_moving_average_0_0/audio_bd_moving_average_0_0_in_context.xdc] for cell 'audio_bd_i/moving_average_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_debouncer_0_0/audio_bd_debouncer_0_0/audio_bd_debouncer_0_0_in_context.xdc] for cell 'audio_bd_i/debouncer_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_debouncer_0_0/audio_bd_debouncer_0_0/audio_bd_debouncer_0_0_in_context.xdc] for cell 'audio_bd_i/debouncer_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_debouncer_1_0/audio_bd_debouncer_1_0/audio_bd_debouncer_1_0_in_context.xdc] for cell 'audio_bd_i/debouncer_1'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_debouncer_1_0/audio_bd_debouncer_1_0/audio_bd_debouncer_1_0_in_context.xdc] for cell 'audio_bd_i/debouncer_1'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_edge_detector_0_0/audio_bd_edge_detector_0_0/audio_bd_edge_detector_0_0_in_context.xdc] for cell 'audio_bd_i/edge_detector_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_edge_detector_0_0/audio_bd_edge_detector_0_0/audio_bd_edge_detector_0_0_in_context.xdc] for cell 'audio_bd_i/edge_detector_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_edge_detector_1_0/audio_bd_edge_detector_1_0/audio_bd_edge_detector_1_0_in_context.xdc] for cell 'audio_bd_i/edge_detector_1'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_edge_detector_1_0/audio_bd_edge_detector_1_0/audio_bd_edge_detector_1_0_in_context.xdc] for cell 'audio_bd_i/edge_detector_1'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_mute_controller_0_0/audio_bd_mute_controller_0_0/audio_bd_mute_controller_0_0_in_context.xdc] for cell 'audio_bd_i/mute_controller_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_mute_controller_0_0/audio_bd_mute_controller_0_0/audio_bd_mute_controller_0_0_in_context.xdc] for cell 'audio_bd_i/mute_controller_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_LED_controller_0_0/audio_bd_LED_controller_0_0/audio_bd_LED_controller_0_0_in_context.xdc] for cell 'audio_bd_i/LED_controller_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_LED_controller_0_0/audio_bd_LED_controller_0_0/audio_bd_LED_controller_0_0_in_context.xdc] for cell 'audio_bd_i/LED_controller_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_volume_controller_0_0/audio_bd_volume_controller_0_0/audio_bd_volume_controller_0_0_in_context.xdc] for cell 'audio_bd_i/volume_controller_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_volume_controller_0_0/audio_bd_volume_controller_0_0/audio_bd_volume_controller_0_0_in_context.xdc] for cell 'audio_bd_i/volume_controller_0'
+Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_audio_balance_0_0/audio_bd_audio_balance_0_0/audio_bd_audio_balance_0_0_in_context.xdc] for cell 'audio_bd_i/audio_balance_0'
+Finished Parsing XDC File [c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_audio_balance_0_0/audio_bd_audio_balance_0_0/audio_bd_audio_balance_0_0_in_context.xdc] for cell 'audio_bd_i/audio_balance_0'
+Parsing XDC File [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'input_signal_0'. [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'input_signal_0'. [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'input_signal_1'. [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'input_signal_1'. [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc:32]
+Finished Parsing XDC File [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/audio_bd_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/DESD/PW/Audio/Audio/VHDL/VHDL/Basys3_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/audio_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/audio_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/DESD/audio_project/audio_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/DESD/audio_project/audio_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1270.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1270.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1270.391 ; gain = 143.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1270.391 ; gain = 143.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/DESD/audio_project/audio_project.gen/sources_1/bd/audio_bd/ip/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0/audio_bd_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/pmod_i2s2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/Pmod_JSTK2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/moving_average_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/debouncer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/debouncer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/edge_detector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/edge_detector_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/mute_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/LED_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/volume_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for audio_bd_i/audio_balance_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1270.391 ; gain = 143.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1270.391 ; gain = 143.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1270.391 ; gain = 143.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1284.188 ; gain = 157.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1284.188 ; gain = 157.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1303.762 ; gain = 177.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |audio_bd_LED_controller_0_0    |         1|
+|2     |audio_bd_Pmod_JSTK2_0_0        |         1|
+|3     |audio_bd_audio_balance_0_0     |         1|
+|4     |audio_bd_clk_wiz_0_0           |         1|
+|5     |audio_bd_debouncer_0_0         |         1|
+|6     |audio_bd_debouncer_1_0         |         1|
+|7     |audio_bd_edge_detector_0_0     |         1|
+|8     |audio_bd_edge_detector_1_0     |         1|
+|9     |audio_bd_moving_average_0_0    |         1|
+|10    |audio_bd_mute_controller_0_0   |         1|
+|11    |audio_bd_pmod_i2s2_0_0         |         1|
+|12    |audio_bd_util_vector_logic_0_0 |         1|
+|13    |audio_bd_volume_controller_0_0 |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |audio_bd_LED_controller_0_0_bbox    |     1|
+|2     |audio_bd_Pmod_JSTK2_0_0_bbox        |     1|
+|3     |audio_bd_audio_balance_0_0_bbox     |     1|
+|4     |audio_bd_clk_wiz_0_0_bbox           |     1|
+|5     |audio_bd_debouncer_0_0_bbox         |     1|
+|6     |audio_bd_debouncer_1_0_bbox         |     1|
+|7     |audio_bd_edge_detector_0_0_bbox     |     1|
+|8     |audio_bd_edge_detector_1_0_bbox     |     1|
+|9     |audio_bd_moving_average_0_0_bbox    |     1|
+|10    |audio_bd_mute_controller_0_0_bbox   |     1|
+|11    |audio_bd_pmod_i2s2_0_0_bbox         |     1|
+|12    |audio_bd_util_vector_logic_0_0_bbox |     1|
+|13    |audio_bd_volume_controller_0_0_bbox |     1|
+|14    |IBUF                                |     2|
+|15    |IOBUF                               |     4|
+|16    |OBUF                                |     7|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1308.566 ; gain = 182.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1308.566 ; gain = 131.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1308.566 ; gain = 182.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1308.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1330.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1330.656 ; gain = 204.117
+INFO: [Common 17-1381] The checkpoint 'C:/DESD/audio_project/audio_project.runs/synth_1/audio_bd_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file audio_bd_wrapper_utilization_synth.rpt -pb audio_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 16 21:38:04 2021...

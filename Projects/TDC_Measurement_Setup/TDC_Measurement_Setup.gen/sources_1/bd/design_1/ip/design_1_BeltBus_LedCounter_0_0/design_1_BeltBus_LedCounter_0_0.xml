@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>DigiLAB</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_BeltBus_LedCounter_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>s00_bb_aresetn</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_BB_ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_BB_ARESETN.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.s00_bb_aresetn" xilinx:dependency="()not ($CONSTANT_LED_SPEED) ">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s00_bb_aclk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.ASSOCIATED_RESET">s00_bb_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.ASSOCIATED_BUSIF">BeltBus</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_BB_ACLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.s00_bb_aclk" xilinx:dependency="()not ($CONSTANT_LED_SPEED) ">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>BeltBus</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_valid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_data</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.HAS_TREADY">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.HAS_TLAST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BELTBUS.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.BELTBUS.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.BeltBus" xilinx:dependency="not ($CONSTANT_LED_SPEED) ">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>reset</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RESET.POLARITY">ACTIVE_HIGH</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RESET.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">reset</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">GREEN_LEDS:RED_LEDS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>GREEN_LEDS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TRI_O</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>green_leds</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>BOARD.ASSOCIATED_PARAM</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.GREEN_LEDS.BOARD.ASSOCIATED_PARAM">GREEN_LEDS_BOARD_INTERFACE</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>RED_LEDS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TRI_O</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>red_leds</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>BOARD.ASSOCIATED_PARAM</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RED_LEDS.BOARD.ASSOCIATED_PARAM">RED_LEDS_BOARD_INTERFACE</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>BeltBus_LedCounter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:43 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:828ce4f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:828ce4f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_BeltBus_LedCounter_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:43 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:828ce4f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>BeltBus_LedCounter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:43 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a4e6c1b7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_BeltBus_LedCounter_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:43 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a4e6c1b7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_implementation</spirit:name>
+        <spirit:displayName>Implementation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:43 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:828ce4f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:37:38 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:828ce4f0</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s00_bb_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_bb_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_bb_data</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((((((spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_NUM_CH&apos;)) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_FID&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_COARSE&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_FINE&apos;))) - 1) / 8) + 1) * 8) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_bb_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>is_calibrated</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>green_leds</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NUM_CH&apos;)) - 1)">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>red_leds</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NUM_CH&apos;)) - 1)">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>BIT_COARSE</spirit:name>
+        <spirit:displayName>Bit Coarse</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_COARSE" spirit:minimum="0" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_FID</spirit:name>
+        <spirit:displayName>Bit Fid</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_FID" spirit:minimum="0" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_NUM_CH</spirit:name>
+        <spirit:displayName>Bit Num Ch</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_NUM_CH" spirit:minimum="0" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>NUM_CH</spirit:name>
+        <spirit:displayName>Num Ch</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NUM_CH" spirit:minimum="0" spirit:rangeType="long">3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>COUNTER_WIDTH</spirit:name>
+        <spirit:displayName>Counter Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COUNTER_WIDTH" spirit:minimum="0" spirit:rangeType="long">26</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>PWM_RES</spirit:name>
+        <spirit:displayName>Pwm Res</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PWM_RES" spirit:minimum="0" spirit:rangeType="long">9</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>PWM_PRESCALER_BITS</spirit:name>
+        <spirit:displayName>Pwm Prescaler Bits</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PWM_PRESCALER_BITS" spirit:minimum="0" spirit:rangeType="long">7</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>PWM_INVERT_POLARITY</spirit:name>
+        <spirit:displayName>Pwm Invert Polarity</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PWM_INVERT_POLARITY">false</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>LED_TIME_RES</spirit:name>
+        <spirit:displayName>Led Time Res</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.LED_TIME_RES" spirit:minimum="0" spirit:rangeType="long">11</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>LED_PRESCALER_BITS</spirit:name>
+        <spirit:displayName>Led Prescaler Bits</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.LED_PRESCALER_BITS" spirit:minimum="0" spirit:rangeType="long">11</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>LED_SIGMA</spirit:name>
+        <spirit:displayName>Led Sigma</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.LED_SIGMA" spirit:minimum="0" spirit:rangeType="long">128</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_FINE</spirit:name>
+        <spirit:displayName>Bit Fine</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_FINE" spirit:minimum="0" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>CDC_SYNC_STAGES</spirit:name>
+        <spirit:displayName>Cdc Sync Stages</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CDC_SYNC_STAGES" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="boolean">
+        <spirit:name>CONSTANT_LED_SPEED</spirit:name>
+        <spirit:displayName>Constant Led Speed</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CONSTANT_LED_SPEED">false</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>RECOVERY_SPEED</spirit:name>
+        <spirit:displayName>Recovery Speed</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.RECOVERY_SPEED">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="MODELPARAM_ENABLEMENT.RECOVERY_SPEED">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>CALIBRATION_SPEED</spirit:name>
+        <spirit:displayName>Calibration Speed</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CALIBRATION_SPEED">1</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/led_pwm_breath.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/pwm.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/simple_log2.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/BeltBus_LedCounter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_BeltBus_LedCounter_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/led_pwm_breath.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/pwm.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/simple_log2.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/71e6/hdl/BeltBus_LedCounter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_BeltBus_LedCounter_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0_board.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>USED_IN_board</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_BeltBus_LedCounter_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>BeltBus TDC Counter with configurable LED breathing effect</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>BIT_COARSE</spirit:name>
+      <spirit:displayName>Bit Coarse</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_COARSE">8</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_COARSE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_FID</spirit:name>
+      <spirit:displayName>Bit Fid</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_FID">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_FID">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_NUM_CH</spirit:name>
+      <spirit:displayName>Bit Num Ch</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_NUM_CH">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_NUM_CH">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_CH</spirit:name>
+      <spirit:displayName>Number of TDC/LED channels</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_CH" spirit:minimum="1" spirit:maximum="1024" spirit:rangeType="long">3</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>COUNTER_WIDTH</spirit:name>
+      <spirit:displayName>Counter Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COUNTER_WIDTH" spirit:minimum="1" spirit:maximum="64" spirit:rangeType="long">26</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PWM_RES</spirit:name>
+      <spirit:displayName>PWM resolution</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PWM_RES" spirit:minimum="1" spirit:maximum="64" spirit:rangeType="long">9</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.PWM_RES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PWM_PRESCALER_BITS</spirit:name>
+      <spirit:displayName>PWM prescaler bits</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PWM_PRESCALER_BITS" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">7</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.PWM_PRESCALER_BITS">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PWM_INVERT_POLARITY</spirit:name>
+      <spirit:displayName>Invert the PWM polarity</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.PWM_INVERT_POLARITY">false</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.PWM_INVERT_POLARITY">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>LED_TIME_RES</spirit:name>
+      <spirit:displayName>LED time resolution</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LED_TIME_RES" spirit:minimum="1" spirit:maximum="64" spirit:rangeType="long">11</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.LED_TIME_RES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>LED_PRESCALER_BITS</spirit:name>
+      <spirit:displayName>LED prescaler bits</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LED_PRESCALER_BITS" spirit:minimum="0" spirit:maximum="64" spirit:rangeType="long">11</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.LED_PRESCALER_BITS">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>LED_SIGMA</spirit:name>
+      <spirit:displayName>Sigma of the Gaussian shape</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.LED_SIGMA">128</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.LED_SIGMA">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_BeltBus_LedCounter_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_FINE</spirit:name>
+      <spirit:displayName>Bit Fine</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_FINE">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_FINE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CDC_SYNC_STAGES</spirit:name>
+      <spirit:displayName>Async FIFO CDC sync stages</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CDC_SYNC_STAGES" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.CDC_SYNC_STAGES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CONSTANT_LED_SPEED</spirit:name>
+      <spirit:displayName>Constant LED speed</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.CONSTANT_LED_SPEED">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RECOVERY_SPEED</spirit:name>
+      <spirit:displayName>Recovery Speed</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.RECOVERY_SPEED">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.RECOVERY_SPEED">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CALIBRATION_SPEED</spirit:name>
+      <spirit:displayName>Calibration Speed</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CALIBRATION_SPEED">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.CALIBRATION_SPEED">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>GREEN_LEDS_BOARD_INTERFACE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.GREEN_LEDS_BOARD_INTERFACE">LED_G_BUS</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RED_LEDS_BOARD_INTERFACE</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RED_LEDS_BOARD_INTERFACE">LED_R_BUS</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>BeltBus TDC LED Counter</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="DigiLAB:user:BeltBus_LedCounter:1.0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/Utility_Ip_Core/ip_repo/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="DigiLAB:user:BeltBus_LedCounter:1.1_ARCHIVE_LOCATION">/home/nicola/Documents/vivado/IPs/ip_repo/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="DigiLAB:user:BeltBus_LedCounter:1.2_ARCHIVE_LOCATION">/home/fabio/VivadoSources/2017.3/Utility_IP_Core/ip_repo/BeltBus_LEDCounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b84c60_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@be98583_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42858421_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ec17673_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42fc74b8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cfcbab5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3140cb4a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a2b0084_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67dabb9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f60e447_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ce5f2d2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cfe9934_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1393c951_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18c9e8cf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5923507_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31894d54_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5865e5d5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9a532d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5c5dc8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_repo/AXI_Peripheral/MME_TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a34fb4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15cc750c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@679b40ef_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59b8b77f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ac84875_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@780f6f23_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c8831e8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@365eb4b1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f04ea5c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@783dc10f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3554c654_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@385272d6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a3098fb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f81d20_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@721dd71f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bbd052f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@405fa0ba_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22ba4931_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10798848_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415f9af1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@744a443b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f4ea3fe_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ebced3a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e7ba3c5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53872f57_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f364ce7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@726b37cb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@484d34f9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a4813c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc433a1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1981c680_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@275e383a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54274fc5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d6e5c8f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19b753be_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@134e616d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e1b72_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b49b89_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d1578db_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73166760_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e58b632_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@699b1fbb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69e75cda_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5641fd93_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cc5afd6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@168863ec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2939eee2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41e9605c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f276a89_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a190fe5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2746e2f2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2302bb1d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41769ca6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33917e6b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d402233_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d50030d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f54d517_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98f6a2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ab838f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@460cb7b8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6126c822_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b7615c9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@557eacb4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cdff3a0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f67634_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cff854a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f450ec7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d32f80d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e28309f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8774af_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37587281_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5e59dd_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a397e05_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d9025fe_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3951d8f9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d8a15db_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d9820b_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57cd1a51_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b9424f7_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36b82656_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf327f6_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a54235e_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa42da1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33ea57fd_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bc685fb_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77639985_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@239ae9e_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@326da989_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2058a858_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20eef76f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f4f165_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d9ec3b_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ff1318_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66479641_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d01b8f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10c87f8a_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79c2af52_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dee4bcc_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d49e5f8_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc87dd_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ca13496_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@da3b679_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d74a3d_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6803096e_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11746166_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@455ec0df_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@df246d0_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fbd537d_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50d93fab_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6867e97f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@301ee727_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61ea26aa_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@420cbed3_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e63599e_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aefcac0_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f747598_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e75f71_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a8b6938_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42600f04_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a1e657a_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25a481d4_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fdd7126_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64643618_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c59d5dc_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4246fe02_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@718c7f7a_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35974162_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e58c109_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a0ae24_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b113dff_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d6e5580_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45997e2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a43c2d1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4199de8c_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e61454f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d15492_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fb2448_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b22eee_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46b1c72c_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@660c03c3_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee3971f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f6daf1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/AXI_Peripheral/TDC_Module/beltbus_ledcounter</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BELTBUS.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GREEN_LEDS.BOARD.ASSOCIATED_PARAM" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RED_LEDS.BOARD.ASSOCIATED_PARAM" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RESET.POLARITY" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ACLK.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB_ARESETN.POLARITY" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.GREEN_LEDS_BOARD_INTERFACE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RED_LEDS_BOARD_INTERFACE" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6055c40f"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8721fd24"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="42385a37"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="c38c400e"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="95bae8de"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Aug 31 10:45:18 2020
+# Process ID: 608
+# Current directory: C:/DESD/june_2020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7448 C:\DESD\june_2020\june_2020.xpr
+# Log file: C:/DESD/june_2020/vivado.log
+# Journal file: C:/DESD/june_2020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/june_2020/june_2020.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 802.363 ; gain = 167.883
+update_compile_order -fileset sources_1
+close [ open C:/DESD/june_2020/june_2020.srcs/sources_1/new/encoder.vhd w ]
+add_files C:/DESD/june_2020/june_2020.srcs/sources_1/new/encoder.vhd
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:slip_encoder:1.0 - slip_encoder_0
+Adding component instance block -- xilinx.com:module_ref:slip_decoder:1.0 - slip_decoder_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:led_controller:1.0 - led_controller_0
+Adding component instance block -- xilinx.com:module_ref:switch_controller:1.0 - switch_controller_0
+Successfully read diagram <design_1> from BD file <C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1093.141 ; gain = 0.000
+delete_bd_objs [get_bd_intf_nets slip_encoder_0_m_axis] [get_bd_intf_nets switch_controller_0_m_axis] [get_bd_cells slip_encoder_0]
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference encoder encoder_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+WARNING: [IP_Flow 19-3571] IP 'design_1_encoder_0_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_intf_net [get_bd_intf_pins encoder_0/m_axis] [get_bd_intf_pins AXI4Stream_UART_0/S00_AXIS_TX]
+connect_bd_intf_net [get_bd_intf_pins switch_controller_0/m_axis] [get_bd_intf_pins encoder_0/s_axis]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins encoder_0/aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins encoder_0/aclk]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\june_2020\june_2020.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /slip_decoder_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /led_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /switch_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /encoder_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-1771] Block interface /AXI4Stream_UART_0/UART has associated board param 'UART_BOARD_INTERFACE', which is set to board part interface 'usb_uart'. This interface is connected to an external interface /UART_0, whose name 'UART_0' does not match with the board interface name 'usb_uart'.
+This is a visual-only issue - this interface /AXI4Stream_UART_0/UART will be connected to board interface 'usb_uart'. If desired, please change the name of this port /UART_0 manually.
+Wrote  : <C:\DESD\june_2020\june_2020.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block slip_decoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switch_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block encoder_0 .
+Exporting to file C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/DESD/june_2020/june_2020.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Aug 31 11:17:31 2020] Launched design_1_encoder_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_encoder_0_0_synth_1: C:/DESD/june_2020/june_2020.runs/design_1_encoder_0_0_synth_1/runme.log
+synth_1: C:/DESD/june_2020/june_2020.runs/synth_1/runme.log
+[Mon Aug 31 11:17:32 2020] Launched impl_1...
+Run output will be captured here: C:/DESD/june_2020/june_2020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1143.336 ; gain = 50.195
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1179.422 ; gain = 16.563
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACACB0A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2409.754 ; gain = 1230.332
+set_property PROGRAM.FILE {C:/DESD/june_2020/june_2020.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/june_2020/june_2020.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 31 11:28:04 2020...

@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2019.2_AR72614 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 27 08:31:02 2020
+# Process ID: 4958
+# Current directory: /home/nicola/Documents/vivado/logs
+# Command line: vivado -jvm -patch-module=java.desktop=/opt/Xilinx/Vivado/2019.2/lib/classes/AR72614/AR72614.jar
+# Log file: /home/nicola/Documents/vivado/logs/vivado.log
+# Journal file: /home/nicola/Documents/vivado/logs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 6688.934 ; gain = 240.438 ; free physical = 6572 ; free virtual = 27926
+open_project /home/nicola/Documents/vivado/color_to_grayscale/color_to_grayscale.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:06 . Memory (MB): peak = 6850.691 ; gain = 53.020 ; free physical = 5170 ; free virtual = 27320
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/color_to_grayscale/color_to_grayscale.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_project LAB2_serial_manager
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_project
+close_project
+open_project /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr 27 11:25:57 2020] Launched synth_1...
+Run output will be captured here: /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/synth_1/runme.log
+[Mon Apr 27 11:25:58 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:32 ; elapsed = 00:00:13 . Memory (MB): peak = 8006.156 ; gain = 71.797 ; free physical = 5243 ; free virtual = 24422
+update_compile_order -fileset sources_1
+open_bd_design {/home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd}
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:axi4stream_data_out:1.0 - axi4stream_data_out_0
+Adding component instance block -- xilinx.com:module_ref:axi4stream_data_sampler:1.0 - axi4stream_data_samp_0
+Successfully read diagram <top_bd> from BD file </home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 8037.902 ; gain = 0.000 ; free physical = 4267 ; free virtual = 23819
+reset_run synth_1
+update_module_reference top_bd_axi4stream_data_samp_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+Upgrading '/home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_axi4stream_data_samp_0_0 from axi4stream_data_sampler_v1_0 1.0 to axi4stream_data_sampler_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi4stream_data_out_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /axi4stream_data_samp_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi4stream_data_samp_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi4stream_data_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+Exporting to file /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Mon Apr 27 11:26:40 2020] Launched top_bd_axi4stream_data_samp_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_axi4stream_data_samp_0_0_synth_1: /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_axi4stream_data_samp_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/synth_1/runme.log
+[Mon Apr 27 11:26:40 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 8225.320 ; gain = 139.750 ; free physical = 4569 ; free virtual = 24131
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+archive_project /home/nicola/Documents/vivado/LAB2_serial_manager.xpr.zip -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-4958-debianDesktop' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/IPs'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_util_vector_logic_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_AXI4Stream_UART_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_debouncer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_edge_detector_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_axi4stream_data_out_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_axi4stream_data_samp_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'top_bd_util_vector_logic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_AXI4Stream_UART_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_debouncer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_edge_detector_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_axi4stream_data_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_axi4stream_data_samp_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_axi4stream_data_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_axi4stream_data_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_axi4stream_data_samp_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_axi4stream_data_samp_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_debouncer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_debouncer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_edge_detector_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_edge_detector_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_util_vector_logic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_util_vector_logic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

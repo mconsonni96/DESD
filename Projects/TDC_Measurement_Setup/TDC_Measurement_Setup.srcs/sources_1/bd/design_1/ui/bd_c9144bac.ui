@@ -1,0 +1,49 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.662088",
+   "Default View_TopLeft":"-186,-103",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port M00_BB -pg 1 -lvl 5 -x 1440 -y 160 -defaultsOSRD
+preplace port M01_AXIS_DebugCT -pg 1 -lvl 5 -x 1440 -y 180 -defaultsOSRD
+preplace port S00_BB -pg 1 -lvl 0 -x -30 -y 50 -defaultsOSRD
+preplace port ch1_diff -pg 1 -lvl 0 -x -30 -y 270 -defaultsOSRD
+preplace port CalibEventIn -pg 1 -lvl 0 -x -30 -y 290 -defaultsOSRD
+preplace port Calibrated -pg 1 -lvl 5 -x 1440 -y 200 -defaultsOSRD
+preplace port clk_BB -pg 1 -lvl 0 -x -30 -y 430 -defaultsOSRD
+preplace port clk_TDC -pg 1 -lvl 0 -x -30 -y 410 -defaultsOSRD
+preplace port reset_TDC -pg 1 -lvl 0 -x -30 -y 560 -defaultsOSRD
+preplace portBus CoarseCounter_CTD -pg 1 -lvl 0 -x -30 -y 210 -defaultsOSRD
+preplace portBus read_reg -pg 1 -lvl 5 -x 1440 -y 640 -defaultsOSRD
+preplace portBus write_reg -pg 1 -lvl 0 -x -30 -y 490 -defaultsOSRD
+preplace inst BeltBus_TDL_Channel_1 -pg 1 -lvl 4 -x 1230 -y 180 -defaultsOSRD
+preplace inst InputLogic_1 -pg 1 -lvl 3 -x 850 -y 360 -defaultsOSRD
+preplace inst TDCChannelSlice_1 -pg 1 -lvl 2 -x 410 -y 420 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 350 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 850 -y 570 -defaultsOSRD
+preplace netloc AsyncInput_1 1 3 1 1010 70n
+preplace netloc BeltBus_TDL_Channel_TDC_1_Calibrated 1 1 4 190 550 620 -10 NJ -10 1420
+preplace netloc CoarseCounter_CTD_1 1 0 4 NJ 210 NJ 210 NJ 210 NJ
+preplace netloc StartStopGenerator_0_StopOut 1 0 3 NJ 290 NJ 290 650J
+preplace netloc TDCChannelSlice_1_Divider 1 2 1 630 370n
+preplace netloc TDCChannelSlice_1_EdgeTrigger 1 2 1 600 330n
+preplace netloc TDCChannelSlice_1_ForceCalibrate 1 2 1 640 410n
+preplace netloc TDCChannelSlice_1_Gate 1 2 1 N 430
+preplace netloc TDCChannelSlice_1_StretchLength 1 2 1 610 350n
+preplace netloc TDCChannelSlice_1_read_reg 1 2 3 600J 640 NJ 640 NJ
+preplace netloc bitTrn_Cal_dout_1 1 3 1 1030 270n
+preplace netloc clk_BB_1 1 0 4 NJ 430 190 190 NJ 190 1030
+preplace netloc clk_TDC_1 1 0 4 NJ 410 180 280 660 110 NJ
+preplace netloc reset_TDC_1 1 0 4 -10J 260 NJ 260 670 170 1020
+preplace netloc xlconstant_0_dout 1 1 3 200 200 NJ 200 1020
+preplace netloc xlslice_1_Dout 1 0 2 NJ 490 NJ
+preplace netloc S00_BB_1 1 0 4 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc BeltBus_TDL_Channel_1_M01_AXIS_DebugCT 1 4 1 NJ 180
+preplace netloc Conn2 1 0 3 NJ 270 NJ 270 NJ
+preplace netloc BeltBus_TDL_Channel_1_M00_BB 1 4 1 NJ 160
+levelinfo -pg 1 -30 100 410 850 1230 1440
+pagesize -pg 1 -db -bbox -sgen -260 -30 1640 670
+"
+}
+0

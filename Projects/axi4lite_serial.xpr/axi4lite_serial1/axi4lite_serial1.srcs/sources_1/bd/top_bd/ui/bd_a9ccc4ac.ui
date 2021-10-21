@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.871982",
+   "Default View_TopLeft":"-117,-147",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 5 -x 1140 -y 210 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 1000 -y 220 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 230 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1000 -y 80 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 410 -y 180 -defaultsOSRD
+preplace inst axi4_counter_0 -pg 1 -lvl 3 -x 710 -y 150 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 NJ 240
+preplace netloc reset_1 1 0 2 20 160 N
+preplace netloc clk_wiz_0_clk_out1 1 1 3 220 80 590 80 840
+preplace netloc util_vector_logic_0_Res 1 2 2 590 220 830
+preplace netloc clk_wiz_0_locked 1 1 1 230 220n
+preplace netloc axi4_counter_0_m_axi 1 3 1 850 60n
+preplace netloc axi_uartlite_0_UART 1 4 1 N 210
+levelinfo -pg 1 0 120 410 710 1000 1140
+pagesize -pg 1 -db -bbox -sgen -120 0 1260 300
+"
+}
+0

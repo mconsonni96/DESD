@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 17:12:09 2021
+# Process ID: 5052
+# Current directory: C:/DESD/Projects/AXIS_02_Adder_project.xpr/AXIS_02_Adder_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4364 C:\DESD\Projects\AXIS_02_Adder_project.xpr\AXIS_02_Adder_project\AXIS_02_Adder_project.xpr
+# Log file: C:/DESD/Projects/AXIS_02_Adder_project.xpr/AXIS_02_Adder_project/vivado.log
+# Journal file: C:/DESD/Projects/AXIS_02_Adder_project.xpr/AXIS_02_Adder_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/AXIS_02_Adder_project.xpr/AXIS_02_Adder_project/AXIS_02_Adder_project.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,456 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 23 18:14:05 2020
+# Process ID: 14224
+# Current directory: C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18760 C:\DESD\Project\LAB1 - 02 - KittCar PWM\KittCarPWM\KittCarPWM.xpr
+# Log file: C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/vivado.log
+# Journal file: C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.xpr}
+INFO: [Project 1-313] Project file moved from '/tmp/.Xil_pc-fisso/Vivado-9980-pcfisso/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 937.867 ; gain = 304.535
+update_compile_order -fileset sources_1
+create_fileset -simset sim_2
+create_fileset -simset sim_3
+set_property is_enabled false [get_files  {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}]
+set_property is_enabled true [get_files  {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_SyncGenerator.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_SyncGenerator.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}
+set_property source_mgmt_mode DisplayOnly [current_project]
+add_files -fileset sim_2 -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_SyncGenerator_behav.wcfg}}
+import_files -fileset sim_2 -force -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_SyncGenerator_behav.wcfg}}
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_SyncGenerator_behav.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_SyncGenerator_behav.wcfg}}
+file delete -force {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_SyncGenerator_behav.wcfg}
+add_files -fileset sim_3 -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_TailGenerator_behav.wcfg}}
+import_files -fileset sim_3 -force -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_TailGenerator_behav.wcfg}}
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_TailGenerator_behav.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_TailGenerator_behav.wcfg}}
+file delete -force {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_TailGenerator_behav.wcfg}
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_SyncGenerator.vhd}}
+set_property top tb_SyncGenerator [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SyncGenerator' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj tb_SyncGenerator_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PulseWidthModulator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TailGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_SyncGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SyncGenerator'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_2/behav/xsim'
+"xelab -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_SyncGenerator_behav xil_defaultlib.tb_SyncGenerator -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_SyncGenerator_behav xil_defaultlib.tb_SyncGenerator -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.SyncGenerator [\SyncGenerator(clk_period_ns=10,...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_syncgenerator
+Built simulation snapshot tb_SyncGenerator_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SyncGenerator_behav -key {Behavioral:sim_2:Functional:tb_SyncGenerator} -tclbatch {tb_SyncGenerator.tcl} -view {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_2/imports/behav/tb_SyncGenerator_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_2/imports/behav/tb_SyncGenerator_behav.wcfg}
+source tb_SyncGenerator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.277 ; gain = 26.324
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SyncGenerator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1022.117 ; gain = 33.461
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1022.117 ; gain = 0.000
+current_fileset -simset [ get_filesets sim_1 ]
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+add_files -fileset sim_3 -norecurse {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}
+set_property top tb_TailGenerator [get_filesets sim_3]
+set_property top_lib xil_defaultlib [get_filesets sim_3]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_KittCarPWM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_KittCarPWM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PulseWidthModulator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TailGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_TailGenerator'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_1/behav/xsim'
+"xelab -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_KittCarPWM_behav xil_defaultlib.tb_KittCarPWM -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_KittCarPWM_behav xil_defaultlib.tb_KittCarPWM -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PulseWidthModulator [\PulseWidthModulator(bit_length=...]
+Compiling architecture behavioral of entity xil_defaultlib.TailGenerator [tailgenerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.SyncGenerator [\SyncGenerator(clk_period_ns=10,...]
+Compiling architecture behavioral of entity xil_defaultlib.KittCar [\KittCar(num_of_leds=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.KittCarPWM [\KittCarPWM(simulation_vs_implem...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_kittcarpwm
+Built simulation snapshot tb_KittCarPWM_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_KittCarPWM_behav -key {Behavioral:sim_1:Functional:tb_KittCarPWM} -tclbatch {tb_KittCarPWM.tcl} -view {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_KittCarPWM_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/imports/KittCarPWM/KittCarPWM.sim/sim_1/behav/tb_KittCarPWM_behav.wcfg}
+source tb_KittCarPWM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1022.117 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_KittCarPWM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1022.117 ; gain = 0.000
+run 100 us
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd}}
+current_fileset -simset [ get_filesets sim_3 ]
+launch_simulation -simset [get_filesets sim_3 ]
+Command: launch_simulation -simset sim_3
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_3/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_3'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_TailGenerator' in fileset 'sim_3'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_3'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_3/behav/xsim'
+"xvhdl --incr --relax -prj tb_TailGenerator_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PulseWidthModulator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TailGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_TailGenerator'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_3/behav/xsim'
+"xelab -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_TailGenerator_behav xil_defaultlib.tb_TailGenerator -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_TailGenerator_behav xil_defaultlib.tb_TailGenerator -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PulseWidthModulator [\PulseWidthModulator(bit_length=...]
+Compiling architecture behavioral of entity xil_defaultlib.TailGenerator [tailgenerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_tailgenerator
+Built simulation snapshot tb_TailGenerator_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.sim/sim_3/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_TailGenerator_behav -key {Behavioral:sim_3:Functional:tb_TailGenerator} -tclbatch {tb_TailGenerator.tcl} -view {{C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_3/imports/behav/tb_TailGenerator_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_3/imports/behav/tb_TailGenerator_behav.wcfg}
+source tb_TailGenerator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_TailGenerator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1071.480 ; gain = 7.996
+run 100 us
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.246 ; gain = 16.852
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D17A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2316.895 ; gain = 1225.648
+set_property PROGRAM.FILE {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: KittCarPWM
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2854.871 ; gain = 242.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:71]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:59]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:38' bound to instance 'Inst_PulseWidthModulator' of component 'PulseWidthModulator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:65]
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (1#1) [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'TailGenerator' (2#1) [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:59]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'SyncGenerator' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:33' bound to instance 'Inst_SyncGenerator' of component 'SyncGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'SyncGenerator' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:60]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncGenerator' (3#1) [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:60]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'KittCar' declared at 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:35' bound to instance 'Inst_KittCar' of component 'KittCar' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'KittCar' [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:59]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'KittCar' (4#1) [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2896.918 ; gain = 284.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2914.785 ; gain = 302.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2914.785 ; gain = 302.863
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2914.785 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3019.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 3052.824 ; gain = 440.902
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 3052.824 ; gain = 704.293
+archive_project {C:/DESD/Project/LAB1 - 02 - KittCar PWM/LAB1_02_KittCarPWM_proj.xpr.zip} -temp_dir {C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/.Xil/Vivado-14224-NicolaPC} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/.Xil/Vivado-14224-NicolaPC' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/.Xil/Vivado-14224-NicolaPC/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

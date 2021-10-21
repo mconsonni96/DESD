@@ -1,0 +1,306 @@
+#-----------------------------------------------------------
+# Vivado v2019.2_AR72614 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 10 11:25:33 2020
+# Process ID: 59933
+# Current directory: /home/nicola/Documents/vivado/logs
+# Command line: vivado -jvm -patch-module=java.desktop=/opt/Xilinx/Vivado/2019.2/lib/classes/AR72614/AR72614.jar
+# Log file: /home/nicola/Documents/vivado/logs/vivado.log
+# Journal file: /home/nicola/Documents/vivado/logs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+update_module_reference top_bd_volume_controller_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_module_reference top_bd_mute_controller_0_0
+update_module_reference top_bd_volume_controller_0_0
+reset_run impl_1
+connect_bd_net [get_bd_pins mute_controller_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {150.000} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.375} CONFIG.MMCM_CLKOUT1_DIVIDE {6} CONFIG.CLKOUT1_JITTER {138.844} CONFIG.CLKOUT1_PHASE_ERROR {105.461} CONFIG.CLKOUT2_JITTER {127.220} CONFIG.CLKOUT2_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.MMCM_CLKOUT1_DIVIDE {3} CONFIG.CLKOUT1_JITTER {152.663} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {132.221} CONFIG.CLKOUT2_PHASE_ERROR {132.063}] [get_bd_cells clk_wiz_0]
+endgroup
+update_module_reference top_bd_volume_controller_0_0
+reset_run synth_1
+reset_run top_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_module_reference top_bd_volume_controller_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run top_bd_volume_controller_0_0_synth_1
+update_module_reference top_bd_volume_controller_0_0
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_design
+open_run impl_1
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+update_module_reference top_bd_volume_controller_0_0
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter.vhd
+update_compile_order -fileset sources_1
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter_en.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter_en.vhd
+update_compile_order -fileset sources_1
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/all_pass_filter.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/all_pass_filter.vhd
+update_compile_order -fileset sources_1
+update_module_reference top_bd_volume_controller_0_0
+create_bd_cell -type module -reference moving_average_filter_en moving_average_filte_0
+delete_bd_objs [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX]
+undo
+delete_bd_objs [get_bd_intf_nets depacketizer_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins depacketizer_0/m_axis] [get_bd_intf_pins moving_average_filte_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins moving_average_filte_0/m_axis] [get_bd_intf_pins volume_controller_0/s_axis]
+connect_bd_net [get_bd_pins moving_average_filte_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins moving_average_filte_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+startgroup
+make_bd_pins_external  [get_bd_pins moving_average_filte_0/enable_filter]
+endgroup
+set_property name enable_filter [get_bd_ports enable_filter_0]
+set_property name SW0 [get_bd_ports enable_filter]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+regenerate_bd_layout
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+regenerate_bd_layout
+close_design
+open_run synth_1 -name synth_1
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+set_property name SW0a [get_bd_ports SW0]
+set_property name sw0 [get_bd_ports SW0a]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+close_project
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+open_project /home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.xpr
+current_project LAB3
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+close_project
+close_project
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+close_project
+create_project LAB3 /home/nicola/Documents/vivado/DESD/LAB3 -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "top_bd"
+update_compile_order -fileset sources_1
+file mkdir /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/packetizer.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/packetizer.vhd
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/depacketizer.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/depacketizer.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  /home/nicola/Documents/vivado/DESD/IPs [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv TimeEngineers:ip:AXI4Stream_UART:1.0 AXI4Stream_UART_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "top_bd" 
+endgroup
+apply_board_connection -board_interface "usb_uart" -ip_intf "AXI4Stream_UART_0/UART" -diagram "top_bd" 
+apply_board_connection -board_interface "reset" -ip_intf "clk_wiz_0/reset" -diagram "top_bd" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aresetn]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aresetn] [get_bd_pins util_vector_logic_0/Res]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aclk] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AXI4Stream_UART_0/rst]
+disconnect_bd_net /Net [get_bd_pins AXI4Stream_UART_0/clk_uart]
+startgroup
+set_property -dict [list CONFIG.UART_BAUD_RATE {2000000}] [get_bd_cells AXI4Stream_UART_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {96} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.MMCM_CLKOUT1_DIVIDE {3} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {152.663} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {132.221} CONFIG.CLKOUT2_PHASE_ERROR {132.063}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+make_wrapper -files [get_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd] -top
+add_files -norecurse /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference depacketizer depacketizer_0
+connect_bd_intf_net [get_bd_intf_pins depacketizer_0/s_axis] [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/S00_AXIS_TX] [get_bd_intf_pins depacketizer_0/m_axis]
+delete_bd_objs [get_bd_intf_nets depacketizer_0_m_axis]
+create_bd_cell -type module -reference packetizer packetizer_0
+connect_bd_intf_net [get_bd_intf_pins packetizer_0/s_axis] [get_bd_intf_pins depacketizer_0/m_axis]
+connect_bd_intf_net [get_bd_intf_pins packetizer_0/m_axis] [get_bd_intf_pins AXI4Stream_UART_0/S00_AXIS_TX]
+connect_bd_net [get_bd_pins depacketizer_0/aclk] [get_bd_pins packetizer_0/aclk]
+connect_bd_net [get_bd_pins depacketizer_0/aresetn] [get_bd_pins packetizer_0/aresetn]
+connect_bd_net [get_bd_pins depacketizer_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins depacketizer_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+regenerate_bd_layout
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {depacketizer_0_m_axis}]
+undo
+regenerate_bd_layout
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {depacketizer_0_m_axis}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets depacketizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+undo
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {AXI4Stream_UART_0_M00_AXIS_RX}]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {packetizer_0_m_axis}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets depacketizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets packetizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+delete_bd_objs [get_bd_nets rst_top_bd_200M_peripheral_aresetn] [get_bd_cells rst_top_bd_200M]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins system_ila_0/resetn]
+regenerate_bd_layout
+save_bd_design
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run top_bd_clk_wiz_0_0_synth_1
+reset_run top_bd_AXI4Stream_UART_0_0_synth_1
+reset_run top_bd_util_vector_logic_0_0_synth_1
+reset_run top_bd_system_ila_0_1_synth_1
+reset_run top_bd_depacketizer_0_0_synth_1
+reset_run top_bd_packetizer_0_0_synth_1
+update_module_reference top_bd_packetizer_0_0
+update_module_reference top_bd_depacketizer_0_0
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_project /home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.xpr
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+update_module_reference top_bd_depacketizer_0_0
+update_module_reference top_bd_mute_controller_0_0
+update_module_reference top_bd_volume_controller_0_0
+update_module_reference top_bd_moving_average_filte_0_0
+update_module_reference top_bd_packetizer_0_0
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+current_project LAB3
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+open_run synth_1 -name synth_1
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {7.5} CONFIG.C_DATA_DEPTH {8192}] [get_bd_cells system_ila_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run top_bd_system_ila_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes top_bd_i/system_ila_0/U0/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes top_bd_i/system_ila_0/U0/net_slot_0_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+set_property CONTROL.TRIGGER_POSITION 16 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+archive_project {/home/nicola/Documents/vivado/DESD/LAB3 - Exercise - Solution.xpr.zip} -force -include_local_ip_cache -include_config_settings

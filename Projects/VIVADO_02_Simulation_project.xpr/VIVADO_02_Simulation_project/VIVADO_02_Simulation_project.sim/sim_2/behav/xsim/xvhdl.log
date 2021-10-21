@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Projects/VIVADO_02_Simulation_project.xpr/VIVADO_02_Simulation_project/VIVADO_02_Simulation_project.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Projects/VIVADO_02_Simulation_project.xpr/VIVADO_02_Simulation_project/VIVADO_02_Simulation_project.srcs/sim_2/new/tb_counter_v3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_counter'

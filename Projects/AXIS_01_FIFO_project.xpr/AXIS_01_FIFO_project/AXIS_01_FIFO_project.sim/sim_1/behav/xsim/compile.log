@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project/AXIS_01_FIFO_project.srcs/sources_1/imports/new/AXIS_FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AXIS_FIFO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project/AXIS_01_FIFO_project.srcs/sim_1/imports/new/sim_FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_FIFO'

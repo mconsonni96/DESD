@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Bachetti_Project.srcs/sources_1/new/LocalPackage_TDL.vhd" \
+"../../../../Bachetti_Project.srcs/sources_1/new/AXI4Stream_X7S_VirtualTDLWrapper.vhd" \
+"../../../../Bachetti_Project.srcs/sources_1/new/Sampler_TDL.vhd" \
+"../../../../Bachetti_Project.srcs/sources_1/new/Simulated_TappedDelayLine.vhd" \
+"../../../../Bachetti_Project.srcs/sources_1/new/X7S_TappedDelayLine_CARRY4.vhd" \
+"../../../../Bachetti_Project.srcs/sim_1/new/tb_AXI4Stream_X7S_VirtualTDLWrapper.vhd" \
+
+# Do not sort compile order
+nosort

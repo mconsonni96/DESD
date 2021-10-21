@@ -1,0 +1,69 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/AXI4Stream_UART_0/M00_AXIS_RX": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "m00_axis_rx_aclk"},
+						"ARESETN": { "actual": "m00_axis_rx_aresetn"},
+						"TDATA": { "actual": "m00_axis_rx_tdata"},
+						"TREADY": { "actual": "m00_axis_rx_tready"},
+						"TVALID": { "actual": "m00_axis_rx_tvalid"}
+					}
+				},
+				"/decoder_0/m00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "m00_axis_tdata"},
+						"TREADY": { "actual": "m00_axis_tready"},
+						"TVALID": { "actual": "m00_axis_tvalid"}
+					}
+				},
+				"/decoder_0/s00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s00_axis_tdata"},
+						"TREADY": { "actual": "s00_axis_tready"},
+						"TVALID": { "actual": "s00_axis_tvalid"}
+					}
+				},
+				"/led_controller_0/s00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s00_axis_tdata"},
+						"TREADY": { "actual": "s00_axis_tready"},
+						"TVALID": { "actual": "s00_axis_tvalid"}
+					}
+				},
+				"/timer_controller_0/m00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "m00_axis_tdata"},
+						"TREADY": { "actual": "m00_axis_tready"},
+						"TVALID": { "actual": "m00_axis_tvalid"}
+					}
+				},
+				"/timer_controller_0/s00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s00_axis_tdata"},
+						"TREADY": { "actual": "s00_axis_tready"},
+						"TVALID": { "actual": "s00_axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

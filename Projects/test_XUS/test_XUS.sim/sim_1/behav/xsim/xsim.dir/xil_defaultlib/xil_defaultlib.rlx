@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1634067743,vhdl,,,,design_1_wrapper,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/sim/design_1_AXI4Stream_XUS_Virtu_0_0.vhd,1634067743,vhdl,,,,design_1_axi4stream_xus_virtu_0_0,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/AXI4Stream_XUS_VirtualTDLWrapper.vhd,1634067743,vhdl,,,,axi4stream_xus_virtualtdlwrapper,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd,1634067743,vhdl,/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/AXI4Stream_XUS_VirtualTDLWrapper.vhd;/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Sampler_TDL.vhd;/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Simulated_TappedDelayLine.vhd;/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/XUS_TappedDelayLine_CARRY8.vhd,,,localpackage_tdl,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Sampler_TDL.vhd,1634067743,vhdl,,,,sampler_tdl,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Simulated_TappedDelayLine.vhd,1634067743,vhdl,,,,simulated_tappeddelayline,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/XUS_TappedDelayLine_CARRY8.vhd,1634067743,vhdl,,,,xus_tappeddelayline_carry8,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/sim/design_1.vhd,1634067743,vhdl,,,,design_1,,,,,,,,

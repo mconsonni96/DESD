@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar 20 15:45:20 2019
+# Process ID: 1962
+# Current directory: /home/nicola/Documents/Vivado/fifo/fifo.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/nicola/Documents/Vivado/fifo/fifo.sim/sim_1/behav/xsim/xsim.dir/FIFO_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/nicola/Documents/Vivado/fifo/fifo.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/nicola/Documents/Vivado/fifo/fifo.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/nicola/Documents/Vivado/fifo/fifo.sim/sim_1/behav/xsim/xsim.dir/FIFO_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 20 15:45:20 2019...

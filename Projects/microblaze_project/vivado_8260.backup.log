@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 14 16:23:54 2021
+# Process ID: 8260
+# Current directory: C:/DESD/microblaze_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15300 C:\DESD\microblaze_project\microblaze_project.xpr
+# Log file: C:/DESD/microblaze_project/vivado.log
+# Journal file: C:/DESD/microblaze_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/microblaze_project/microblaze_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_outled_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_leds_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1126.188 ; gain = 0.000
+open_bd_design {C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd}
+Reading block design file <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Successfully read diagram <microblaze_bd> from block design file <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1278.879 ; gain = 127.793
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:myip_leds:1.0 myip_leds_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/myip_leds_0/S00_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins myip_leds_0/S00_AXI]
+Slave segment '/myip_leds_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/microblaze_0/Data' at <0x44A0_0000 [ 64K ]>.
+delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M02_AXI] [get_bd_cells myip_leds_0]
+set_property  ip_repo_paths  {c:/DESD/ip_repo/myip_outled_1.0 C:/DESD/Repository c:/DESD/ip_repo/myip_leds_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_outled_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_leds_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:myip:1.0 myip_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/myip_0/S00_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins myip_0/S00_AXI]
+Slave segment '/myip_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/microblaze_0/Data' at <0x44A0_0000 [ 64K ]>.
+startgroup
+make_bd_pins_external  [get_bd_pins myip_0/leds_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\microblaze_project\microblaze_project.srcs\sources_1\bd\microblaze_bd\microblaze_bd.bd> 
+Wrote  : <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/ui/bd_883dbd03.ui> 
+reset_run microblaze_bd_xbar_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\DESD\microblaze_project\microblaze_project.srcs\sources_1\bd\microblaze_bd\microblaze_bd.bd> 
+Wrote  : <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/ui/bd_883dbd03.ui> 
+VHDL Output written to : c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/synth/microblaze_bd.vhd
+VHDL Output written to : c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/sim/microblaze_bd.vhd
+VHDL Output written to : c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/hdl/microblaze_bd_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'microblaze_bd_xbar_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Verilog' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'microblaze_bd_xbar_0' detected simulation language mismatch. Simulation type 'tlm' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'SystemC' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myip_0 .
+Exporting to file c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/hw_handoff/microblaze_bd.hwh
+Generated Block Design Tcl file c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/hw_handoff/microblaze_bd_bd.tcl
+Generated Hardware Definition File c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/synth/microblaze_bd.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP microblaze_bd_myip_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP microblaze_bd_xbar_0
+[Tue Sep 14 16:27:09 2021] Launched microblaze_bd_xbar_0_synth_1, microblaze_bd_myip_0_0_synth_1...
+Run output will be captured here:
+microblaze_bd_xbar_0_synth_1: C:/DESD/microblaze_project/microblaze_project.runs/microblaze_bd_xbar_0_synth_1/runme.log
+microblaze_bd_myip_0_0_synth_1: C:/DESD/microblaze_project/microblaze_project.runs/microblaze_bd_myip_0_0_synth_1/runme.log
+[Tue Sep 14 16:27:09 2021] Launched synth_1...
+Run output will be captured here: C:/DESD/microblaze_project/microblaze_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1612.551 ; gain = 158.879
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_axi_uartlite_0_1/microblaze_bd_axi_uartlite_0_1.dcp' for cell 'microblaze_bd_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1.dcp' for cell 'microblaze_bd_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_mdm_1_3/microblaze_bd_mdm_1_3.dcp' for cell 'microblaze_bd_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_3/microblaze_bd_microblaze_0_3.dcp' for cell 'microblaze_bd_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_axi_intc_0/microblaze_bd_microblaze_0_axi_intc_0.dcp' for cell 'microblaze_bd_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_myip_0_0/microblaze_bd_myip_0_0.dcp' for cell 'microblaze_bd_i/myip_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_rst_clk_wiz_0_100M_1/microblaze_bd_rst_clk_wiz_0_100M_1.dcp' for cell 'microblaze_bd_i/rst_clk_wiz_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_xbar_0/microblaze_bd_xbar_0.dcp' for cell 'microblaze_bd_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_dlmb_bram_if_cntlr_3/microblaze_bd_dlmb_bram_if_cntlr_3.dcp' for cell 'microblaze_bd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_dlmb_v10_3/microblaze_bd_dlmb_v10_3.dcp' for cell 'microblaze_bd_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_ilmb_bram_if_cntlr_3/microblaze_bd_ilmb_bram_if_cntlr_3.dcp' for cell 'microblaze_bd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_ilmb_v10_3/microblaze_bd_ilmb_v10_3.dcp' for cell 'microblaze_bd_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_lmb_bram_3/microblaze_bd_lmb_bram_3.dcp' for cell 'microblaze_bd_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.236 . Memory (MB): peak = 1803.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1_board.xdc] for cell 'microblaze_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1_board.xdc] for cell 'microblaze_bd_i/clk_wiz_0/inst'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1.xdc] for cell 'microblaze_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1.xdc:57]
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_clk_wiz_0_1/microblaze_bd_clk_wiz_0_1.xdc] for cell 'microblaze_bd_i/clk_wiz_0/inst'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_3/microblaze_bd_microblaze_0_3.xdc] for cell 'microblaze_bd_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_3/microblaze_bd_microblaze_0_3.xdc] for cell 'microblaze_bd_i/microblaze_0/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_axi_uartlite_0_1/microblaze_bd_axi_uartlite_0_1_board.xdc] for cell 'microblaze_bd_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_axi_uartlite_0_1/microblaze_bd_axi_uartlite_0_1_board.xdc] for cell 'microblaze_bd_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_axi_uartlite_0_1/microblaze_bd_axi_uartlite_0_1.xdc] for cell 'microblaze_bd_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_axi_uartlite_0_1/microblaze_bd_axi_uartlite_0_1.xdc] for cell 'microblaze_bd_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_axi_intc_0/microblaze_bd_microblaze_0_axi_intc_0.xdc] for cell 'microblaze_bd_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_axi_intc_0/microblaze_bd_microblaze_0_axi_intc_0.xdc] for cell 'microblaze_bd_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_mdm_1_3/microblaze_bd_mdm_1_3.xdc] for cell 'microblaze_bd_i/mdm_1/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_mdm_1_3/microblaze_bd_mdm_1_3.xdc] for cell 'microblaze_bd_i/mdm_1/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_rst_clk_wiz_0_100M_1/microblaze_bd_rst_clk_wiz_0_100M_1_board.xdc] for cell 'microblaze_bd_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_rst_clk_wiz_0_100M_1/microblaze_bd_rst_clk_wiz_0_100M_1_board.xdc] for cell 'microblaze_bd_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_rst_clk_wiz_0_100M_1/microblaze_bd_rst_clk_wiz_0_100M_1.xdc] for cell 'microblaze_bd_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_rst_clk_wiz_0_100M_1/microblaze_bd_rst_clk_wiz_0_100M_1.xdc] for cell 'microblaze_bd_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_axi_intc_0/microblaze_bd_microblaze_0_axi_intc_0_clocks.xdc] for cell 'microblaze_bd_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_axi_intc_0/microblaze_bd_microblaze_0_axi_intc_0_clocks.xdc] for cell 'microblaze_bd_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'microblaze_bd_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/DESD/microblaze_project/microblaze_project.gen/sources_1/bd/microblaze_bd/ip/microblaze_bd_microblaze_0_3/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2494.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2509.281 ; gain = 896.730
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds_0_0[15]} {leds_0_0[14]} {leds_0_0[13]} {leds_0_0[12]} {leds_0_0[11]} {leds_0_0[10]} {leds_0_0[9]} {leds_0_0[8]} {leds_0_0[7]} {leds_0_0[6]} {leds_0_0[5]} {leds_0_0[4]} {leds_0_0[3]} {leds_0_0[2]} {leds_0_0[1]} {leds_0_0[0]}]]
+place_ports {leds_0_0[0]} U16
+place_ports {leds_0_0[1]} E19
+place_ports {leds_0_0[2]} U19
+place_ports {leds_0_0[3]} V19
+place_ports {leds_0_0[4]} W18
+place_ports {leds_0_0[5]} U15
+place_ports {leds_0_0[6]} U14
+place_ports {leds_0_0[7]} V14
+place_ports {leds_0_0[8]} V13
+place_ports {leds_0_0[9]} V3
+place_ports {leds_0_0[10]} W3
+place_ports {leds_0_0[11]} U3
+place_ports {leds_0_0[12]} P3
+place_ports {leds_0_0[13]} N3
+place_ports {leds_0_0[14]} P1
+place_ports {leds_0_0[15]} L1
+file mkdir C:/DESD/microblaze_project/microblaze_project.srcs/constrs_1/new
+close [ open C:/DESD/microblaze_project/microblaze_project.srcs/constrs_1/new/pins.xdc w ]
+add_files -fileset constrs_1 C:/DESD/microblaze_project/microblaze_project.srcs/constrs_1/new/pins.xdc
+set_property target_constrs_file C:/DESD/microblaze_project/microblaze_project.srcs/constrs_1/new/pins.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Sep 14 16:31:32 2021] Launched synth_1...
+Run output will be captured here: C:/DESD/microblaze_project/microblaze_project.runs/synth_1/runme.log
+[Tue Sep 14 16:31:32 2021] Launched impl_1...
+Run output will be captured here: C:/DESD/microblaze_project/microblaze_project.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file {C:/XSA Environment/kittcar_wrapper.xsa}
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/XSA Environment/kittcar_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx2/Vivado/2020.2/data\embeddedsw) loading 1 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/XSA Environment/kittcar_wrapper.xsa
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 14 17:06:53 2021...

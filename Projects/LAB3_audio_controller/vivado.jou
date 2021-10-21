@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  8 10:52:04 2020
+# Process ID: 9700
+# Current directory: C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9108
+# Log file: C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/LAB3_audio_controller/LAB3_audio_controller.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_moving_average_filter_0_0
+update_module_reference design_1_volume_controller_1_0
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_mute_controller [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+export_ip_user_files -of_objects  [get_files C:/DESD/LAB3_audio_controller/LAB3_audio_controller.srcs/sim_1/new/tb_volume_controller.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/DESD/LAB3_audio_controller/LAB3_audio_controller.srcs/sim_1/new/tb_volume_controller.vhd
+file delete -force C:/DESD/LAB3_audio_controller/LAB3_audio_controller.srcs/sim_1/new/tb_volume_controller.vhd
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/LAB3_audio_controller/LAB3_audio_controller.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/LAB3_audio_controller/LAB3_audio_controller.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/DESD/LAB3_audio_controller.xpr.zip -temp_dir C:/Users/stefanomacario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9700-STEFANOMACA8EDF -force -include_local_ip_cache

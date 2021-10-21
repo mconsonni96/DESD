@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 16 12:57:02 2021
+# Process ID: 12304
+# Current directory: C:/DESD/audio_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12940 C:\DESD\audio_project\audio_project.xpr
+# Log file: C:/DESD/audio_project/vivado.log
+# Journal file: C:/DESD/audio_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/audio_project/audio_project.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open C:/DESD/audio_project/audio_project.srcs/sources_1/new/volume_saturator.vhd w ]
+add_files C:/DESD/audio_project/audio_project.srcs/sources_1/new/volume_saturator.vhd
+update_compile_order -fileset sources_1
+close [ open C:/DESD/audio_project/audio_project.srcs/sources_1/new/volume_multiplier.vhd w ]
+add_files C:/DESD/audio_project/audio_project.srcs/sources_1/new/volume_multiplier.vhd
+update_compile_order -fileset sources_1
+close [ open C:/DESD/audio_project/audio_project.srcs/sources_1/new/joystick_lut.vhd w ]
+add_files C:/DESD/audio_project/audio_project.srcs/sources_1/new/joystick_lut.vhd
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/audio_project/audio_project.srcs/sources_1/bd/audio_bd/audio_bd.bd}
+create_bd_cell -type module -reference volume_controller volume_controller_0
+set_property location {5 1343 617} [get_bd_cells volume_controller_0]
+delete_bd_objs [get_bd_intf_nets mute_controller_0_m_axis]
+set_property location {5 1309 366} [get_bd_cells mute_controller_0]
+connect_bd_intf_net [get_bd_intf_pins mute_controller_0/m_axis] [get_bd_intf_pins volume_controller_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins volume_controller_0/m_axis] [get_bd_intf_pins pmod_i2s2_0/S_AXIS]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins volume_controller_0/aresetn]
+connect_bd_net [get_bd_pins volume_controller_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins Pmod_JSTK2_0/jstk_y] [get_bd_pins volume_controller_0/joy_y]
+startgroup
+make_bd_pins_external  [get_bd_pins Pmod_JSTK2_0/out_valid]
+endgroup
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_module_reference audio_bd_volume_controller_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets Pmod_JSTK2_0_out_valid] [get_bd_ports out_valid_0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

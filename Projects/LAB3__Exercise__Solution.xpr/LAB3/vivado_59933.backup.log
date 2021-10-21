@@ -1,0 +1,1706 @@
+#-----------------------------------------------------------
+# Vivado v2019.2_AR72614 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 10 11:25:33 2020
+# Process ID: 59933
+# Current directory: /home/nicola/Documents/vivado/logs
+# Command line: vivado -jvm -patch-module=java.desktop=/opt/Xilinx/Vivado/2019.2/lib/classes/AR72614/AR72614.jar
+# Log file: /home/nicola/Documents/vivado/logs/vivado.log
+# Journal file: /home/nicola/Documents/vivado/logs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 6676.598 ; gain = 241.770 ; free physical = 4932 ; free virtual = 27463
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:packetizer:1.0 - packetizer_0
+Adding component instance block -- xilinx.com:module_ref:depacketizer:1.0 - depacketizer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Successfully read diagram <top_bd> from BD file </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:13 . Memory (MB): peak = 6945.070 ; gain = 156.422 ; free physical = 4849 ; free virtual = 27337
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 11:27:02 2020] Launched top_bd_volume_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 11:27:02 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:53 ; elapsed = 00:00:19 . Memory (MB): peak = 7091.141 ; gain = 125.684 ; free physical = 4807 ; free virtual = 27277
+update_compile_order -fileset sources_1
+update_module_reference top_bd_mute_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_mute_controller_0_0 from mute_controller_v1_0 1.0 to mute_controller_v1_0 1.0
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'aresetn' (xilinx.com:signal:reset:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'top_bd_mute_controller_0_0'.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'aresetn'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'top_bd_mute_controller_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'top_bd_mute_controller_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:34 ; elapsed = 00:00:10 . Memory (MB): peak = 7226.637 ; gain = 22.008 ; free physical = 3593 ; free virtual = 26091
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 7226.637 ; gain = 0.000 ; free physical = 3430 ; free virtual = 25914
+reset_run impl_1
+connect_bd_net [get_bd_pins mute_controller_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 11:30:44 2020] Launched top_bd_volume_controller_0_0_synth_1, top_bd_mute_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+top_bd_mute_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_mute_controller_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 11:30:44 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 7232.527 ; gain = 5.891 ; free physical = 4719 ; free virtual = 27220
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7245.535 ; gain = 0.000 ; free physical = 4441 ; free virtual = 27061
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7726.629 ; gain = 0.000 ; free physical = 3938 ; free virtual = 26559
+Restored from archive | CPU: 0.080000 secs | Memory: 1.334801 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7726.629 ; gain = 0.000 ; free physical = 3938 ; free virtual = 26559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7726.629 ; gain = 0.000 ; free physical = 3938 ; free virtual = 26559
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 7917.938 ; gain = 672.402 ; free physical = 3818 ; free virtual = 26431
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {150.000} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.375} CONFIG.MMCM_CLKOUT1_DIVIDE {6} CONFIG.CLKOUT1_JITTER {138.844} CONFIG.CLKOUT1_PHASE_ERROR {105.461} CONFIG.CLKOUT2_JITTER {127.220} CONFIG.CLKOUT2_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 11:36:46 2020] Launched top_bd_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_clk_wiz_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_clk_wiz_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 11:36:47 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:49 ; elapsed = 00:00:20 . Memory (MB): peak = 8051.707 ; gain = 72.035 ; free physical = 3724 ; free virtual = 26355
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.MMCM_CLKOUT1_DIVIDE {3} CONFIG.CLKOUT1_JITTER {152.663} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {132.221} CONFIG.CLKOUT2_PHASE_ERROR {132.063}] [get_bd_cells clk_wiz_0]
+endgroup
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:116]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "process". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:123]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:116]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "process". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:123]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:116]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "process". [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/volume_multiplier.vhd:123]
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+reset_run top_bd_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_bd_clk_wiz_0_0, cache-ID = 4d4722e9afff6a32; cache size = 60.779 MB.
+[Sun May 10 11:48:24 2020] Launched top_bd_volume_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 11:48:24 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:58 ; elapsed = 00:00:22 . Memory (MB): peak = 8180.734 ; gain = 40.020 ; free physical = 3441 ; free virtual = 26160
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+update_module_reference: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 8230.762 ; gain = 34.020 ; free physical = 3005 ; free virtual = 25824
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 11:57:44 2020] Launched top_bd_volume_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 11:57:44 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:48 ; elapsed = 00:00:19 . Memory (MB): peak = 8290.785 ; gain = 60.023 ; free physical = 3006 ; free virtual = 25804
+reset_run synth_1
+reset_run top_bd_volume_controller_0_0_synth_1
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+update_module_reference: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 8333.805 ; gain = 0.000 ; free physical = 2975 ; free virtual = 25805
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 12:00:35 2020] Launched top_bd_volume_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 12:00:35 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:56 ; elapsed = 00:00:22 . Memory (MB): peak = 8387.766 ; gain = 53.961 ; free physical = 2844 ; free virtual = 25636
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9471.332 ; gain = 0.000 ; free physical = 2000 ; free virtual = 24616
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 9471.332 ; gain = 0.000 ; free physical = 1953 ; free virtual = 24568
+Restored from archive | CPU: 0.080000 secs | Memory: 1.219482 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 9471.332 ; gain = 0.000 ; free physical = 1953 ; free virtual = 24568
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9471.332 ; gain = 0.000 ; free physical = 1953 ; free virtual = 24568
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter.vhd
+update_compile_order -fileset sources_1
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter_en.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/moving_average_filter_en.vhd
+update_compile_order -fileset sources_1
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/all_pass_filter.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/all_pass_filter.vhd
+update_compile_order -fileset sources_1
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+create_bd_cell -type module -reference moving_average_filter_en moving_average_filte_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+delete_bd_objs [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX]'
+delete_bd_objs [get_bd_intf_nets depacketizer_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins depacketizer_0/m_axis] [get_bd_intf_pins moving_average_filte_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins moving_average_filte_0/m_axis] [get_bd_intf_pins volume_controller_0/s_axis]
+connect_bd_net [get_bd_pins moving_average_filte_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins moving_average_filte_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+startgroup
+make_bd_pins_external  [get_bd_pins moving_average_filte_0/enable_filter]
+endgroup
+set_property name enable_filter [get_bd_ports enable_filter_0]
+set_property name SW0 [get_bd_ports enable_filter]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+regenerate_bd_layout
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /moving_average_filte_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block moving_average_filte_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 14:28:33 2020] Launched top_bd_volume_controller_0_0_synth_1, top_bd_moving_average_filte_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_volume_controller_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_volume_controller_0_0_synth_1/runme.log
+top_bd_moving_average_filte_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_moving_average_filte_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 14:28:33 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 10405.168 ; gain = 27.012 ; free physical = 2038 ; free virtual = 24595
+regenerate_bd_layout
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0.dcp' for cell 'top_bd_i/AXI4Stream_UART_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.dcp' for cell 'top_bd_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_debouncer_0_0/top_bd_debouncer_0_0.dcp' for cell 'top_bd_i/debouncer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_debouncer_1_0/top_bd_debouncer_1_0.dcp' for cell 'top_bd_i/debouncer_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_depacketizer_0_0/top_bd_depacketizer_0_0.dcp' for cell 'top_bd_i/depacketizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_edge_detector_0_0/top_bd_edge_detector_0_0.dcp' for cell 'top_bd_i/edge_detector_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_edge_detector_1_0/top_bd_edge_detector_1_0.dcp' for cell 'top_bd_i/edge_detector_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_moving_average_filte_0_0/top_bd_moving_average_filte_0_0.dcp' for cell 'top_bd_i/moving_average_filte_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_mute_controller_0_0/top_bd_mute_controller_0_0.dcp' for cell 'top_bd_i/mute_controller_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_packetizer_0_0/top_bd_packetizer_0_0.dcp' for cell 'top_bd_i/packetizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_util_vector_logic_0_0/top_bd_util_vector_logic_0_0.dcp' for cell 'top_bd_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_volume_controller_0_0/top_bd_volume_controller_0_0.dcp' for cell 'top_bd_i/volume_controller_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 10410.180 ; gain = 0.000 ; free physical = 2315 ; free virtual = 24712
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw0'. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc:297]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc:297]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw0'. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc:298]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc:298]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc]
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10410.180 ; gain = 0.000 ; free physical = 2225 ; free virtual = 24633
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+set_property name SW0a [get_bd_ports SW0]
+set_property name sw0 [get_bd_ports SW0a]
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_0/reset (associated clock /edge_detector_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /edge_detector_1/reset (associated clock /edge_detector_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_0/reset (associated clock /debouncer_0/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+CRITICAL WARNING: [BD 41-1348] Reset pin /debouncer_1/reset (associated clock /debouncer_1/clk) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out2.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /edge_detector_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_0/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /debouncer_1/reset have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /mute_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /volume_controller_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /moving_average_filte_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mute_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block edge_detector_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debouncer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block volume_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block moving_average_filte_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+[Sun May 10 14:33:06 2020] Launched synth_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:32 ; elapsed = 00:00:16 . Memory (MB): peak = 10514.121 ; gain = 43.020 ; free physical = 2229 ; free virtual = 24612
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0.dcp' for cell 'top_bd_i/AXI4Stream_UART_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.dcp' for cell 'top_bd_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_debouncer_0_0/top_bd_debouncer_0_0.dcp' for cell 'top_bd_i/debouncer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_debouncer_1_0/top_bd_debouncer_1_0.dcp' for cell 'top_bd_i/debouncer_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_depacketizer_0_0/top_bd_depacketizer_0_0.dcp' for cell 'top_bd_i/depacketizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_edge_detector_0_0/top_bd_edge_detector_0_0.dcp' for cell 'top_bd_i/edge_detector_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_edge_detector_1_0/top_bd_edge_detector_1_0.dcp' for cell 'top_bd_i/edge_detector_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_moving_average_filte_0_0/top_bd_moving_average_filte_0_0.dcp' for cell 'top_bd_i/moving_average_filte_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_mute_controller_0_0/top_bd_mute_controller_0_0.dcp' for cell 'top_bd_i/mute_controller_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_packetizer_0_0/top_bd_packetizer_0_0.dcp' for cell 'top_bd_i/packetizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_util_vector_logic_0_0/top_bd_util_vector_logic_0_0.dcp' for cell 'top_bd_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_volume_controller_0_0/top_bd_volume_controller_0_0.dcp' for cell 'top_bd_i/volume_controller_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2330 ; free virtual = 24710
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc]
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/constrs_1/imports/Downloads/basys3_master_xdc.xdc]
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2268 ; free virtual = 24648
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2322 ; free virtual = 24690
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.02 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2318 ; free virtual = 24687
+[Sun May 10 14:34:47 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+close_project
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_project /home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/Documents/vivado/DESD/LAB3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 1089 ; free virtual = 23805
+current_project LAB3
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:packetizer:1.0 - packetizer_0
+Adding component instance block -- xilinx.com:module_ref:depacketizer:1.0 - depacketizer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:moving_average_filter_en:1.0 - moving_average_filte_0
+Successfully read diagram <top_bd> from BD file </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:06 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 1117 ; free virtual = 23792
+close_project
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+close_project
+open_project /home/nicola/Documents/vivado/DESD/LAB3/LAB3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:packetizer:1.0 - packetizer_0
+Adding component instance block -- xilinx.com:module_ref:depacketizer:1.0 - depacketizer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:moving_average_filter_en:1.0 - moving_average_filte_0
+Successfully read diagram <top_bd> from BD file </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd>
+INFO: [Common 17-365] Interrupt caught but 'open_bd_design' cannot be canceled. Please wait for command to finish.
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 1116 ; free virtual = 23778
+INFO: [Common 17-681] Processing pending cancel.
+close_project
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+INFO: [filemgmt 56-326] User Interrupt. Could not getCurrentGraph()
+create_project LAB3 /home/nicola/Documents/vivado/DESD/LAB3 -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "top_bd"
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+update_compile_order -fileset sources_1
+file mkdir /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/packetizer.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/packetizer.vhd
+close [ open /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/depacketizer.vhd w ]
+add_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/new/depacketizer.vhd
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  /home/nicola/Documents/vivado/DESD/IPs [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv TimeEngineers:ip:AXI4Stream_UART:1.0 AXI4Stream_UART_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "top_bd" 
+INFO: [board_interface 100-100] current_bd_design top_bd
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [board_interface 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [board_interface 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_interface 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_interface 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+WARNING: [board_interface 100-100] The IP interface clk_wiz_0/clock_CLK_IN1 has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+endgroup
+apply_board_connection -board_interface "usb_uart" -ip_intf "AXI4Stream_UART_0/UART" -diagram "top_bd" 
+INFO: [board_interface 100-100] current_bd_design top_bd
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /AXI4Stream_UART_0]
+INFO: [board_interface 100-100] set_property CONFIG.UART_BOARD_INTERFACE usb_uart [get_bd_cells -quiet /AXI4Stream_UART_0]
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart
+INFO: [board_interface 100-100] connect_bd_intf_net /usb_uart /AXI4Stream_UART_0/UART
+WARNING: [board_interface 100-100] The IP interface AXI4Stream_UART_0/UART has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+apply_board_connection -board_interface "reset" -ip_intf "clk_wiz_0/reset" -diagram "top_bd" 
+INFO: [board_interface 100-100] current_bd_design top_bd
+INFO: [board_interface 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells -quiet /clk_wiz_0]
+INFO: [board_interface 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_interface 100-100] set_property CONFIG.POLARITY  /reset
+INFO: [board_interface 100-100] connect_bd_net /reset /clk_wiz_0/reset
+INFO: [board_interface 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+WARNING: [board_interface 100-100] The IP interface clk_wiz_0/reset has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aresetn]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aresetn] [get_bd_pins util_vector_logic_0/Res]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aclk] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+connect_bd_net [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AXI4Stream_UART_0/rst]
+disconnect_bd_net /Net [get_bd_pins AXI4Stream_UART_0/clk_uart]
+startgroup
+set_property -dict [list CONFIG.UART_BAUD_RATE {2000000}] [get_bd_cells AXI4Stream_UART_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {96} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.MMCM_CLKOUT1_DIVIDE {3} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {152.663} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {132.221} CONFIG.CLKOUT2_PHASE_ERROR {132.063}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+make_wrapper -files [get_files /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd] -top
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AXI4Stream_UART_0/s00_axis_tx_tvalid
+
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+add_files -norecurse /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference depacketizer depacketizer_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+connect_bd_intf_net [get_bd_intf_pins depacketizer_0/s_axis] [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/S00_AXIS_TX] [get_bd_intf_pins depacketizer_0/m_axis]
+delete_bd_objs [get_bd_intf_nets depacketizer_0_m_axis]
+create_bd_cell -type module -reference packetizer packetizer_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+connect_bd_intf_net [get_bd_intf_pins packetizer_0/s_axis] [get_bd_intf_pins depacketizer_0/m_axis]
+connect_bd_intf_net [get_bd_intf_pins packetizer_0/m_axis] [get_bd_intf_pins AXI4Stream_UART_0/S00_AXIS_TX]
+connect_bd_net [get_bd_pins depacketizer_0/aclk] [get_bd_pins packetizer_0/aclk]
+connect_bd_net [get_bd_pins depacketizer_0/aresetn] [get_bd_pins packetizer_0/aresetn]
+connect_bd_net [get_bd_pins depacketizer_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins depacketizer_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+regenerate_bd_layout
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {depacketizer_0_m_axis}]
+true
+undo
+INFO: [Common 17-17] undo 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {depacketizer_0_m_axis}]'
+regenerate_bd_layout
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {depacketizer_0_m_axis}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets depacketizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_0' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /clk_wiz_0/clk_out2 to the following sink clock pins :
+/system_ila_0/clk
+Debug Automation : Instantiated new Processor System Reset block /rst_top_bd_200M, with its 'slowest_sync_clk' clock pin driven by /clk_wiz_0/clk_out2.
+Debug Automation : Connecting source reset pin /rst_top_bd_200M/peripheral_aresetn to the following sink reset pins :
+/system_ila_0/resetn
+Debug Automation : Connecting interface connection /depacketizer_0_m_axis, to System ILA slot interface pin /system_ila_0/SLOT_0_AXIS for debug.
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets depacketizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {AXI4Stream_UART_0_M00_AXIS_RX}]
+true
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {packetizer_0_m_axis}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets depacketizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                          [get_bd_intf_nets packetizer_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out2" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_0' with mode INTERFACE, 3 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /clk_wiz_0/clk_out2 to the following sink clock pins :
+/system_ila_0/clk
+Debug Automation : Instantiated new Processor System Reset block /rst_top_bd_200M, with its 'slowest_sync_clk' clock pin driven by /clk_wiz_0/clk_out2.
+Debug Automation : Connecting source reset pin /rst_top_bd_200M/peripheral_aresetn to the following sink reset pins :
+/system_ila_0/resetn
+Debug Automation : Connecting interface connection /AXI4Stream_UART_0_M00_AXIS_RX, to System ILA slot interface pin /system_ila_0/SLOT_0_AXIS for debug.
+Debug Automation : Connecting interface connection /depacketizer_0_m_axis, to System ILA slot interface pin /system_ila_0/SLOT_1_AXIS for debug.
+Debug Automation : Connecting interface connection /packetizer_0_m_axis, to System ILA slot interface pin /system_ila_0/SLOT_2_AXIS for debug.
+endgroup
+delete_bd_objs [get_bd_nets rst_top_bd_200M_peripheral_aresetn] [get_bd_cells rst_top_bd_200M]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins system_ila_0/resetn]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/synth/top_bd_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Sun May 10 15:48:09 2020] Launched top_bd_clk_wiz_0_0_synth_1, top_bd_AXI4Stream_UART_0_0_synth_1, top_bd_util_vector_logic_0_0_synth_1, top_bd_system_ila_0_1_synth_1, top_bd_depacketizer_0_0_synth_1, top_bd_packetizer_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_clk_wiz_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_clk_wiz_0_0_synth_1/runme.log
+top_bd_AXI4Stream_UART_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_AXI4Stream_UART_0_0_synth_1/runme.log
+top_bd_util_vector_logic_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_util_vector_logic_0_0_synth_1/runme.log
+top_bd_system_ila_0_1_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_system_ila_0_1_synth_1/runme.log
+top_bd_depacketizer_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_depacketizer_0_0_synth_1/runme.log
+top_bd_packetizer_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_packetizer_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 15:48:10 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 1030 ; free virtual = 23885
+reset_run synth_1
+reset_run top_bd_clk_wiz_0_0_synth_1
+reset_run top_bd_AXI4Stream_UART_0_0_synth_1
+reset_run top_bd_util_vector_logic_0_0_synth_1
+reset_run top_bd_system_ila_0_1_synth_1
+reset_run top_bd_depacketizer_0_0_synth_1
+reset_run top_bd_packetizer_0_0_synth_1
+update_module_reference top_bd_packetizer_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_packetizer_0_0 from packetizer_v1_0 1.0 to packetizer_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference top_bd_depacketizer_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_depacketizer_0_0 from depacketizer_v1_0 1.0 to depacketizer_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/synth/top_bd_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Sun May 10 15:49:58 2020] Launched top_bd_clk_wiz_0_0_synth_1, top_bd_AXI4Stream_UART_0_0_synth_1, top_bd_util_vector_logic_0_0_synth_1, top_bd_system_ila_0_1_synth_1, top_bd_depacketizer_0_0_synth_1, top_bd_packetizer_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_bd_clk_wiz_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_clk_wiz_0_0_synth_1/runme.log
+top_bd_AXI4Stream_UART_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_AXI4Stream_UART_0_0_synth_1/runme.log
+top_bd_util_vector_logic_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_util_vector_logic_0_0_synth_1/runme.log
+top_bd_system_ila_0_1_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_system_ila_0_1_synth_1/runme.log
+top_bd_depacketizer_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_depacketizer_0_0_synth_1/runme.log
+top_bd_packetizer_0_0_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_packetizer_0_0_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 15:49:58 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4456 ; free virtual = 24353
+open_project /home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/Documents/vivado/DESD/LAB3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:module_ref:packetizer:1.0 - packetizer_0
+Adding component instance block -- xilinx.com:module_ref:depacketizer:1.0 - depacketizer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_1
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_1
+Adding component instance block -- xilinx.com:module_ref:mute_controller:1.0 - mute_controller_0
+Adding component instance block -- xilinx.com:module_ref:volume_controller:1.0 - volume_controller_0
+Adding component instance block -- xilinx.com:module_ref:moving_average_filter_en:1.0 - moving_average_filte_0
+Successfully read diagram <top_bd> from BD file </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:21 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4395 ; free virtual = 23144
+update_module_reference top_bd_depacketizer_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_depacketizer_0_0 from depacketizer_v1_0 1.0 to depacketizer_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:38 ; elapsed = 00:00:15 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4025 ; free virtual = 22850
+update_module_reference top_bd_mute_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_mute_controller_0_0 from mute_controller_v1_0 1.0 to mute_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4210 ; free virtual = 23067
+update_module_reference top_bd_volume_controller_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_volume_controller_0_0 from volume_controller_v1_0 1.0 to volume_controller_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4392 ; free virtual = 23244
+update_module_reference top_bd_moving_average_filte_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_moving_average_filte_0_0 from moving_average_filter_en_v1_0 1.0 to moving_average_filter_en_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 5045 ; free virtual = 23975
+update_module_reference top_bd_packetizer_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+Upgrading '/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_bd_packetizer_0_0 from packetizer_v1_0 1.0 to packetizer_v1_0 1.0
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+update_module_reference: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4719 ; free virtual = 23715
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:13:42
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:41:48
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0CBBA
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_project LAB3
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3_solution/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0.dcp' for cell 'top_bd_i/AXI4Stream_UART_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.dcp' for cell 'top_bd_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_depacketizer_0_0/top_bd_depacketizer_0_0.dcp' for cell 'top_bd_i/depacketizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_packetizer_0_0/top_bd_packetizer_0_0.dcp' for cell 'top_bd_i/packetizer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/top_bd_system_ila_0_1.dcp' for cell 'top_bd_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_util_vector_logic_0_0/top_bd_util_vector_logic_0_0.dcp' for cell 'top_bd_i/util_vector_logic_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4525 ; free virtual = 23977
+INFO: [Netlist 29-17] Analyzing 213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: top_bd_i/system_ila_0/U0/ila_lib UUID: 05a87ddd-8916-55de-a40e-e113813c7734 
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_AXI4Stream_UART_0_0/top_bd_AXI4Stream_UART_0_0_board.xdc] for cell 'top_bd_i/AXI4Stream_UART_0/U0'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0_board.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_clk_wiz_0_0/top_bd_clk_wiz_0_0.xdc] for cell 'top_bd_i/clk_wiz_0/inst'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'top_bd_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'top_bd_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'top_bd_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'top_bd_i/system_ila_0/U0/ila_lib/U0'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4439 ; free virtual = 23873
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 108 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 108 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4437 ; free virtual = 23877
+open_bd_design {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd}
+startgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {7.5} CONFIG.C_DATA_DEPTH {8192}] [get_bd_cells system_ila_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '9.5' to '7.5' has been ignored for IP 'system_ila_0'
+endgroup
+save_bd_design
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+reset_run synth_1
+reset_run top_bd_system_ila_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /packetizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /depacketizer_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : </home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/top_bd.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_0_AXIS_tdata'(32) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'packetizer_0_m_axis_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/sim/top_bd.vhd
+VHDL Output written to : /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hdl/top_bd_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block depacketizer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block packetizer_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/hw_handoff/top_bd_system_ila_0_1_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/ip/top_bd_system_ila_0_1/bd_0/synth/top_bd_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd.hwh
+Generated Block Design Tcl file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/hw_handoff/top_bd_bd.tcl
+Generated Hardware Definition File /home/nicola/Documents/vivado/DESD/LAB3/LAB3.srcs/sources_1/bd/top_bd/synth/top_bd.hwdef
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun May 10 16:01:27 2020] Launched top_bd_system_ila_0_1_synth_1, synth_1...
+Run output will be captured here:
+top_bd_system_ila_0_1_synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/top_bd_system_ila_0_1_synth_1/runme.log
+synth_1: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/synth_1/runme.log
+[Sun May 10 16:01:27 2020] Launched impl_1...
+Run output will be captured here: /home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 4418 ; free virtual = 23885
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2188 ; free virtual = 21982
+INFO: [Netlist 29-17] Analyzing 262 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2_AR72614
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2346 ; free virtual = 22142
+Restored from archive | CPU: 0.360000 secs | Memory: 5.633453 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2346 ; free virtual = 22142
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2346 ; free virtual = 22142
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 114 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 108 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 10514.121 ; gain = 0.000 ; free physical = 2310 ; free virtual = 22098
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property PROBES.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/nicola/Documents/vivado/DESD/LAB3/LAB3.runs/impl_1/top_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+Processing Interface AXI4Stream_UART_0_M00_AXIS_RX_ila1_slot0
+Processing Interface depacketizer_0_m_axis_ila1_slot1
+Processing Interface packetizer_0_m_axis_ila1_slot2
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes top_bd_i/system_ila_0/U0/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes top_bd_i/system_ila_0/U0/net_slot_0_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+set_property CONTROL.TRIGGER_POSITION 16 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-May-10 16:10:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"top_bd_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-May-10 16:10:17
+Processed interface AXI4Stream_UART_0_M00_AXIS_RX_ila1_slot0
+Processed interface depacketizer_0_m_axis_ila1_slot1
+Processed interface packetizer_0_m_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/nicola/Documents/vivado/DESD/LAB3/LAB3.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+archive_project {/home/nicola/Documents/vivado/DESD/LAB3 - Exercise - Solution.xpr.zip} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-59933-debianDesktop' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicola/Documents/vivado/DESD/IPs'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_AXI4Stream_UART_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_util_vector_logic_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_system_ila_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_depacketizer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'top_bd_packetizer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'top_bd_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_AXI4Stream_UART_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_util_vector_logic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_system_ila_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_depacketizer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'top_bd_packetizer_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_depacketizer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_depacketizer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_packetizer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_packetizer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_system_ila_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_system_ila_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'top_bd_util_vector_logic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'top_bd_util_vector_logic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 18:26:28 2021
+# Process ID: 11320
+# Current directory: C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9112 C:\DESD\Projects\LAB2_serial_manager.xpr\LAB2_serial_manager\LAB2_serial_manager.xpr
+# Log file: C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/vivado.log
+# Journal file: C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.ipdefs/IPs_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'top_bd.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+top_bd_clk_wiz_0_0
+top_bd_util_vector_logic_0_0
+
+INFO: [Project 1-230] Project 'LAB2_serial_manager.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1126.086 ; gain = 0.000
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1132.117 ; gain = 6.031
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd}
+Reading block design file <C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd>...
+Adding component instance block -- TimeEngineers:ip:AXI4Stream_UART:1.0 - AXI4Stream_UART_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:debouncer:1.0 - debouncer_0
+Adding component instance block -- xilinx.com:module_ref:edge_detector:1.0 - edge_detector_0
+Adding component instance block -- xilinx.com:module_ref:axi4stream_data_out:1.0 - axi4stream_data_out_0
+Adding component instance block -- xilinx.com:module_ref:axi4stream_data_sampler:1.0 - axi4stream_data_samp_0
+Successfully read diagram <top_bd> from block design file <C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/top_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1213.383 ; gain = 76.848
+delete_bd_objs [get_bd_cells util_vector_logic_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_ports sys_clock]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "top_bd" 
+INFO: [BoardInterface 100-3] current_bd_design top_bd
+INFO: [BoardInterface 100-10] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [BoardInterface 100-12] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardInterface 100-110] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardInterface 100-105] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardInterface 100-106] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [BoardInterface 100-111] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [BoardInterface 100-114] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+regenerate_bd_layout
+apply_board_connection -board_interface "reset" -ip_intf "clk_wiz_0/reset" -diagram "top_bd" 
+INFO: [BoardInterface 100-3] current_bd_design top_bd
+INFO: [BoardInterface 100-12] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells -quiet /clk_wiz_0]
+INFO: [BoardInterface 100-110] create_bd_port -dir I reset_0 -type rst
+INFO: [BoardInterface 100-107] set_property CONFIG.POLARITY  /reset_0
+INFO: [BoardInterface 100-111] connect_bd_net /reset_0 /clk_wiz_0/reset
+INFO: [BoardInterface 100-123] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_0
+startgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+endgroup
+connect_bd_net [get_bd_ports reset_0] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aresetn]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\Projects\LAB2_serial_manager.xpr\LAB2_serial_manager\LAB2_serial_manager.srcs\sources_1\bd\top_bd\top_bd.bd> 
+Wrote  : <C:/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.srcs/sources_1/bd/top_bd/ui/bd_a9ccc4ac.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 13 18:38:16 2021...

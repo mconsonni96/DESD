@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_KittCar_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_KittCar" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="368550955fs"></ZoomStartTime>
+      <ZoomEndTime time="1126289810fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_KittCar/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_SWs" type="array">
+      <obj_property name="ElementShortName">dut_SWs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_SWs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_LEDs" type="array">
+      <obj_property name="ElementShortName">dut_LEDs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_LEDs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/kitt_car" type="array">
+      <obj_property name="ElementShortName">kitt_car[7:0]</obj_property>
+      <obj_property name="ObjectShortName">kitt_car[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/direction" type="logic">
+      <obj_property name="ElementShortName">direction</obj_property>
+      <obj_property name="ObjectShortName">direction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/go_kitt_car" type="logic">
+      <obj_property name="ElementShortName">go_kitt_car</obj_property>
+      <obj_property name="ObjectShortName">go_kitt_car</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/count_fine" type="other">
+      <obj_property name="ElementShortName">count_fine</obj_property>
+      <obj_property name="ObjectShortName">count_fine</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/count_coarse" type="other">
+      <obj_property name="ElementShortName">count_coarse</obj_property>
+      <obj_property name="ObjectShortName">count_coarse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/dut_KittCar/select_speed" type="other">
+      <obj_property name="ElementShortName">select_speed</obj_property>
+      <obj_property name="ObjectShortName">select_speed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/RESET_WND" type="other">
+      <obj_property name="ElementShortName">RESET_WND</obj_property>
+      <obj_property name="ObjectShortName">RESET_WND</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/TB_CLK_INIT" type="logic">
+      <obj_property name="ElementShortName">TB_CLK_INIT</obj_property>
+      <obj_property name="ObjectShortName">TB_CLK_INIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/TB_RESET_INIT" type="logic">
+      <obj_property name="ElementShortName">TB_RESET_INIT</obj_property>
+      <obj_property name="ObjectShortName">TB_RESET_INIT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/DUT_CLK_PERIOD_NS" type="other">
+      <obj_property name="ElementShortName">DUT_CLK_PERIOD_NS</obj_property>
+      <obj_property name="ObjectShortName">DUT_CLK_PERIOD_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/DUT_MIN_KITT_CAR_STEP_MS" type="other">
+      <obj_property name="ElementShortName">DUT_MIN_KITT_CAR_STEP_MS</obj_property>
+      <obj_property name="ObjectShortName">DUT_MIN_KITT_CAR_STEP_MS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/DUT_NUM_OF_LEDS" type="other">
+      <obj_property name="ElementShortName">DUT_NUM_OF_LEDS</obj_property>
+      <obj_property name="ObjectShortName">DUT_NUM_OF_LEDS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_KittCar/DUT_NUM_OF_SWS" type="other">
+      <obj_property name="ElementShortName">DUT_NUM_OF_SWS</obj_property>
+      <obj_property name="ObjectShortName">DUT_NUM_OF_SWS</obj_property>
+   </wvobject>
+</wave_config>

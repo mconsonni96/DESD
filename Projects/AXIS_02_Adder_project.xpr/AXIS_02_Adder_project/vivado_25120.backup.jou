@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Mar 20 12:23:56 2020
+# Process ID: 25120
+# Current directory: C:/DESD/Project/AXIS_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19584 C:\DESD\Project\AXIS_adder\AXIS_adder.xpr
+# Log file: C:/DESD/Project/AXIS_adder/vivado.log
+# Journal file: C:/DESD/Project/AXIS_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Project/AXIS_adder/AXIS_adder.xpr
+update_compile_order -fileset sources_1
+save_project_as AXIS_02_Adder_project C:/DESD/Project/AXIS_02_Adder_project -force
+import_files
+archive_project C:/DESD/Project/AXIS_02_Adder_project.xpr.zip -temp_dir C:/DESD/Project/AXIS_adder/.Xil/Vivado-25120-NicolaPC -force -include_local_ip_cache -include_config_settings

@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 12 21:45:37 2021
+| Host         : mconsonni-HP-ProBook-440-G7 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcku115-flvb2104-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI4Stream_XUS_Virtu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_AXI4Stream_XUS_Virtu_0_0 (DigiLAB:ip:AXI4Stream_XUS_VirtualTDL:1.0 (Rev. 10)) to Vivado generation flows.
+

@@ -1,0 +1,515 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Mar 27 16:04:42 2020
+# Process ID: 13530
+# Current directory: /home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.runs/synth_1
+# Command line: vivado -log KittCarPWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
+# Log file: /home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.vds
+# Journal file: /home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source KittCarPWM.tcl -notrace
+Command: synth_design -top KittCarPWM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13569 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1850.539 ; gain = 200.719 ; free physical = 3989 ; free virtual = 15589
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:71]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:59]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:38' bound to instance 'Inst_PulseWidthModulator' of component 'PulseWidthModulator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:65]
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (1#1) [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'TailGenerator' (2#1) [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:59]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:35' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:210]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'SyncGenerator' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:33' bound to instance 'Inst_SyncGenerator' of component 'SyncGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'SyncGenerator' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:60]
+	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncGenerator' (3#1) [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:60]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'KittCar' declared at '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:35' bound to instance 'Inst_KittCar' of component 'KittCar' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'KittCar' [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:59]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'KittCar' (4#1) [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1912.289 ; gain = 262.469 ; free physical = 4023 ; free virtual = 15623
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1915.258 ; gain = 265.438 ; free physical = 4018 ; free virtual = 15618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1915.258 ; gain = 265.438 ; free physical = 4018 ; free virtual = 15618
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1915.258 ; gain = 0.000 ; free physical = 4011 ; free virtual = 15611
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KittCarPWM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/KittCarPWM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2081.008 ; gain = 0.000 ; free physical = 3933 ; free virtual = 15530
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2081.008 ; gain = 0.000 ; free physical = 3933 ; free virtual = 15530
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3997 ; free virtual = 15595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3997 ; free virtual = 15595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3997 ; free virtual = 15595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3990 ; free virtual = 15588
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 32    
+	   2 Input      3 Bit       Adders := 16    
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                4 Bit    Registers := 48    
+	                3 Bit    Registers := 16    
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   2 Input      3 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 98    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PulseWidthModulator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module TailGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module SyncGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module KittCar 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[3]' (FDCE) to 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[0]' (FDPE) to 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Period_reg_reg[2]' (FDCE) to 'GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/Ton_reg_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3972 ; free virtual = 15573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3852 ; free virtual = 15453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3848 ; free virtual = 15449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15450
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    16|
+|4     |LUT2   |    29|
+|5     |LUT3   |    46|
+|6     |LUT4   |    80|
+|7     |LUT5   |     2|
+|8     |LUT6   |   138|
+|9     |FDCE   |   255|
+|10    |FDPE   |    19|
+|11    |FDRE   |     1|
+|12    |IBUF   |    18|
+|13    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-----------------------+------+
+|      |Instance                           |Module                 |Cells |
++------+-----------------------------------+-----------------------+------+
+|1     |top                                |                       |   633|
+|2     |  \GenTail[0].Inst_TailGenerator   |TailGenerator          |    26|
+|3     |    Inst_PulseWidthModulator       |PulseWidthModulator_29 |    19|
+|4     |  \GenTail[10].Inst_TailGenerator  |TailGenerator_0        |    26|
+|5     |    Inst_PulseWidthModulator       |PulseWidthModulator_28 |    19|
+|6     |  \GenTail[11].Inst_TailGenerator  |TailGenerator_1        |    27|
+|7     |    Inst_PulseWidthModulator       |PulseWidthModulator_27 |    20|
+|8     |  \GenTail[12].Inst_TailGenerator  |TailGenerator_2        |    26|
+|9     |    Inst_PulseWidthModulator       |PulseWidthModulator_26 |    19|
+|10    |  \GenTail[13].Inst_TailGenerator  |TailGenerator_3        |    26|
+|11    |    Inst_PulseWidthModulator       |PulseWidthModulator_25 |    19|
+|12    |  \GenTail[14].Inst_TailGenerator  |TailGenerator_4        |    26|
+|13    |    Inst_PulseWidthModulator       |PulseWidthModulator_24 |    19|
+|14    |  \GenTail[15].Inst_TailGenerator  |TailGenerator_5        |    27|
+|15    |    Inst_PulseWidthModulator       |PulseWidthModulator_23 |    20|
+|16    |  \GenTail[1].Inst_TailGenerator   |TailGenerator_6        |    27|
+|17    |    Inst_PulseWidthModulator       |PulseWidthModulator_22 |    20|
+|18    |  \GenTail[2].Inst_TailGenerator   |TailGenerator_7        |    26|
+|19    |    Inst_PulseWidthModulator       |PulseWidthModulator_21 |    19|
+|20    |  \GenTail[3].Inst_TailGenerator   |TailGenerator_8        |    26|
+|21    |    Inst_PulseWidthModulator       |PulseWidthModulator_20 |    19|
+|22    |  \GenTail[4].Inst_TailGenerator   |TailGenerator_9        |    27|
+|23    |    Inst_PulseWidthModulator       |PulseWidthModulator_19 |    20|
+|24    |  \GenTail[5].Inst_TailGenerator   |TailGenerator_10       |    26|
+|25    |    Inst_PulseWidthModulator       |PulseWidthModulator_18 |    19|
+|26    |  \GenTail[6].Inst_TailGenerator   |TailGenerator_11       |    26|
+|27    |    Inst_PulseWidthModulator       |PulseWidthModulator_17 |    19|
+|28    |  \GenTail[7].Inst_TailGenerator   |TailGenerator_12       |    26|
+|29    |    Inst_PulseWidthModulator       |PulseWidthModulator_16 |    19|
+|30    |  \GenTail[8].Inst_TailGenerator   |TailGenerator_13       |    27|
+|31    |    Inst_PulseWidthModulator       |PulseWidthModulator_15 |    20|
+|32    |  \GenTail[9].Inst_TailGenerator   |TailGenerator_14       |    27|
+|33    |    Inst_PulseWidthModulator       |PulseWidthModulator    |    20|
+|34    |  Inst_KittCar                     |KittCar                |    47|
+|35    |  Inst_SyncGenerator               |SyncGenerator          |   129|
++------+-----------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3849 ; free virtual = 15449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2081.008 ; gain = 265.438 ; free physical = 3902 ; free virtual = 15503
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2081.008 ; gain = 431.188 ; free physical = 3902 ; free virtual = 15503
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2081.008 ; gain = 0.000 ; free physical = 3970 ; free virtual = 15571
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2081.008 ; gain = 0.000 ; free physical = 3917 ; free virtual = 15518
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2081.008 ; gain = 645.320 ; free physical = 4047 ; free virtual = 15648
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2081.008 ; gain = 0.000 ; free physical = 4047 ; free virtual = 15648
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/pc-fisso/Downloads/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file KittCarPWM_utilization_synth.rpt -pb KittCarPWM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 27 16:05:23 2020...

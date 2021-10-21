@@ -1,0 +1,98 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.57082",
+   "Default View_TopLeft":"858,-11",
+   "ExpandedHierarchyInLayout":"/TDC_Calib/TDC",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port M00_AXIS -pg 1 -lvl 6 -x 4120 -y 320 -defaultsOSRD
+preplace port M00_AXIS_Autopush -pg 1 -lvl 6 -x 4120 -y 90 -defaultsOSRD
+preplace port M00_BB -pg 1 -lvl 6 -x 4120 -y 340 -defaultsOSRD
+preplace port S00_AXI -pg 1 -lvl 0 -x -30 -y 70 -defaultsOSRD
+preplace port ch1_diff -pg 1 -lvl 0 -x -30 -y 320 -defaultsOSRD
+preplace port ch2_diff -pg 1 -lvl 0 -x -30 -y 340 -defaultsOSRD
+preplace port sync_diff -pg 1 -lvl 0 -x -30 -y 360 -defaultsOSRD
+preplace port tdc_diff_clock -pg 1 -lvl 0 -x -30 -y 430 -defaultsOSRD
+preplace port clk_BB -pg 1 -lvl 0 -x -30 -y 380 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -30 -y 510 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -30 -y 490 -defaultsOSRD
+preplace port resetn -pg 1 -lvl 0 -x -30 -y 530 -defaultsOSRD
+preplace portBus Res -pg 1 -lvl 6 -x 4120 -y 420 -defaultsOSRD
+preplace inst AXI4Stream_MuxDebugg_0 -pg 1 -lvl 4 -x 3460 -y 180 -defaultsOSRD
+preplace inst AXI4_TDC_Wrapper_0 -pg 1 -lvl 5 -x 3890 -y 110 -defaultsOSRD
+preplace inst TDC -pg 1 -lvl 3 -x 870 -y 382 -defaultsOSRD
+preplace inst util_ds_buf_3 -pg 1 -lvl 1 -x 140 -y 430 -defaultsOSRD
+preplace inst util_ds_buf_4 -pg 1 -lvl 2 -x 410 -y 430 -defaultsOSRD
+preplace inst TDC|Ch1 -pg 1 -lvl 4 -x 2020 -y 652 -defaultsOSRD
+preplace inst TDC|Ch2 -pg 1 -lvl 5 -x 2500 -y 762 -defaultsOSRD
+preplace inst TDC|CoarseTreeDistributor_0 -pg 1 -lvl 2 -x 1110 -y 372 -defaultsOSRD
+preplace inst TDC|StartStopGenerator_0 -pg 1 -lvl 2 -x 1110 -y 792 -defaultsOSRD
+preplace inst TDC|Sync -pg 1 -lvl 3 -x 1540 -y 522 -defaultsOSRD
+preplace inst TDC|util_vector_logic_0 -pg 1 -lvl 6 -x 2870 -y 1052 -defaultsOSRD
+preplace inst TDC|util_vector_logic_1 -pg 1 -lvl 5 -x 2500 -y 1042 -defaultsOSRD
+preplace inst TDC|xlconcat_0 -pg 1 -lvl 6 -x 2870 -y 892 -defaultsOSRD
+preplace inst TDC|xlconstant_0 -pg 1 -lvl 1 -x 850 -y 782 -defaultsOSRD
+preplace inst TDC|xlslice_0 -pg 1 -lvl 2 -x 1110 -y 932 -defaultsOSRD
+preplace inst TDC|xlslice_1 -pg 1 -lvl 3 -x 1540 -y 722 -defaultsOSRD
+preplace inst TDC|xlslice_2 -pg 1 -lvl 4 -x 2020 -y 852 -defaultsOSRD
+preplace netloc AXI4_TDC_Wrapper_0_MUX_sel 1 3 3 3280 40 3650J 230 4100
+preplace netloc AXI4_TDC_Wrapper_0_TDC_PROP_WPORT 1 2 4 600 10 NJ 10 3660J 240 4090
+preplace netloc Net 1 0 5 0J 252 NJ 252 NJ 252 3200 30 3680
+preplace netloc TDC_Res 1 3 3 3280J 420 NJ 420 NJ
+preplace netloc TDC_dout 1 3 2 3240 50 3640J
+preplace netloc clk_wiz_0_clk_out1 1 0 5 10J 350 NJ 350 580 262 3210 60 3630
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 5 -10J 20 NJ 20 NJ 20 NJ 20 3690J
+preplace netloc reset_0_1 1 0 3 NJ 490 NJ 490 540J
+preplace netloc util_ds_buf_3_IBUF_OUT 1 1 1 NJ 430
+preplace netloc util_ds_buf_4_BUFG_O 1 2 1 550J 430n
+preplace netloc AXI4Stream_MuxDebugg_0_M00_AXIS_CT 1 4 1 3670 50n
+preplace netloc AXI4_TDC_Wrapper_0_M00_AXIS_Autopush 1 5 1 NJ 90
+preplace netloc Conn3 1 3 3 3230J 320 NJ 320 NJ
+preplace netloc S00_AXI_1 1 0 5 NJ 70 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc TDC_M00_BB 1 3 3 3270J 340 NJ 340 NJ
+preplace netloc TDC_M01_AXIS_DebugCT 1 3 1 3220 150n
+preplace netloc TDC_M01_AXIS_DebugCT1 1 3 1 3260 170n
+preplace netloc TDC_M01_AXIS_DebugCT2 1 3 1 3250 130n
+preplace netloc ch1_diff_1 1 0 3 NJ 320 NJ 320 590J
+preplace netloc ch2_diff_1 1 0 3 NJ 340 NJ 340 570J
+preplace netloc sync_diff_1 1 0 3 NJ 360 NJ 360 560J
+preplace netloc tdc_diff_clock_1 1 0 1 NJ 430
+preplace netloc TDC|BeltBus_TDL_Channel_TDC_0_Calibrated 1 3 2 1760 502 2260J
+preplace netloc TDC|BeltBus_TDL_Channel_TDC_1_Calibrated 1 4 1 2210 662n
+preplace netloc TDC|BeltBus_TDL_Channel_TDC_2_Calibrated 1 5 1 2700 772n
+preplace netloc TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_0 1 2 1 1330 352n
+preplace netloc TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_1 1 2 2 NJ 372 1790
+preplace netloc TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_2 1 2 3 1260J 382 NJ 382 2310
+preplace netloc TDC|Net 1 0 4 NJ 1042 940 862 1340 852 NJ
+preplace netloc TDC|StartStopGenerator_0_StartOut 1 2 1 1300 472n
+preplace netloc TDC|StartStopGenerator_0_StopOut 1 2 3 NJ 802 1810 772 2290
+preplace netloc TDC|Sync_read_reg1 1 3 3 1750 462 NJ 462 2720J
+preplace netloc TDC|TDCChannelSlice_1_read_reg 1 4 2 2230 622 2710J
+preplace netloc TDC|TDCChannelSlice_2_read_reg 1 5 1 2690 792n
+preplace netloc TDC|clk_BB_1 1 0 5 760J 712 950 632 1270 392 1770 452 2300J
+preplace netloc TDC|clk_TDC_1 1 0 5 750J 642 940 642 1320 642 1780 512 2270J
+preplace netloc TDC|reset_0_1 1 0 3 770J 652 NJ 652 1290
+preplace netloc TDC|reset_TDC_1 1 1 4 930 662 1310 652 1800 522 2250J
+preplace netloc TDC|util_vector_logic_0_Res 1 6 1 3020 872n
+preplace netloc TDC|util_vector_logic_1_Res 1 5 1 N 1042
+preplace netloc TDC|xlconcat_0_dout 1 6 1 N 892
+preplace netloc TDC|xlslice_0_Dout 1 2 1 1330J 592n
+preplace netloc TDC|xlslice_1_Dout 1 3 1 NJ 722
+preplace netloc TDC|xlslice_2_Dout 1 4 1 2300J 832n
+preplace netloc TDC|BeltBus_TDL_Channel_0_M00_BB 1 3 1 1740 502n
+preplace netloc TDC|BeltBus_TDL_Channel_0_M01_AXIS_DebugCT 1 3 4 1730 472 NJ 472 NJ 472 3020J
+preplace netloc TDC|BeltBus_TDL_Channel_1_M00_BB 1 4 1 2220 622n
+preplace netloc TDC|BeltBus_TDL_Channel_1_M01_AXIS_DebugCT 1 4 3 2240 632 NJ 632 NJ
+preplace netloc TDC|BeltBus_TDL_Channel_2_M00_BB 1 5 2 2690 612 NJ
+preplace netloc TDC|BeltBus_TDL_Channel_2_M01_AXIS_DebugCT 1 5 2 N 752 NJ
+preplace netloc TDC|Conn1 1 0 3 740J 622 NJ 622 1280
+preplace netloc TDC|Conn2 1 0 4 NJ 672 NJ 672 1320J 662 1750
+preplace netloc TDC|Conn3 1 0 5 NJ 722 NJ 722 1320J 782 NJ 782 2280
+preplace netloc TDC|Conn4 1 3 4 N 482 NJ 482 NJ 482 NJ
+levelinfo -pg 1 -30 140 410 870 3460 3890 4120
+levelinfo -hier TDC * 850 1110 1540 2020 2500 2870 *
+pagesize -pg 1 -db -bbox -sgen -180 -10 4320 1150
+pagesize -hier TDC -db -bbox -sgen 710 292 3050 1122
+"
+}
+

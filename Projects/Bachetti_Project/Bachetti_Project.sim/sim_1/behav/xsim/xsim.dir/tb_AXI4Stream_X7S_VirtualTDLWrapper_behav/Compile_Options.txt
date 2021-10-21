@@ -1,0 +1,1 @@
+-wto "ff26f8deab6d4604954c61f33827ef35" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_AXI4Stream_X7S_VirtualTDLWrapper_behav" "xil_defaultlib.tb_AXI4Stream_X7S_VirtualTDLWrapper" -log "elaborate.log" 

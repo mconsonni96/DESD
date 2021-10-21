@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct  5 12:13:21 2021
+# Process ID: 24922
+# Current directory: /home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.runs/synth_1
+# Command line: vivado -log AXI4Stream_X7S_VirtualTDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI4Stream_X7S_VirtualTDL.tcl
+# Log file: /home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.runs/synth_1/AXI4Stream_X7S_VirtualTDL.vds
+# Journal file: /home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source AXI4Stream_X7S_VirtualTDL.tcl -notrace

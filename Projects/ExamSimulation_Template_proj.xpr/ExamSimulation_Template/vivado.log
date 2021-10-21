@@ -1,0 +1,571 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Aug 27 12:44:53 2020
+# Process ID: 10556
+# Current directory: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13172 C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.xpr
+# Log file: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/vivado.log
+# Journal file: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/nicol/Downloads/ExamSimulation/.Xil/Vivado-15744-NicolaPC/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 779.359 ; gain = 114.508
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 903.465 ; gain = 65.922
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  C:/DESD/Repository [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+startgroup
+create_bd_cell -type ip -vlnv TimeEngineers:ip:AXI4Stream_UART:1.0 AXI4Stream_UART_0
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins AXI4Stream_UART_0/UART]
+endgroup
+apply_board_connection -board_interface "usb_uart" -ip_intf "AXI4Stream_UART_0/UART" -diagram "design_1" 
+INFO: [board_interface 100-100] current_bd_design design_1
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /AXI4Stream_UART_0]
+INFO: [board_interface 100-100] set_property CONFIG.UART_BOARD_INTERFACE usb_uart [get_bd_cells -quiet /AXI4Stream_UART_0]
+INFO: [board_interface 100-100] delete_bd_objs -quiet /AXI4Stream_UART_0_UART /UART_0
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART_0
+INFO: [board_interface 100-100] connect_bd_intf_net /UART_0 /AXI4Stream_UART_0/UART
+WARNING: [board_interface 100-100] The IP interface AXI4Stream_UART_0/UART has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "design_1" 
+INFO: [board_interface 100-100] current_bd_design design_1
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [board_interface 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [board_interface 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_interface 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_interface 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_interface 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+WARNING: [board_interface 100-100] The IP interface clk_wiz_0/clock_CLK_IN1 has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+endgroup
+apply_board_connection -board_interface "reset" -ip_intf "clk_wiz_0/reset" -diagram "design_1" 
+INFO: [board_interface 100-100] current_bd_design design_1
+INFO: [board_interface 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells -quiet /clk_wiz_0]
+INFO: [board_interface 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_interface 100-100] set_property CONFIG.POLARITY  /reset
+INFO: [board_interface 100-100] connect_bd_net /reset /clk_wiz_0/reset
+INFO: [board_interface 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+WARNING: [board_interface 100-100] The IP interface clk_wiz_0/reset has been connected but the IP has not been configured to match your board.  Please configure this IP as necessary to meet your requirements.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AXI4Stream_UART_0/rst]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aresetn]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+regenerate_bd_layout
+create_bd_cell -type module -reference AXI4Stream_7Segment AXI4Stream_7Segment_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_7Segment_0/aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_7Segment_0/clk]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_7Segment_0/digit_select_anode]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_7Segment_0/seven_segment_led]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /AXI4Stream_7Segment_0/s00_axis(2) and /AXI4Stream_UART_0/M00_AXIS_RX(1)
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_7Segment_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AXI4Stream_UART_0/s00_axis_tx_tvalid
+
+WARNING: [BD 41-1771] Block interface /AXI4Stream_UART_0/UART has associated board param 'UART_BOARD_INTERFACE', which is set to board part interface 'usb_uart'. This interface is connected to an external interface /UART_0, whose name 'UART_0' does not match with the board interface name 'usb_uart'.
+This is a visual-only issue - this interface /AXI4Stream_UART_0/UART will be connected to board interface 'usb_uart'. If desired, please change the name of this port /UART_0 manually.
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/AXI4Stream_7Segment_0/s00_axis_tdata'(16) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/AXI4Stream_7Segment_0/s00_axis_tdata'(16) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+add_files -norecurse C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AXI4Stream_UART_0/s00_axis_tx_tvalid
+
+WARNING: [BD 41-1771] Block interface /AXI4Stream_UART_0/UART has associated board param 'UART_BOARD_INTERFACE', which is set to board part interface 'usb_uart'. This interface is connected to an external interface /UART_0, whose name 'UART_0' does not match with the board interface name 'usb_uart'.
+This is a visual-only issue - this interface /AXI4Stream_UART_0/UART will be connected to board interface 'usb_uart'. If desired, please change the name of this port /UART_0 manually.
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/AXI4Stream_7Segment_0/s00_axis_tdata'(16) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/AXI4Stream_7Segment_0/s00_axis_tdata'(16) to net 'AXI4Stream_UART_0_M00_AXIS_RX_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2019.2/data/boards/board_files/digilent/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_7Segment_0 .
+Exporting to file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Thu Aug 27 13:04:33 2020] Launched design_1_util_vector_logic_0_0_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_AXI4Stream_7Segment_0_0_synth_1, design_1_AXI4Stream_UART_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_util_vector_logic_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_util_vector_logic_0_0_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_AXI4Stream_7Segment_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_7Segment_0_0_synth_1/runme.log
+design_1_AXI4Stream_UART_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_UART_0_0_synth_1/runme.log
+synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/synth_1/runme.log
+[Thu Aug 27 13:04:33 2020] Launched impl_1...
+Run output will be captured here: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1264.531 ; gain = 12.875
+reset_run synth_1
+reset_run design_1_AXI4Stream_7Segment_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Aug 27 13:06:46 2020] Launched design_1_AXI4Stream_7Segment_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_AXI4Stream_7Segment_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_7Segment_0_0_synth_1/runme.log
+synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/synth_1/runme.log
+[Thu Aug 27 13:06:46 2020] Launched impl_1...
+Run output will be captured here: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.098 ; gain = 16.895
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACACB0A
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+create_bd_cell -type module -reference AXI4Stream_Depacketizer AXI4Stream_Depacketi_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+WARNING: [IP_Flow 19-3571] IP 'design_1_AXI4Stream_Depacketi_0_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_Depacketi_0/aclk]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_Depacketi_0/aresetn]
+delete_bd_objs [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX] [get_bd_intf_pins AXI4Stream_Depacketi_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_Depacketi_0/m_axis] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_7Segment_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_Depacketi_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AXI4Stream_UART_0/s00_axis_tx_tvalid
+
+WARNING: [BD 41-1771] Block interface /AXI4Stream_UART_0/UART has associated board param 'UART_BOARD_INTERFACE', which is set to board part interface 'usb_uart'. This interface is connected to an external interface /UART_0, whose name 'UART_0' does not match with the board interface name 'usb_uart'.
+This is a visual-only issue - this interface /AXI4Stream_UART_0/UART will be connected to board interface 'usb_uart'. If desired, please change the name of this port /UART_0 manually.
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_7Segment_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_Depacketi_0 .
+Exporting to file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Aug 27 13:32:16 2020] Launched design_1_AXI4Stream_Depacketi_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_AXI4Stream_Depacketi_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_Depacketi_0_0_synth_1/runme.log
+synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/synth_1/runme.log
+[Thu Aug 27 13:32:17 2020] Launched impl_1...
+Run output will be captured here: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2601.516 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACACB0A
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+create_bd_cell -type module -reference AXI4Stream_GPI AXI4Stream_GPI_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+WARNING: [IP_Flow 19-3571] IP 'design_1_AXI4Stream_GPI_0_0' is restricted:
+* Detected changes to module reference file(s).
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_0
+endgroup
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_GPI_0/m_axis] [get_bd_intf_pins axis_switch_0/S00_AXIS]
+delete_bd_objs [get_bd_intf_nets AXI4Stream_Depacketi_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_Depacketi_0/m_axis] [get_bd_intf_pins axis_switch_0/S01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M00_AXIS] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_GPI_0/gpi]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_GPI_0/trigger]
+endgroup
+startgroup
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_GPI_0/aresetn]
+endgroup
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins axis_switch_0/aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axis_switch_0/aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_GPI_0/aclk]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1348] Reset pin /AXI4Stream_UART_0/rst (associated clock /AXI4Stream_UART_0/clk_uart) is connected to asynchronous reset source /reset.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_7Segment_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_Depacketi_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+WARNING: [BD 41-927] Following properties on pin /AXI4Stream_GPI_0/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/AXI4Stream_UART_0/s00_axis_tx_tvalid
+
+WARNING: [BD 41-1771] Block interface /AXI4Stream_UART_0/UART has associated board param 'UART_BOARD_INTERFACE', which is set to board part interface 'usb_uart'. This interface is connected to an external interface /UART_0, whose name 'UART_0' does not match with the board interface name 'usb_uart'.
+This is a visual-only issue - this interface /AXI4Stream_UART_0/UART will be connected to board interface 'usb_uart'. If desired, please change the name of this port /UART_0 manually.
+Wrote  : <C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_UART_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_7Segment_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_Depacketi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4Stream_GPI_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_0 .
+Exporting to file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Aug 27 14:10:55 2020] Launched design_1_axis_switch_0_0_synth_1, design_1_AXI4Stream_GPI_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axis_switch_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_axis_switch_0_0_synth_1/runme.log
+design_1_AXI4Stream_GPI_0_0_synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_GPI_0_0_synth_1/runme.log
+synth_1: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/synth_1/runme.log
+[Thu Aug 27 14:10:56 2020] Launched impl_1...
+Run output will be captured here: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2621.551 ; gain = 1.020
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2621.551 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACACB0A
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+archive_project C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_'.
+WARNING: [IP_Flow 19-3571] IP 'design_1_AXI4Stream_7Segment_0_0' is restricted:
+* Detected changes to module reference file(s).
+WARNING: [IP_Flow 19-3571] IP 'design_1_AXI4Stream_7Segment_0_0' is restricted:
+* Detected changes to module reference file(s).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_util_vector_logic_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_clk_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_AXI4Stream_7Segment_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_AXI4Stream_UART_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_AXI4Stream_Depacketi_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_axis_switch_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_AXI4Stream_GPI_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'design_1_util_vector_logic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_AXI4Stream_7Segment_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_AXI4Stream_UART_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_AXI4Stream_Depacketi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_switch_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_AXI4Stream_GPI_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_AXI4Stream_7Segment_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_AXI4Stream_7Segment_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_AXI4Stream_Depacketi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_AXI4Stream_Depacketi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_AXI4Stream_GPI_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_AXI4Stream_GPI_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_AXI4Stream_UART_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_switch_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_switch_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_util_vector_logic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_util_vector_logic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/ExamSimulation_Template/ExamSimulation_Template.runs/design_1_AXI4Stream_7Segment_0_0_synth_1/design_1_AXI4Stream_7Segment_0_0_utilization_synth.pb
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO' for archiving project
+WARNING: [Coretcl 2-1222] Failed to remove the temporary archive dir. Please check directory permissions (C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_)
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_'.
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_/ExamSimulation_Template.runs
+ERROR: [Common 17-70] Application Exception: Unrecognized project type in HAPRMgr::closeProject
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO' for archiving project
+WARNING: [Coretcl 2-1222] Failed to remove the temporary archive dir. Please check directory permissions (C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_)
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_'.
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_/ExamSimulation_Template.runs
+ERROR: [Common 17-70] Application Exception: Unrecognized project type in HAPRMgr::closeProject
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO' for archiving project
+WARNING: [Coretcl 2-1222] Failed to remove the temporary archive dir. Please check directory permissions (C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_)
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_'.
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_/ExamSimulation_Template.runs
+ERROR: [Common 17-70] Application Exception: Unrecognized project type in HAPRMgr::closeProject
+archive_project C:/DESD/Projects/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO' for archiving project
+WARNING: [Coretcl 2-1222] Failed to remove the temporary archive dir. Please check directory permissions (C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_)
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_'.
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO/PrjAr/_X_/ExamSimulation_Template.runs
+ERROR: [Common 17-70] Application Exception: Unrecognized project type in HAPRMgr::closeProject
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 27 14:21:30 2020...

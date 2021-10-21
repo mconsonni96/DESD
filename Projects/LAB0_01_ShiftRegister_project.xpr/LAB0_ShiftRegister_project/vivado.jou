@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 10:14:25 2021
+# Process ID: 11684
+# Current directory: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10020 C:\DESD\Projects\LAB0_01_ShiftRegister_project.xpr\LAB0_ShiftRegister_project\LAB0_ShiftRegister_project.xpr
+# Log file: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/vivado.log
+# Journal file: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ShiftRegister_v0 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+current_fileset -simset [ get_filesets sim_1 ]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+open_wave_config C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/dut0_tb_ShiftRegister_v0_behav.wcfg
+source tb_ShiftRegister_v0.tcl
+close_sim
+launch_simulation
+open_wave_config C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/dut0_tb_ShiftRegister_v0_behav.wcfg
+source tb_ShiftRegister_v0.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ShiftRegister_v1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+open_wave_config C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_2/new/dut1_tb_ShiftRegister_v1_behav.wcfg
+source tb_ShiftRegister_v1.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ShiftRegister_v2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+current_fileset -simset [ get_filesets sim_3 ]
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_3/new/dut2_tb_ShiftRegister_v2_behav.wcfg
+source tb_ShiftRegister_v2.tcl
+close_sim

@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri Mar 27 16:06:04 2020
+| Host         : pcfisso running 64-bit Ubuntu 19.10
+| Command      : report_control_sets -verbose -file KittCarPWM_control_sets_placed.rpt
+| Design       : KittCarPWM
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   125 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |    17 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |             226 |           64 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              48 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                                Enable Signal                                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__14_n_0 | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__6_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__9_n_0  | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__12_n_0 | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__11_n_0 | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__3_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__2_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__1_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__0_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG |                                                                             |                  |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__13_n_0 | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__7_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__8_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__5_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__4_n_0   | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__10_n_0 | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/p_0_in               | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | Inst_SyncGenerator/count_coarse0                                            | reset_IBUF       |                4 |             16 |
+|  clk_IBUF_BUFG | Inst_SyncGenerator/sync                                                     | reset_IBUF       |                6 |             16 |
+|  clk_IBUF_BUFG |                                                                             | reset_IBUF       |               64 |            226 |
++----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+
+
+

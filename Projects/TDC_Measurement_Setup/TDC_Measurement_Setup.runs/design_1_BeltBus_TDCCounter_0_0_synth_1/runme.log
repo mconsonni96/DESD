@@ -1,0 +1,271 @@
+
+*** Running vivado
+    with args -log design_1_BeltBus_TDCCounter_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_BeltBus_TDCCounter_0_0.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_BeltBus_TDCCounter_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core/ip-repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx_Vitis/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_BeltBus_TDCCounter_0_0 -part xc7a100tftg256-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tftg256-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31211
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2389.207 ; gain = 0.000 ; free physical = 2474 ; free virtual = 9225
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/synth/design_1_BeltBus_TDCCounter_0_0.vhd:87]
+	Parameter BIT_COARSE bound to: 8 - type: integer 
+	Parameter BIT_FID bound to: 1 - type: integer 
+	Parameter BIT_NUM_CH bound to: 4 - type: integer 
+	Parameter NUM_CH bound to: 3 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter INTTIME_INIT bound to: 20000000 - type: integer 
+	Parameter SYNC_STAGES bound to: 4 - type: integer 
+	Parameter SYNC_STAGES_INIT_V bound to: 1'b0 
+	Parameter COMMAND_CMD_WIDTH bound to: 6 - type: integer 
+	Parameter COMMAND_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter COMMAND_RESP_WIDTH bound to: 2 - type: integer 
+	Parameter BIT_RESOLUTION bound to: 16 - type: integer 
+	Parameter C_S00_AXI_ADDR_ABS bound to: 32'b01000100101000000000000000000000 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_M00_AXIS_TDEST_WIDTH bound to: 8 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 56 - type: integer 
+INFO: [Synth 8-3491] module 'tdccounter_v1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/44b6/hdl/tdccounter_v1_0.vhd:10' bound to instance 'U0' of component 'TDCCounter_v1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/synth/design_1_BeltBus_TDCCounter_0_0.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDCCounter_0_0' (4#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/synth/design_1_BeltBus_TDCCounter_0_0.vhd:87]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2399.129 ; gain = 9.922 ; free physical = 3200 ; free virtual = 9951
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2413.973 ; gain = 24.766 ; free physical = 3257 ; free virtual = 10008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2413.973 ; gain = 24.766 ; free physical = 3257 ; free virtual = 10008
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2413.973 ; gain = 0.000 ; free physical = 3249 ; free virtual = 10001
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timing_OOC.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timing_OOC.xdc] for cell 'U0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timinig.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timinig.xdc] for cell 'U0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_BeltBus_TDCCounter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_BeltBus_TDCCounter_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.723 ; gain = 0.000 ; free physical = 3406 ; free virtual = 10157
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2579.723 ; gain = 0.000 ; free physical = 3406 ; free virtual = 10157
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 6025 ; free virtual = 12776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tftg256-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 6025 ; free virtual = 12776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_BeltBus_TDCCounter_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 6016 ; free virtual = 12768
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 5928 ; free virtual = 12687
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 43    
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 4983 ; free virtual = 11744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 4484 ; free virtual = 11241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 4352 ; free virtual = 11109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 4279 ; free virtual = 11037
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3815 ; free virtual = 10573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3815 ; free virtual = 10573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3807 ; free virtual = 10565
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3807 ; free virtual = 10565
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3800 ; free virtual = 10558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3800 ; free virtual = 10557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tdccounter_v1_0 | axihandler/Command_ACK_SR_reg[3]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|tdccounter_v1_0 | axihandler/Counters_valid_SR_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    29|
+|2     |LUT1   |     6|
+|3     |LUT2   |     9|
+|4     |LUT3   |    37|
+|5     |LUT4   |    22|
+|6     |LUT5   |    66|
+|7     |LUT6   |   137|
+|8     |SRL16E |     2|
+|9     |FDCE   |     5|
+|10    |FDRE   |   533|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3799 ; free virtual = 10557
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2579.723 ; gain = 24.766 ; free physical = 3837 ; free virtual = 10594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2579.723 ; gain = 190.516 ; free physical = 3838 ; free virtual = 10595
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2579.723 ; gain = 0.000 ; free physical = 3944 ; free virtual = 10701
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2579.723 ; gain = 0.000 ; free physical = 3744 ; free virtual = 10495
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:36 . Memory (MB): peak = 2579.723 ; gain = 190.594 ; free physical = 3867 ; free virtual = 10618
+INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_BeltBus_TDCCounter_0_0_synth_1/design_1_BeltBus_TDCCounter_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BeltBus_TDCCounter_0_0, cache-ID = 4885555a36699a9f
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_BeltBus_TDCCounter_0_0_synth_1/design_1_BeltBus_TDCCounter_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_BeltBus_TDCCounter_0_0_utilization_synth.rpt -pb design_1_BeltBus_TDCCounter_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 13 13:33:42 2021...

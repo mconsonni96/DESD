@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.2_AR72614 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar 26 11:07:32 2020
+# Process ID: 6723
+# Current directory: /home/nicola/Documents/vivado/logs
+# Command line: vivado -jvm -patch-module=java.desktop=/opt/Xilinx/Vivado/2019.2/lib/classes/AR72614/AR72614.jar
+# Log file: /home/nicola/Documents/vivado/logs/vivado.log
+# Journal file: /home/nicola/Documents/vivado/logs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/nicola/Documents/vivado/DESD/uart_loopback_synthetized/uart_loopback_synthetized.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_project /home/nicola/Documents/vivado/DESD/uart_adder_synthetized/uart_adder_synthetized.xpr
+update_compile_order -fileset sources_1
+current_project uart_loopback_synthetized
+current_project uart_adder_synthetized
+archive_project /home/nicola/Documents/vivado/DESD/uart_adder_synthetized.xpr.zip -force -include_local_ip_cache
+current_project uart_loopback_synthetized
+current_project uart_adder_synthetized
+archive_project /home/nicola/Documents/vivado/DESD/uart_adder_synthetized.xpr.zip -force -include_local_ip_cache -include_config_settings

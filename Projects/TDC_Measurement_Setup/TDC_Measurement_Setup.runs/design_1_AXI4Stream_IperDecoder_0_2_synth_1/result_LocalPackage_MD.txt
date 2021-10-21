@@ -1,0 +1,39 @@
+		LOCAL PACKAGE TABLE
+==================== DECODER INPUT ====================
+
+FREE_RUNNING	=	true
+EDGE_CHECK	=	false
+TYPE_DECODER	=	T2B
+
+TYPE_EDGE_ARRAY_0	=	DN
+TYPE_EDGE_ARRAY_1	=	DN
+TYPE_EDGE_ARRAY_2	=	DN
+TYPE_EDGE_ARRAY_3	=	DN
+
+NUMBER_OF_TDL	=	4
+
+BIT_TDL	=	256
+BIT_BUBBLE	=	4
+BIT_DECO	=	8
+
+BIT_SUB_INT	=	10
+
+======================================================
+
+====================== DECO T2B =====================
+
+BIT_THERMO_DECOT2B	=	256
+
+BIT_BIN_DECOT2B	=	8
+
+======================================================
+
+================== DECODER PIPELINE ==================
+
+DECO_PIPELINE	=	7
+
+SUB_INTERPOLATION_PIPELINE	=	1
+COARSE_PIPELINE	=	8
+
+======================================================
+

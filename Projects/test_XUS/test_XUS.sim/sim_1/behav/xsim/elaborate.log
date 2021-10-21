@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx_Vitis/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto a5599d1397aa4fffbc105bd58e466efc --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'axi4stream_xus_virtualtdl' remains a black box since it has no binding entity [/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/sim/design_1_AXI4Stream_XUS_Virtu_0_0.vhd:143]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling architecture design_1_axi4stream_xus_virtu_0_0_arch of entity xil_defaultlib.design_1_AXI4Stream_XUS_Virtu_0_0 [design_1_axi4stream_xus_virtu_0_...]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/AXI4Stream_XUS_VirtualTDLWrapper.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Sampler_TDL.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Simulated_TappedDelayLine.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/XUS_TappedDelayLine_CARRY8.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/sim/design_1_AXI4Stream_XUS_Virtu_0_0.vhd" \
+"../../../../test_XUS.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../test_XUS.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

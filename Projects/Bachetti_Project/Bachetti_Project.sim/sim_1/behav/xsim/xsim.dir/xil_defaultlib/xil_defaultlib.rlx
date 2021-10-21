@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sim_1/new/tb_AXI4Stream_X7S_VirtualTDLWrapper.vhd,1633529843,vhdl,,,,tb_axi4stream_x7s_virtualtdlwrapper,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/AXI4Stream_X7S_VirtualTDLWrapper.vhd,1633513646,vhdl,,,,axi4stream_x7s_virtualtdlwrapper,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/LocalPackage_TDL.vhd,1633513653,vhdl,/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/Simulated_TappedDelayLine.vhd,,,localpackage_tdl,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/Sampler_TDL.vhd,1633513664,vhdl,,,,sampler_tdl,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/Simulated_TappedDelayLine.vhd,1633531559,vhdl,,,,simulated_tappeddelayline,,,,,,,,
+/home/mconsonni/Desktop/DESD/Projects/Bachetti_Project/Bachetti_Project.srcs/sources_1/new/X7S_TappedDelayLine_CARRY4.vhd,1633428471,vhdl,,,,x7s_tappeddelayline_carry4,,,,,,,,

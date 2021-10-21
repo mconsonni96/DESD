@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 17:43:37 2021
+# Process ID: 16396
+# Current directory: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16372 C:\DESD\Projects\uart_adder_synthetized.xpr\uart_adder_synthetized\uart_adder_synthetized.xpr
+# Log file: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized/vivado.log
+# Journal file: C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized/uart_adder_synthetized.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/Documents/vivado/logs/.Xil/Vivado-6723-debianDesktop/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Projects/uart_adder_synthetized.xpr/uart_adder_synthetized/uart_adder_synthetized.ipdefs/IPs_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.387 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 13 17:44:54 2021...

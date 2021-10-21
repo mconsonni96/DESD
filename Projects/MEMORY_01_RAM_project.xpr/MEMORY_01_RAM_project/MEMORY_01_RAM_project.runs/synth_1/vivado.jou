@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar 20 15:20:37 2019
+# Process ID: 18215
+# Current directory: /home/nicola/Downloads/Vivado/ram/ram.runs/synth_1
+# Command line: vivado -log RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM.tcl
+# Log file: /home/nicola/Downloads/Vivado/ram/ram.runs/synth_1/RAM.vds
+# Journal file: /home/nicola/Downloads/Vivado/ram/ram.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source RAM.tcl -notrace

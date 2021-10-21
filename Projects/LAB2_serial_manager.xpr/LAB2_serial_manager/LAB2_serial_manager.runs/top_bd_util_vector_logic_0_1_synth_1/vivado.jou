@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 19 11:42:24 2021
+# Process ID: 24189
+# Current directory: /home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_util_vector_logic_0_1_synth_1
+# Command line: vivado -log top_bd_util_vector_logic_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_bd_util_vector_logic_0_1.tcl
+# Log file: /home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_util_vector_logic_0_1_synth_1/top_bd_util_vector_logic_0_1.vds
+# Journal file: /home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_util_vector_logic_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_bd_util_vector_logic_0_1.tcl -notrace

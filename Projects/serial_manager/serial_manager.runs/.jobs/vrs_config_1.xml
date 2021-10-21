@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_data_out_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_data_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_data_sampler_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_data_sampler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_debouncer_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_debouncer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_edge_detector_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_edge_detector_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_AXI4Stream_UART_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_AXI4Stream_UART_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_clk_wiz_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_util_vector_logic_0_0_synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/design_1_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/mconsonni/Desktop/DESD/Projects/serial_manager/serial_manager.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_data_out_0_0_synth_1"/>
+		<Parent Id="design_1_data_sampler_0_0_synth_1"/>
+		<Parent Id="design_1_debouncer_0_0_synth_1"/>
+		<Parent Id="design_1_edge_detector_0_0_synth_1"/>
+		<Parent Id="design_1_AXI4Stream_UART_0_0_synth_1"/>
+		<Parent Id="design_1_clk_wiz_0_0_synth_1"/>
+		<Parent Id="design_1_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2_AR72614 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Sun May  3 21:38:35 2020
+| Host         : debianDesktop running 64-bit Debian GNU/Linux bullseye/sid
+| Command      : report_bus_skew -warn_on_violation -file moving_average_bus_skew_routed.rpt -pb moving_average_bus_skew_routed.pb -rpx moving_average_bus_skew_routed.rpx
+| Design       : moving_average
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

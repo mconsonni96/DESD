@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ExampleDesign>
+  <Vendor>digilentinc.com</Vendor>
+  <Library>ced</Library>
+  <Name>Arty_S7_25_base_uc</Name>
+  <Version>1.0</Version>
+  <Design>init.tcl</Design>
+  <DisplayName>Arty S7-25 Microcontroller Preset</DisplayName>
+  <Description>Microcontroller Preset example design targeting the Arty S7-25 boards.  For use with baremetal applications</Description>
+  <Image>Microcontroller_Preset.png</Image>
+</ExampleDesign>
+

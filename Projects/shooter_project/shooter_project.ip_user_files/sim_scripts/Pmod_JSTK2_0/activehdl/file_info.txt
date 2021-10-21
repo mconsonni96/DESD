@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../Xilinx2/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/ipshared/d0f7"
+xpm_fifo.sv,systemverilog,xpm,../../../../../../../../../Xilinx2/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,incdir="../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/ipshared/d0f7"
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx2/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/ipshared/d0f7"
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx2/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/ipshared/d0f7"
+Pmod_JSTK2_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/Pmod_JSTK2_0_sim_netlist.vhdl,incdir="../../../../shooter_project.gen/sources_1/ip/Pmod_JSTK2_0/ipshared/d0f7"
+glbl.v,Verilog,xil_defaultlib,glbl.v

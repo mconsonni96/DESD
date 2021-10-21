@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_bd_util_vector_logic_0_1_synth_1" LaunchDir="/home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_util_vector_logic_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_bd_clk_wiz_0_1_synth_1" LaunchDir="/home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/top_bd_clk_wiz_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="top_bd_util_vector_logic_0_1_synth_1"/>
+		<Parent Id="top_bd_clk_wiz_0_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/mconsonni/Scrivania/DESD/Projects/LAB2_serial_manager.xpr/LAB2_serial_manager/LAB2_serial_manager.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="top_bd_util_vector_logic_0_1_synth_1"/>
+		<Parent Id="top_bd_clk_wiz_0_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

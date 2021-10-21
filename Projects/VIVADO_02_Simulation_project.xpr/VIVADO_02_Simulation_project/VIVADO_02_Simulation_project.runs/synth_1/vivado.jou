@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Mar  6 13:07:36 2019
+# Process ID: 5288
+# Current directory: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/counter/counter.runs/synth_1
+# Command line: vivado.exe -log counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter.tcl
+# Log file: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/counter/counter.runs/synth_1/counter.vds
+# Journal file: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/counter/counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter.tcl -notrace

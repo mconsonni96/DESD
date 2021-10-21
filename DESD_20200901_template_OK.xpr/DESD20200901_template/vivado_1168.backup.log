@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep  1 15:17:39 2020
+# Process ID: 1168
+# Current directory: C:/DESD/DESD20200901_template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16868 C:\DESD\DESD20200901_template\DESD20200901_template.xpr
+# Log file: C:/DESD/DESD20200901_template/vivado.log
+# Journal file: C:/DESD/DESD20200901_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/DESD20200901_template/DESD20200901_template.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/nicol/Downloads/xxxxxDESD20200901_template.xpr/DESD20200901_template' since last save.
+WARNING: [Project 1-312] File not found as 'C:/DESD20200901_template/DESD20200901_template.srcs/constrs_1/new/pins.xdc'; using path 'C:/Users/nicol/Downloads/DESD20200901_template/DESD20200901_template.srcs/constrs_1/new/pins.xdc' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/DESD20200901_template/DESD20200901_template.ipdefs/axi4-stream-uart_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 901.625 ; gain = 258.301
+update_compile_order -fileset sources_1
+archive_project C:/DESD/DESD_20200901_template_OK.xpr.zip -temp_dir C:/DESD/DESD20200901_template/.Xil/Vivado-1168-NicolaPC -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/DESD20200901_template/.Xil/Vivado-1168-NicolaPC' for archiving project
+INFO: [Project 1-313] Project file moved from 'C:/Users/nicol/Downloads/xxxxxDESD20200901_template.xpr/DESD20200901_template' since last save.
+WARNING: [Project 1-312] File not found as 'C:/DESD20200901_template/DESD20200901_template.srcs/constrs_1/new/pins.xdc'; using path 'C:/Users/nicol/Downloads/DESD20200901_template/DESD20200901_template.srcs/constrs_1/new/pins.xdc' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/DESD20200901_template/DESD20200901_template.ipdefs/axi4-stream-uart_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Mar 16 18:29:21 2020
+# Process ID: 17108
+# Current directory: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/ClassRoom LAB1/ShiftRegister
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22248 C:\Users\nicol\Desktop\POLIMI\Didattica\Digital_Electronic_System_Design\ClassRoom LAB1\ShiftRegister\ShiftRegister.xpr
+# Log file: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/ClassRoom LAB1/ShiftRegister/vivado.log
+# Journal file: C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/ClassRoom LAB1/ShiftRegister\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/ClassRoom LAB1/ShiftRegister/ShiftRegister.xpr}
+update_compile_order -fileset sources_1
+save_project_as LAB0_ShiftRegister_project C:/DESD/Project/LAB0_ShiftRegister_project -force
+import_files
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut0_tb_ShiftRegister_v0_behav.wcfg] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut1_tb_ShiftRegister_v1_behav.wcfg] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut2_tb_ShiftRegister_v2_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut0_tb_ShiftRegister_v0_behav.wcfg C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut1_tb_ShiftRegister_v1_behav.wcfg C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/imports/behav/dut2_tb_ShiftRegister_v2_behav.wcfg}
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v2.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v1.vhd C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v0.vhd C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v2.vhd}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/dut0_tb_ShiftRegister_v0_behav.wcfg
+add_files -fileset sim_1 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/tb_ShiftRegister_v0.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ShiftRegister_v0 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_1/new/dut0_tb_ShiftRegister_v0_behav.wcfg
+source tb_ShiftRegister_v0.tcl
+close_sim
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_2/new/dut1_tb_ShiftRegister_v1_behav.wcfg
+add_files -fileset sim_2 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_2/new/tb_ShiftRegister_v1.vhd
+update_compile_order -fileset sim_2
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ShiftRegister_v1 [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation
+current_fileset -simset [ get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+open_wave_config C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_2/new/dut1_tb_ShiftRegister_v1_behav.wcfg
+source tb_ShiftRegister_v1.tcl
+close_sim
+create_fileset -simset sim_3
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+add_files -fileset sim_3 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_3/new/dut2_tb_ShiftRegister_v2_behav.wcfg
+add_files -fileset sim_3 -norecurse C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_3/new/tb_ShiftRegister_v2.vhd
+current_fileset -simset [ get_filesets sim_3 ]
+update_compile_order -fileset sim_3
+update_compile_order -fileset sim_3
+launch_simulation -simset [get_filesets sim_3 ]
+open_wave_config C:/DESD/Project/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.srcs/sim_3/new/dut2_tb_ShiftRegister_v2_behav.wcfg
+source tb_ShiftRegister_v2.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ShiftRegister_v0 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+archive_project C:/DESD/Project/LAB0_ShiftRegister_project.xpr.zip -temp_dir {C:/Users/nicol/Desktop/POLIMI/Didattica/Digital_Electronic_System_Design/ClassRoom LAB1/ShiftRegister/.Xil/Vivado-22288-NicolaPC} -force -include_local_ip_cache -include_config_settings

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 10:43:40 2021
+# Process ID: 15356
+# Current directory: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.sim/sim_3/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.sim/sim_3/behav/xsim/xsim.dir/tb_ShiftRegister_v2_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.sim/sim_3/behav/xsim/webtalk.log
+# Journal file: C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.sim/sim_3/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/DESD/Projects/LAB0_01_ShiftRegister_project.xpr/LAB0_ShiftRegister_project/LAB0_ShiftRegister_project.sim/sim_3/behav/xsim/xsim.dir/tb_ShiftRegister_v2_behav/webtalk/xsim_webtalk.tcl -notrace

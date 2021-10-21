@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 13 13:41:28 2021
+# Process ID: 35468
+# Current directory: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_2_synth_1
+# Command line: vivado -log design_1_AXI4Stream_IperDecoder_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI4Stream_IperDecoder_0_2.tcl
+# Log file: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_2_synth_1/design_1_AXI4Stream_IperDecoder_0_2.vds
+# Journal file: /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/design_1_AXI4Stream_IperDecoder_0_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_AXI4Stream_IperDecoder_0_2.tcl -notrace

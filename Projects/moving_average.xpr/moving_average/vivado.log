@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 26 11:54:37 2020
+# Process ID: 792
+# Current directory: C:/DESD/Projects/moving_average.xpr/moving_average
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1128 C:\DESD\Projects\moving_average.xpr\moving_average\moving_average.xpr
+# Log file: C:/DESD/Projects/moving_average.xpr/moving_average/vivado.log
+# Journal file: C:/DESD/Projects/moving_average.xpr/moving_average\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/moving_average.xpr/moving_average/moving_average.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/Documents/vivado/logs/.Xil/Vivado-14822-debianDesktop/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 793.223 ; gain = 196.426
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 12:00:35 2020...

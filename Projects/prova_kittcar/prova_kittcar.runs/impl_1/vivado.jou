@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Aug 23 19:49:48 2020
+# Process ID: 1900
+# Current directory: C:/DESD/Projects/prova_kittcar/prova_kittcar.runs/impl_1
+# Command line: vivado.exe -log kittcar.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kittcar.tcl -notrace
+# Log file: C:/DESD/Projects/prova_kittcar/prova_kittcar.runs/impl_1/kittcar.vdi
+# Journal file: C:/DESD/Projects/prova_kittcar/prova_kittcar.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source kittcar.tcl -notrace

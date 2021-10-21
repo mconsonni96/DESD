@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>DigiLAB</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_AXI4Stream_PeriodMet_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TDATA_NUM_BYTES">5</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TREADY">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TLAST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_BB</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_bb_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.HAS_TREADY">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.HAS_TLAST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_BB.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_BB.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>reset</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>reset</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RESET.POLARITY">ACTIVE_HIGH</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.RESET.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">M00_AXIS:S00_BB</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">reset</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>BeltBus_PeriodMeter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3b09d267</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3b09d267</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_AXI4Stream_PeriodMet_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3b09d267</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>BeltBus_PeriodMeter</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f3b969bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_AXI4Stream_PeriodMet_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f3b969bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:43:00 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3b09d267</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>reset</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_bb_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_bb_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((((((spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_NUM_CH&apos;)) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_FID&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_COARSE&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_RESOLUTION&apos;))) - 1) / 8) + 1) * 8) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((((spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_OVERFLOW&apos;)) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_COARSE&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_RESOLUTION&apos;))) - 1) / 8) + 1) * 8) - 1)">39</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="INTEGER">
+        <spirit:name>FILTER_SEL_INT</spirit:name>
+        <spirit:displayName>Filter Sel Int</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.FILTER_SEL_INT">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="INTEGER">
+        <spirit:name>NUN_CH_PERIOD</spirit:name>
+        <spirit:displayName>Nun Ch Period</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NUN_CH_PERIOD">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>NUMBER_OF_SAMPLE</spirit:name>
+        <spirit:displayName>Number Of Sample</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NUMBER_OF_SAMPLE" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DIVIDER</spirit:name>
+        <spirit:displayName>Divider</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DIVIDER" spirit:minimum="0" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="STRING">
+        <spirit:name>FILTER_SEL</spirit:name>
+        <spirit:displayName>Filter Sel</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.FILTER_SEL">MA</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_OVERFLOW</spirit:name>
+        <spirit:displayName>Bit Overflow</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_OVERFLOW" spirit:minimum="0" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_NUM_CH</spirit:name>
+        <spirit:displayName>Bit Num Ch</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_NUM_CH" spirit:minimum="0" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_FID</spirit:name>
+        <spirit:displayName>Bit Fid</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_FID" spirit:minimum="0" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_COARSE</spirit:name>
+        <spirit:displayName>Bit Coarse</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_COARSE" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_RESOLUTION</spirit:name>
+        <spirit:displayName>Bit Resolution</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_RESOLUTION" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_21da661d</spirit:name>
+      <spirit:enumeration>GI</spirit:enumeration>
+      <spirit:enumeration>MA</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_85010fde</spirit:name>
+      <spirit:enumeration>1</spirit:enumeration>
+      <spirit:enumeration>2</spirit:enumeration>
+      <spirit:enumeration>4</spirit:enumeration>
+      <spirit:enumeration>8</spirit:enumeration>
+      <spirit:enumeration>16</spirit:enumeration>
+      <spirit:enumeration>32</spirit:enumeration>
+      <spirit:enumeration>64</spirit:enumeration>
+      <spirit:enumeration>128</spirit:enumeration>
+      <spirit:enumeration>256</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/timing_ooc.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/BeltBus_PeriodMeter_Wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/delta.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/gated_integrator.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/moving_average.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/BeltBus_PeriodMeter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_AXI4Stream_PeriodMet_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/BeltBus_PeriodMeter_Wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/delta.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/gated_integrator.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/moving_average.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/d4d3/hdl/BeltBus_PeriodMeter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_AXI4Stream_PeriodMet_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_AXI4Stream_PeriodMet_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AXI4Stream_PeriodMet_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AXI4Stream_PeriodMet_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_AXI4Stream_PeriodMet_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Belt-Bus input and AXI4-Stream output (tvalid, tdata) Period Meter</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_AXI4Stream_PeriodMet_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FILTER_SEL_INT</spirit:name>
+      <spirit:displayName>Filter Sel Int</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FILTER_SEL_INT">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUN_CH_PERIOD</spirit:name>
+      <spirit:displayName>Number of Channel Period</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUN_CH_PERIOD" spirit:minimum="0" spirit:maximum="15" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUMBER_OF_SAMPLE</spirit:name>
+      <spirit:displayName>Number of Samples</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUMBER_OF_SAMPLE" spirit:choiceRef="choice_list_85010fde">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DIVIDER</spirit:name>
+      <spirit:displayName>Divider</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DIVIDER" spirit:choiceRef="choice_list_85010fde">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FILTER_SEL</spirit:name>
+      <spirit:displayName>Filter Selection</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.FILTER_SEL" spirit:choiceRef="choice_list_21da661d">MA</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_OVERFLOW</spirit:name>
+      <spirit:displayName>Bit Overflow</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_OVERFLOW" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_NUM_CH</spirit:name>
+      <spirit:displayName>Bit Number of Channel</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_NUM_CH" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_FID</spirit:name>
+      <spirit:displayName>Bit Fid</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_FID" spirit:minimum="1" spirit:maximum="4" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_COARSE</spirit:name>
+      <spirit:displayName>Bit Coarse</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_COARSE" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_RESOLUTION</spirit:name>
+      <spirit:displayName>Bit Resolution</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_RESOLUTION" spirit:minimum="1" spirit:maximum="31" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>Belt-Bus Period Meter</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="xilinx.com:user:Axi4Stream_PeriodMeter:1.0_ARCHIVE_LOCATION">c:/Users/meant/Desktop/tesi/utility_IP_core/ip_repo/Axi4Stream_PeriodMeter</xilinx:tag>
+        <xilinx:tag xilinx:name="DigiLAB:user:Axi4Stream_PeriodMeter:1.0_ARCHIVE_LOCATION">c:/Users/meant/Desktop/tesi/utility_IP_core/ip_repo/Axi4Stream_PeriodMeter</xilinx:tag>
+        <xilinx:tag xilinx:name="DigiLAB:user:AXI4Stream_PeriodMeter:1.0_ARCHIVE_LOCATION">c:/Users/meant/Desktop/tesi/utility_IP_core/ip_repo/Axi4Stream_PeriodMeter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69d0fcaa_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@544c77b0_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43097b8c_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11add676_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9de8847_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64b163ae_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fe86cd5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564122e3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3547a50f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10f816b0_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e262d00_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3536a75e_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4753cdbd_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b234a0d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@237c9d20_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@775ab197_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bdfef17_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d89ed3b_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c7baff_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2234686a_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e2da369_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792aec34_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bc550b_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27aa2667_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3744558e_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@255739e4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@436c04e3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f35b940_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b816f4a_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1270adb9_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a8ebd41_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ae5334_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ccfc590_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d1e76a4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33840227_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72110309_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c3c6cf2_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@700cb3b4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d561d0f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f95ff4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b4bfdd5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e4f374_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74439549_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f70943_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b129ba5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4252760f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e6d5d3f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b4778a3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5365d1b1_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162dc76e_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@129c808_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@773b9bdb_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65f85a12_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6edaed5c_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@841c8f5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@682a00cc_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34f3a309_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8aa14d5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ba4c377_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c184dab_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e0e70b2_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e448747_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60f83a7a_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29435f47_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4de5f490_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@145978a0_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ea23605_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@468c3811_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e4fd4ef_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f25e40d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52146dc4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15430052_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71781da1_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@278cb84a_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f784970_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e4eca88_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c74db4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61929bac_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69a49dd8_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d3d76a5_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33666855_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cf953fd_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ccac6f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@470d9ad4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7495c893_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74f4943f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69356dec_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a9f8d97_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dc30d7_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2332f88d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f7ac70c_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73493919_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dec47a3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a3e095f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d2d95c2_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e3ae3c2_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ba9c75_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@247ec5b4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7664b2e0_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@323e691f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2161a704_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1101d04d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dd8398c_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b41fe37_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e3ce3c3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bf706a1_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cf25759_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d7f98e3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d608829_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515127ce_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb0123e_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32218d8e_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dd81f8f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ca4d709_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d7a5d8_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@545ca086_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d9abc91_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@614fa979_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60593dbe_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@460055e4_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24c79dfd_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32d8193f_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21cb775_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e13b91_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29d9e329_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f42a989_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a49ed62_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@236b7b9a_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43293854_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f38cfc3_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b7848cb_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1875b8c_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dd664b6_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b19514_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36b11def_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c7b9693_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cd8330_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4d178d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716dfa29_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4472d69d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec3baa8_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5af4350d_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2074920b_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b9476b_ARCHIVE_LOCATION">/home/pc-fisso/Documents/IP/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a439221_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a5a3c28_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649d8470_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f609ee9_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fa51eb1_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebb8cf5_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@323ff362_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d75186d_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f686fbf_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b57fe9_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b35e77_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@410a2bef_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@550b806b_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26a8dfe0_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@772ae3b0_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@337f0d75_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5650045c_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15513dbd_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb6204_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a2a8a0_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f80dc8_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@af9bf12_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@307b2cf1_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d9a7344_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a377ac3_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@369e6256_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20dc7105_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55543966_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e09e950_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7708d345_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11fdba5_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@185c40e7_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f95d801_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69821c34_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2741b26b_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@484a2912_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7129da0_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e160194_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe4d7da_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@679bac1f_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49dfb924_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a293d58_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e544336_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf44232_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fc43d00_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a21ce09_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19a58818_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6790b37c_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77482df7_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223fbfaa_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@634c5057_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57dc8931_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b0e1d34_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@655b090d_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bd90146_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa50e2c_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6079cc8b_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e1ef6b_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4888a0eb_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c08ca6_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50b1508c_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f56b57f_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ed8a0f3_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20f5adfa_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ab0fe_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d39d39b_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ed29cab_ARCHIVE_LOCATION">/home/simone/Documents/IPs/ip_repo/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bf56b8b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@579b92c8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f11e03_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5e368c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d35d793_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c14975_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e475047_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10564ff2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d92d7a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a097cb2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e9f4d68_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@536ab19e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5621ea42_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3432c31d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ef08fc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11221958_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7239e39e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c96aeca_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e3b9d0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dbc6335_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b76ab4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2508f498_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48b7cb0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff529e6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ab00f97_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75b3ec62_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@119d36f7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45e453e3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26db54ab_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@426918a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74529a4c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@140e6c12_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f2de49_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53a296f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@536b9487_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73092b72_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@de01d11_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@544b71d1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10649416_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@553e1d43_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c0d2c0c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e6b38ec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f2211fc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c722d85_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@521182a8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fe2ffb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d56a0ab_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ff5254f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77230273_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33147283_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77608ee8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bde14da_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ff8cf3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755b1e5a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@409109c2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1da81be7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a3e06d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aefcf90_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7a8e11_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@248cbbf7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@665a738c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddf0343_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@edd45f3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fcdf660_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21808b6f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57761a32_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1292596c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57d90771_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6437addf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15aa420d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9152549_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@568a30a7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48008227_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7391b51c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7023764_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db57eab_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79df01e5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46650ac_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@612d1ccb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5df9a60d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce9decb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74a6bf6d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e460ef0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658e3dfb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e992e77_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@768c38bc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2191006_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27051fa1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7115e34a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@152fdbd3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c86431_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@778682be_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b131d4a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1714fd2a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66f72995_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7ee415_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a9791c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50c68de8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35bea3cd_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16b4ac30_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a35f722_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5faa32ae_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54ea1253_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fcb1193_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fdf6780_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b922f7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b80ddd_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b23b5c6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16e39709_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1767c56e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@684b733f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e0b1527_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@268f601a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@123e12a9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@774e7217_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a069716_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e0cbb67_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a552285_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@88ce603_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5802555a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55ec9973_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12eb0ae1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f130347_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17eb6ebb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fff4dec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f1743e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2636fac_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5b9fc8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d6134c5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5caef5b8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ed338d1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec33631_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ee7cc8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cce37f4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@411d5121_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1428ff66_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a600f30_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd8b2fa_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@533359a5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b54875f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51227885_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc8aaa4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dbe46fd_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1966ca2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2609184d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e5544c7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a3ab086_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2326752f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6d0133_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5961794d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a2c0b14_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a409a9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da76a5b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cec78_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6048f021_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5346fd8d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@471b2c7c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624e938e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@656e54f4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/axi4stream-period-meter</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RESET.POLARITY" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_BB.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BIT_COARSE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BIT_OVERFLOW" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="22590b48"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="80442953"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0fa8aaa4"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="8b0d751c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e9cf6fbb"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

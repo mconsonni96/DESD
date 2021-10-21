@@ -1,0 +1,20 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto c8cf4c7b731b4bae838d68b34efc5a3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_KittCarPWM_behav xil_defaultlib.tb_KittCarPWM -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PulseWidthModulator [\PulseWidthModulator(bit_length=...]
+Compiling architecture behavioral of entity xil_defaultlib.TailGenerator [tailgenerator_default]
+Compiling architecture behavioral of entity xil_defaultlib.SyncGenerator [\SyncGenerator(clk_period_ns=10,...]
+Compiling architecture behavioral of entity xil_defaultlib.KittCar [\KittCar(num_of_leds=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.KittCarPWM [\KittCarPWM(simulation_vs_implem...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_kittcarpwm
+Built simulation snapshot tb_KittCarPWM_behav

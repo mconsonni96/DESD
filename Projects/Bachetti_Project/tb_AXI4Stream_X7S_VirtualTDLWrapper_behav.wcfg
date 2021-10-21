@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AXI4Stream_X7S_VirtualTDLWrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="localpackage_tdl" />
+            <top_module name="tb_AXI4Stream_X7S_VirtualTDLWrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5858fs"></ZoomStartTime>
+      <ZoomEndTime time="6652fs"></ZoomEndTime>
+      <Cursor1Time time="6067fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider79" type="divider">
+      <obj_property name="label">AXI4Stream_X7S_VirtualTDLWrapper</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/AsyncInput">
+      <obj_property name="ElementShortName">AsyncInput</obj_property>
+      <obj_property name="ObjectShortName">AsyncInput</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/m00_axis_undeco_tvalid">
+      <obj_property name="ElementShortName">m00_axis_undeco_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axis_undeco_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/m00_axis_undeco_tdata">
+      <obj_property name="ElementShortName">m00_axis_undeco_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axis_undeco_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider80" type="divider">
+      <obj_property name="label">TDLs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/CO_Taps_TDL">
+      <obj_property name="ElementShortName">CO_Taps_TDL[0:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">CO_Taps_TDL[0:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/O_Taps_TDL">
+      <obj_property name="ElementShortName">O_Taps_TDL[0:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Taps_TDL[0:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/CO_Taps_preTDL">
+      <obj_property name="ElementShortName">CO_Taps_preTDL[0:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">CO_Taps_preTDL[0:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/O_Taps_preTDL">
+      <obj_property name="ElementShortName">O_Taps_preTDL[0:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Taps_preTDL[0:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/AsyncTaps_TDL">
+      <obj_property name="ElementShortName">AsyncTaps_TDL[0:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">AsyncTaps_TDL[0:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/AsyncTaps_preTDL">
+      <obj_property name="ElementShortName">AsyncTaps_preTDL[0:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">AsyncTaps_preTDL[0:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/Valid_SampledTaps_TDL">
+      <obj_property name="ElementShortName">Valid_SampledTaps_TDL[0:0]</obj_property>
+      <obj_property name="ObjectShortName">Valid_SampledTaps_TDL[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/SampledTaps_TDL">
+      <obj_property name="ElementShortName">SampledTaps_TDL[0:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">SampledTaps_TDL[0:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider81" type="divider">
+      <obj_property name="label">Sampler</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/AsyncInput">
+      <obj_property name="ElementShortName">AsyncInput</obj_property>
+      <obj_property name="ObjectShortName">AsyncInput</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/AsyncTaps_TDL">
+      <obj_property name="ElementShortName">AsyncTaps_TDL[0:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">AsyncTaps_TDL[0:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/AsyncTaps_preTDL">
+      <obj_property name="ElementShortName">AsyncTaps_preTDL[0:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">AsyncTaps_preTDL[0:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/SampledTaps">
+      <obj_property name="ElementShortName">SampledTaps[19:0]</obj_property>
+      <obj_property name="ObjectShortName">SampledTaps[19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/SampledTaps_pipe">
+      <obj_property name="ElementShortName">SampledTaps_pipe[19:0]</obj_property>
+      <obj_property name="ObjectShortName">SampledTaps_pipe[19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/ValidPosition_SampledTaps">
+      <obj_property name="ElementShortName">ValidPosition_SampledTaps[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ValidPosition_SampledTaps[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/ValidPositionTap_int">
+      <obj_property name="ElementShortName">ValidPositionTap_int</obj_property>
+      <obj_property name="ObjectShortName">ValidPositionTap_int</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/RiseValid">
+      <obj_property name="ElementShortName">RiseValid</obj_property>
+      <obj_property name="ObjectShortName">RiseValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/FallValid">
+      <obj_property name="ElementShortName">FallValid</obj_property>
+      <obj_property name="ObjectShortName">FallValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/Valid_SampledTaps">
+      <obj_property name="ElementShortName">Valid_SampledTaps</obj_property>
+      <obj_property name="ObjectShortName">Valid_SampledTaps</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/Valid_SampledTaps_pipe">
+      <obj_property name="ElementShortName">Valid_SampledTaps_pipe</obj_property>
+      <obj_property name="ObjectShortName">Valid_SampledTaps_pipe</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/Valid_SampledTaps_TDL">
+      <obj_property name="ElementShortName">Valid_SampledTaps_TDL</obj_property>
+      <obj_property name="ObjectShortName">Valid_SampledTaps_TDL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/dut_AXI4Stream_X7S_VirtualTDLWrapper/\VirtualTDL(0)\/Inst_Sampler_TDL/SampledTaps_TDL">
+      <obj_property name="ElementShortName">SampledTaps_TDL[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SampledTaps_TDL[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider96" type="divider">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/ASYNC_PERIOD">
+      <obj_property name="ElementShortName">ASYNC_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">ASYNC_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/TYPE_TDL_ARRAY">
+      <obj_property name="ElementShortName">TYPE_TDL_ARRAY[0:15][1:1]</obj_property>
+      <obj_property name="ObjectShortName">TYPE_TDL_ARRAY[0:15][1:1]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/DEBUG_MODE">
+      <obj_property name="ElementShortName">DEBUG_MODE</obj_property>
+      <obj_property name="ObjectShortName">DEBUG_MODE</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/SIM_VS_IMP">
+      <obj_property name="ElementShortName">SIM_VS_IMP[1:3]</obj_property>
+      <obj_property name="ObjectShortName">SIM_VS_IMP[1:3]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/FILE_PATH_NAME_CO_DELAY">
+      <obj_property name="ElementShortName">FILE_PATH_NAME_CO_DELAY[1:93]</obj_property>
+      <obj_property name="ObjectShortName">FILE_PATH_NAME_CO_DELAY[1:93]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/FILE_PATH_NAME_O_DELAY">
+      <obj_property name="ElementShortName">FILE_PATH_NAME_O_DELAY[1:92]</obj_property>
+      <obj_property name="ObjectShortName">FILE_PATH_NAME_O_DELAY[1:92]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/NUMBER_OF_TDL">
+      <obj_property name="ElementShortName">NUMBER_OF_TDL</obj_property>
+      <obj_property name="ObjectShortName">NUMBER_OF_TDL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/NUM_TAP_TDL">
+      <obj_property name="ElementShortName">NUM_TAP_TDL</obj_property>
+      <obj_property name="ObjectShortName">NUM_TAP_TDL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/BUFFERING_STAGE">
+      <obj_property name="ElementShortName">BUFFERING_STAGE</obj_property>
+      <obj_property name="ObjectShortName">BUFFERING_STAGE</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/MIN_VALID_TAP_POS">
+      <obj_property name="ElementShortName">MIN_VALID_TAP_POS</obj_property>
+      <obj_property name="ObjectShortName">MIN_VALID_TAP_POS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/STEP_VALID_TAP_POS">
+      <obj_property name="ElementShortName">STEP_VALID_TAP_POS</obj_property>
+      <obj_property name="ObjectShortName">STEP_VALID_TAP_POS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/MAX_VALID_TAP_POS">
+      <obj_property name="ElementShortName">MAX_VALID_TAP_POS</obj_property>
+      <obj_property name="ObjectShortName">MAX_VALID_TAP_POS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/VALID_POSITION_TAP_INIT">
+      <obj_property name="ElementShortName">VALID_POSITION_TAP_INIT</obj_property>
+      <obj_property name="ObjectShortName">VALID_POSITION_TAP_INIT</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/VALID_NUMBER_OF_TDL_INIT">
+      <obj_property name="ElementShortName">VALID_NUMBER_OF_TDL_INIT</obj_property>
+      <obj_property name="ObjectShortName">VALID_NUMBER_OF_TDL_INIT</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/OFFSET_TAP_TDL_ARRAY">
+      <obj_property name="ElementShortName">OFFSET_TAP_TDL_ARRAY[0:15]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_TAP_TDL_ARRAY[0:15]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/BIT_SMP_TDL">
+      <obj_property name="ElementShortName">BIT_SMP_TDL</obj_property>
+      <obj_property name="ObjectShortName">BIT_SMP_TDL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/NUM_TAP_PRE_TDL">
+      <obj_property name="ElementShortName">NUM_TAP_PRE_TDL</obj_property>
+      <obj_property name="ObjectShortName">NUM_TAP_PRE_TDL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_AXI4Stream_X7S_VirtualTDLWrapper/BIT_SMP_PRE_TDL">
+      <obj_property name="ElementShortName">BIT_SMP_PRE_TDL</obj_property>
+      <obj_property name="ObjectShortName">BIT_SMP_PRE_TDL</obj_property>
+   </wvobject>
+</wave_config>

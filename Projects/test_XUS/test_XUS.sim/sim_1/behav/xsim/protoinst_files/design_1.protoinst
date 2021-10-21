@@ -1,0 +1,18 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/AXI4Stream_XUS_Virtu_0/M00_AXIS_Undeco": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESET": { "actual": "reset"},
+						"TDATA": { "actual": "m00_axis_undeco_tdata"},
+						"TVALID": { "actual": "m00_axis_undeco_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

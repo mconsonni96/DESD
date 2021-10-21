@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>DigiLAB</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_TDCChannelSlice_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>aclk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_BUSIF">write_reg:read_reg</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.ACLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk_TDC</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk_TDC</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK_TDC.ASSOCIATED_BUSIF">Gate:ForceCalibrate:ValidPositionTap:ValidNumberOfTdl:subInterpolationMatrix:EdgeTrigger</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.FREQ_HZ">416666666</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.CLK_DOMAIN">design_1_util_ds_buf_3_0_IBUF_OUT</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK_TDC.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk_SYS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk_SYS</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK_SYS.ASSOCIATED_BUSIF">Restart_Calibration:Stop_Calibration:bitTrn_Uncal_addr:bitTrn_Cal_dout:bitTrn_ReqSample:Calibrated</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK_SYS.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>write_reg</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>write_reg</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.WRITE_REG.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>read_reg</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>read_reg</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.READ_REG.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PortType</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.READ_REG.PortType"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PortType.PROP_SRC</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.READ_REG.PortType.PROP_SRC"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>EdgeTrigger</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>EdgeTrigger</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EDGETRIGGER.NUM_READ_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.EDGETRIGGER.NUM_WRITE_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.EDGETRIGGER.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>StretchLength</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>StretchLength</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.STRETCHLENGTH.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.StretchLength" xilinx:dependency="$BIT_STRETCH_LENGTH > 0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Divider</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Divider</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.DIVIDER.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.Divider" xilinx:dependency="$BIT_DIVIDER > 0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Gate</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Gate</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GATE.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>ForceCalibrate</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>ForceCalibrate</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FORCECALIBRATE.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>ValidPositionTap</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>ValidPositionTap</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.VALIDPOSITIONTAP.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.ValidPositionTap" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>ValidNumberOfTdl</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>ValidNumberOfTdl</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.VALIDNUMBEROFTDL.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.ValidNumberOfTdl" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>subInterpolationMatrix</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>subInterpolationMatrix</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.SUBINTERPOLATIONMATRIX.NUM_READ_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.SUBINTERPOLATIONMATRIX.NUM_WRITE_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SUBINTERPOLATIONMATRIX.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.subInterpolationMatrix" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Restart_Calibration</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Restart_Calibration</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RESTART_CALIBRATION.NUM_READ_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RESTART_CALIBRATION.NUM_WRITE_OUTSTANDING"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.RESTART_CALIBRATION.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.Restart_Calibration" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Stop_Calibration</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Stop_Calibration</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.STOP_CALIBRATION.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.Stop_Calibration" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>bitTrn_Uncal_addr</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bitTrn_Uncal_addr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BITTRN_UNCAL_ADDR.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.bitTrn_Uncal_addr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>bitTrn_Cal_dout</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bitTrn_Cal_dout</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BITTRN_CAL_DOUT.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.bitTrn_Cal_dout" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>bitTrn_ReqSample</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>bitTrn_ReqSample</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BITTRN_REQSAMPLE.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.bitTrn_ReqSample" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Calibrated</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Calibrated</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CALIBRATED.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>write_debug_reg</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>DATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>write_debug_reg</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.WRITE_DEBUG_REG.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+      <spirit:vendorExtensions>
+        <xilinx:busInterfaceInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.write_debug_reg" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS&apos;)) = true">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:busInterfaceInfo>
+      </spirit:vendorExtensions>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS_Period</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_period_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_period_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TDATA_NUM_BYTES">5</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TREADY">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TLAST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.FREQ_HZ"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk_BB</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk_BB</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK_BB.FREQ_HZ"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK_BB.ASSOCIATED_BUSIF">S00_AXIS_Period</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_BB.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_BB.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_BB.CLK_DOMAIN">design_1_clk_wiz_0_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_BB.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK_BB.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>TDCChannelSlice</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3324f810</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3324f810</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_TDCChannelSlice_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3324f810</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>TDCChannelSlice</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c50b660</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_TDCChannelSlice_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:28:45 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6c50b660</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Wed Oct 13 11:32:08 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3324f810</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk_TDC</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk_SYS</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk_BB</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>EdgeTrigger</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>StretchLength</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_STRETCH_LENGTH&apos;)) - 1)">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Divider</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_DIVIDER&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Gate</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ForceCalibrate</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ValidPositionTap</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.ValidPositionTap">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ValidNumberOfTdl</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.ValidNumberOfTdl">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>subInterpolationMatrix</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.subInterpolationMatrix">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Restart_Calibration</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.Restart_Calibration">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Stop_Calibration</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.Stop_Calibration">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bitTrn_Uncal_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.bitTrn_Uncal_addr">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bitTrn_Cal_dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.bitTrn_Cal_dout">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>bitTrn_ReqSample</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.bitTrn_ReqSample">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Calibrated</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_period_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_period_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((((spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_OVERFLOW&apos;)) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_COARSE&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.BIT_RESOLUTION&apos;))) - 1) / 8) + 1) * 8) - 1)">39</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>write_reg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">18</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>write_debug_reg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">73</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:id="PORT_ENABLEMENT.write_debug_reg">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>read_reg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">64</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>BIT_STRETCH_LENGTH</spirit:name>
+        <spirit:displayName>Bit Stretch Length</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_STRETCH_LENGTH" spirit:minimum="0" spirit:maximum="4" spirit:rangeType="long">3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_DIVIDER</spirit:name>
+        <spirit:displayName>Bit Divider</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_DIVIDER" spirit:minimum="0" spirit:maximum="4" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="INTEGER">
+        <spirit:name>DEST_SYNC_FF</spirit:name>
+        <spirit:displayName>Dest Sync Ff</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DEST_SYNC_FF" spirit:minimum="2" spirit:maximum="10" spirit:rangeType="long">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="INTEGER">
+        <spirit:name>SRC_SYNC_FF</spirit:name>
+        <spirit:displayName>Src Sync Ff</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SRC_SYNC_FF" spirit:minimum="2" spirit:maximum="10" spirit:rangeType="long">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="BOOLEAN">
+        <spirit:name>TDC_ENABLE_DEBUG_PORTS</spirit:name>
+        <spirit:displayName>Tdc Enable Debug Ports</spirit:displayName>
+        <spirit:value spirit:format="bool" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS">false</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_OVERFLOW</spirit:name>
+        <spirit:displayName>Bit Overflow</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_OVERFLOW" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_COARSE</spirit:name>
+        <spirit:displayName>Bit Coarse</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_COARSE" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BIT_RESOLUTION</spirit:name>
+        <spirit:displayName>Bit Resolution</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BIT_RESOLUTION" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/timing_ooc.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c048/hdl/cdc_self_handshake.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c048/hdl/tdc_channel_slice.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_TDCChannelSlice_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/c048/hdl/cdc_self_handshake.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c048/hdl/tdc_channel_slice.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_TDCChannelSlice_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_TDCChannelSlice_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_TDCChannelSlice_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_TDCChannelSlice_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_TDCChannelSlice_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_TDCChannelSlice_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Slicer for TDC and AXI4-wrapper</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>BIT_STRETCH_LENGTH</spirit:name>
+      <spirit:displayName>Bit Stretch Length</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_STRETCH_LENGTH" spirit:minimum="0" spirit:maximum="4" spirit:rangeType="long">3</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_DIVIDER</spirit:name>
+      <spirit:displayName>Bit Divider</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_DIVIDER" spirit:minimum="0" spirit:maximum="4" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_TDCChannelSlice_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEST_SYNC_FF</spirit:name>
+      <spirit:displayName>Dest Sync Ff</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEST_SYNC_FF" spirit:minimum="2" spirit:maximum="10" spirit:rangeType="long">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SRC_SYNC_FF</spirit:name>
+      <spirit:displayName>Src Sync Ff</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SRC_SYNC_FF" spirit:minimum="2" spirit:maximum="10" spirit:rangeType="long">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TDC_ENABLE_DEBUG_PORTS</spirit:name>
+      <spirit:displayName>Enable Debug Ports</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.TDC_ENABLE_DEBUG_PORTS">false</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_OVERFLOW</spirit:name>
+      <spirit:displayName>Bit Overflow</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_OVERFLOW" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_COARSE</spirit:name>
+      <spirit:displayName>Bit Coarse</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_COARSE" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_RESOLUTION</spirit:name>
+      <spirit:displayName>Bit Resolution</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_RESOLUTION" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>TDC Channel Slice</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b1455_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5865ac8f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d3a57c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48461576_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a0eb2f2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12efb368_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b9a928c_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@246ca08f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56003681_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@414c57ec_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6518906d_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e9b3575_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d6c58b9_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fec8ea3_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@686412f9_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebd6e2f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/Vivado_projects/TDC_Felix_v30/TDC_Felix_v30.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@265102eb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59602889_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45e9f0b8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@607a2680_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60bea04c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@683a32bf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bce2d6b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9ea8541_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@635cc735_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3374568f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54125deb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519a742b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@555c236e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e2d27a4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c9f1f3a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@469aeca3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33c663c2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e53483d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49a70795_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47e6bb77_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26789cf3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73b9d91c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37250f54_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ffdd213_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f6d34e3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e12dea2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51967a5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c43783d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@590e5d7d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b82ec3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a570698_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b6759c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dee499a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@641f02a9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456321e7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44e2531b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ea8fbe_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28235cbd_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@336e074e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c4d9b59_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@695f4aa1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ccc48d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39b81211_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@202bf124_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21472a3a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7534bb58_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76baa0ec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8a0b69_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d390d56_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d69c6ef_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589bbcd5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45e0e50f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae04292_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ddf8544_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f90929a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d2292f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15a8215f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb8435c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e484e28_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12f65f66_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16b250ec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a13209_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4896570f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8cd1771_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6612c494_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32d3257e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d02c006_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b1981bf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3242850_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539b5851_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e04e518_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fa4811_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be2204e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b55ddd1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19c84842_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c58851_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ac59f39_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@558474e7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fa2872c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ae3425b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e06ee9b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3aadf8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b3ab11_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b072f25_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10264c35_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1195cd5d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70161fb6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@753fd030_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f9f0a9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22fc3f25_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f4a546d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f5740c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea04b82_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d6d424a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@637d3eea_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c03337_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd52c75_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16960502_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3376a56d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d7d16cc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37e68911_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d9b0d9f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62ae7bc0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b94398_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d208bf6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60ae38df_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@602a9801_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e8c44ea_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c7806ad_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e982c5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a3d2985_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12a77d1b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e540b44_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@741c0519_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7485a019_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f9ec5d3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4057ff01_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bd0f55c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce861d7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5b546_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a1fe780_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4f0ae3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9864643_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa07a30_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a538e4c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79b2f7d3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e74422_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1489f44e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee191c7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ac0734a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@526a30e4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c9fe908_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b5ccb5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a69f647_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bd92ef8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b533819_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20b0e747_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a7e31a6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5017e3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a03c90_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4608608d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f21af86_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2be12d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb9b9de_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8a2f82_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57653b31_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58852bd1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eba0370_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a576da2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519711ef_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7259206f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b56fa7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3254fc8a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4083ae1f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f8d8593_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ca3ea77_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e124d4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@84cc76c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62e7a668_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb49ebe_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519d8d1f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c1aadf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d24d767_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b4727f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cd1521f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76843582_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18d3f22a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7513a70f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27bb3d84_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b1ac44_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32728bea_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32901480_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a71b9f8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aebf4b1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7968e39d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18165895_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b66932e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3377e6aa_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70c0bb5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Repositories/2020.2/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/tdc_channel_slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5539841e_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f814dad_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53036047_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d682a96_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5019c5d4_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65e8576d_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3440ecee_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cf967c2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bc80882_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@565c6607_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dcc8272_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51ee9d04_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1369e114_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463feaf1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f355c6_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1414b0c6_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca40ec6_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b4ebb20_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@342f0c7f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c1b1c3_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1831e7e1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@592748b1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4484772c_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f83989_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f111e18_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@307af0d2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b01fda9_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a5559ab_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@748c3a58_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28df5ff2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a68ddab_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@242981ed_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cccc742_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72fea6f2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200dea4a_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5b53e2_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fbead18_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51bb1b2f_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@334acdba_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddf71ee_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c38cfd0_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65acf7b7_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d2be10_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b10a9_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@187ec30_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46384f6b_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cad9bf1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fe913ce_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20724638_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2306e61a_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d230_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d26b9b1_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f97af57_ARCHIVE_LOCATION">/home/enrico/Tesi/Hardware/IP_2020/ip_repo/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e92e5b4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c33ac3a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716085cf_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@95565d6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c54f190_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32108f21_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c1fb396_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716c6ce4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@728bbeb4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39acf92a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658b5b48_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44476c47_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca4e547_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eaaded3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d78e90_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix_PBI801/TDC_Felix_PBI801.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cdb0087_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@340a19c2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15bff10b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cfbef79_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@260e2123_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3488a78b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64f95da7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c243fc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d8c247_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79d151a6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1751c1ae_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3367c108_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc25308_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d18f2d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53224504_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d8087b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f5fef1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a6d5268_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58c8cec2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24e87002_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438d9797_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b0c5c14_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34057cf3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b749ae4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e82a593_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58540af0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55910d1b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eb86eac_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a160baa_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@468ad8e3_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e6e3cad_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@672012aa_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fcd5af8_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cb3982_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51fb3fd2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1778c417_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76023d26_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f00e9d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63094a23_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c8a5eca_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa3e92b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc005e7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60c133d4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a7e2a4f_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51604d62_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5089b6b5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b87c4e6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ca5f54_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@122daf20_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56e423c0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62766297_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6802f80c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cdbba35_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78561409_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a65d987_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6604d17_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@476be68e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c8fabde_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db40b38_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7658d62b_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bcaee6_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d5ac4e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@840ee2a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a0a5a28_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f1842bb_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d3da506_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db0d78_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@108ffd80_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bd68caa_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae89b6c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdcacc1_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3297a68c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49e9ac7d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@254dbfac_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@600981ae_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4da64616_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54153cf7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@128104dc_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3801631c_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dfd156e_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@785687ac_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f419b44_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15169b26_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9665a8d_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25910e29_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@752ea4c9_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1686b0e7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c39285_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38365f2_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ffb06a_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1642c695_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c3c1b40_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4068ddd7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ccecaec_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2930b4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@610c31b7_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b4ca445_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3af081ad_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@134a72f0_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eed0cd4_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a667fd5_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d6817_ARCHIVE_LOCATION">/home/nicola/Documents/Vivado/Projects/2020.2/TDC_Felix/TestSYNC/TDC_Felix_v48_xsimone_sync.xpr/TDC_Felix_v40_galland/TDC_Felix_v40_galland.ipdefs/Utility_Ip_Core/ip_user_files/ip_repo/TDC_Basic/TDC_Channel_Slice</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CALIBRATED.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_BB.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_SYS.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK_TDC.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DIVIDER.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.EDGETRIGGER.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.EDGETRIGGER.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.EDGETRIGGER.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FORCECALIBRATE.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GATE.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.PortType" xilinx:valueSource="weak" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.PortType.PROP_SRC" xilinx:valueSource="weak"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.FREQ_HZ" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_PERIOD.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.STRETCHLENGTH.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.WRITE_REG.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BIT_DIVIDER" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BIT_OVERFLOW" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TDC_ENABLE_DEBUG_PORTS" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d3426569"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b45f1ed8"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="906d8b61"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="2b420146"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8497a65e"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,105 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Jun 30 19:27:59 2020
+| Host         : DESKTOP-0BA32RO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_bd_wrapper_control_sets_placed.rpt
+| Design       : top_bd_wrapper
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    75 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             165 |           38 |
+| No           | No                    | Yes                    |               5 |            3 |
+| No           | Yes                   | No                     |              95 |           35 |
+| Yes          | No                    | No                     |              56 |           15 |
+| Yes          | No                    | Yes                    |              22 |            4 |
+| Yes          | Yes                   | No                     |             158 |           42 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|            Clock Signal           |                                              Enable Signal                                             |                                                                  Set/Reset Signal                                                                  | Slice Load Count | Bel Load Count |
++-----------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/FSM_sequential_state[2]_i_1_n_0                                             | reset_IBUF                                                                                                                                         |                1 |              3 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/packetizer_0/U0/FSM_sequential_state[2]_i_1_n_0                                               | reset_IBUF                                                                                                                                         |                1 |              3 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                2 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                2 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/rx_baud_tick__0                              |                                                                                                                                                    |                1 |              4 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/m_axis_tlast_int0                                                           | top_bd_i/depacketizer_0/U0/tx_words_counter[4]_i_1_n_0                                                                                             |                1 |              5 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/rx_bytes_counter0                                                           |                                                                                                                                                    |                1 |              6 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/packetizer_0/U0/words_counter0                                                                |                                                                                                                                                    |                2 |              6 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/p_0_in[15]                                                                  | top_bd_i/depacketizer_0/U0/data_sr[0][15]_i_1_n_0                                                                                                  |                2 |              7 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/p_0_in[7]                                                                   |                                                                                                                                                    |                3 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/E[0]                                         | reset_IBUF                                                                                                                                         |                1 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/data_stream_in[7]_i_1_n_0                              | reset_IBUF                                                                                                                                         |                1 |              8 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/uart_tx_count[2]_i_1_n_0                     | reset_IBUF                                                                                                                                         |                3 |             10 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/UART_Manager_inst/Inst_uart/uart_rx_data_vec                             | reset_IBUF                                                                                                                                         |                3 |             11 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                4 |             12 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                6 |             12 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             15 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 |                                                                                                        | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             15 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/packetizer_0/U0/high_byte0                                                                    |                                                                                                                                                    |                4 |             16 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/depacketizer_0/U0/data_sr_reg[1]0                                                             |                                                                                                                                                    |                4 |             32 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                9 |             34 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 |                                                                                                        | reset_IBUF                                                                                                                                         |               12 |             38 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | top_bd_i/AXI4Stream_UART_0/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |               12 |             45 |
+|  top_bd_i/clk_wiz_0/inst/clk_out1 |                                                                                                        |                                                                                                                                                    |               18 |             82 |
+|  top_bd_i/clk_wiz_0/inst/clk_out2 |                                                                                                        |                                                                                                                                                    |               20 |             83 |
++-----------------------------------+--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

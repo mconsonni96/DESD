@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Mar 20 12:23:22 2020
+# Process ID: 9224
+# Current directory: C:/DESD/Project/AXIS_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24156 C:\DESD\Project\AXIS_FIFO\AXIS_FIFO.xpr
+# Log file: C:/DESD/Project/AXIS_FIFO/vivado.log
+# Journal file: C:/DESD/Project/AXIS_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Project/AXIS_FIFO/AXIS_FIFO.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Fabio/Documents/DESD/2020/AXIS_FIFO' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'AXIS_FIFO.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 874.984 ; gain = 228.238
+update_compile_order -fileset sources_1
+save_project_as AXIS_01_FIFO_project C:/DESD/Project/AXIS_01_FIFO_project -force
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+archive_project C:/DESD/Project/AXIS_01_FIFO_project.xpr.zip -temp_dir C:/DESD/Project/AXIS_FIFO/.Xil/Vivado-9224-NicolaPC -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/DESD/Project/AXIS_FIFO/.Xil/Vivado-9224-NicolaPC' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'

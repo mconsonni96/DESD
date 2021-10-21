@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 17:15:10 2021
+# Process ID: 7892
+# Current directory: C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17264 C:\DESD\Projects\AXIS_01_FIFO_project.xpr\AXIS_01_FIFO_project\AXIS_01_FIFO_project.xpr
+# Log file: C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project/vivado.log
+# Journal file: C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/AXIS_01_FIFO_project.xpr/AXIS_01_FIFO_project/AXIS_01_FIFO_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'AXIS_01_FIFO_project.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1126.148 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 13 17:20:04 2021...

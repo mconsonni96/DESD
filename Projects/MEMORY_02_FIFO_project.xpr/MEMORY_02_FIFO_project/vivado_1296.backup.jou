@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Aug 23 17:03:20 2020
+# Process ID: 1296
+# Current directory: C:/DESD/Projects/MEMORY_02_FIFO_project.xpr/MEMORY_02_FIFO_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7156 C:\DESD\Projects\MEMORY_02_FIFO_project.xpr\MEMORY_02_FIFO_project\MEMORY_02_FIFO_project.xpr
+# Log file: C:/DESD/Projects/MEMORY_02_FIFO_project.xpr/MEMORY_02_FIFO_project/vivado.log
+# Journal file: C:/DESD/Projects/MEMORY_02_FIFO_project.xpr/MEMORY_02_FIFO_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/MEMORY_02_FIFO_project.xpr/MEMORY_02_FIFO_project/MEMORY_02_FIFO_project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_FIFO.tcl
+close_sim

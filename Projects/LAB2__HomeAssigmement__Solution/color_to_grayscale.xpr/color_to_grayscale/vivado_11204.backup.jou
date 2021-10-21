@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 25 11:27:25 2020
+# Process ID: 11204
+# Current directory: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10208 C:\DESD\Projects\LAB2__HomeAssigmement__Solution\color_to_grayscale.xpr\color_to_grayscale\color_to_grayscale.xpr
+# Log file: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/vivado.log
+# Journal file: C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/LAB2__HomeAssigmement__Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.xpr
+update_compile_order -fileset sources_1

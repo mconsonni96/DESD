@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 13 19:15:56 2021
+# Process ID: 2244
+# Current directory: C:/DESD/Projects/LAB3__Exercise__Solution.xpr/LAB3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5288 C:\DESD\Projects\LAB3__Exercise__Solution.xpr\LAB3\LAB3.xpr
+# Log file: C:/DESD/Projects/LAB3__Exercise__Solution.xpr/LAB3/vivado.log
+# Journal file: C:/DESD/Projects/LAB3__Exercise__Solution.xpr/LAB3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/LAB3__Exercise__Solution.xpr/LAB3/LAB3.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1

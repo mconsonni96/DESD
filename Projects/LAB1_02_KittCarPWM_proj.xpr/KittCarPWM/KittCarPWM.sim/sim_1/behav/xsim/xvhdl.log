@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCar'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PulseWidthModulator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TailGenerator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_KittCarPWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_KittCarPWM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/DESD/Project/LAB1 - 02 - KittCar PWM/KittCarPWM/KittCarPWM.srcs/sim_1/new/tb_TailGenerator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_TailGenerator'

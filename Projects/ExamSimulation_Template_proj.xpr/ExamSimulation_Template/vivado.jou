@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Aug 27 12:44:53 2020
+# Process ID: 10556
+# Current directory: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13172 C:\DESD\Projects\ExamSimulation_Template_proj.xpr\ExamSimulation_Template\ExamSimulation_Template.xpr
+# Log file: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/vivado.log
+# Journal file: C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  C:/DESD/Repository [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv TimeEngineers:ip:AXI4Stream_UART:1.0 AXI4Stream_UART_0
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins AXI4Stream_UART_0/UART]
+endgroup
+apply_board_connection -board_interface "usb_uart" -ip_intf "AXI4Stream_UART_0/UART" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "design_1" 
+endgroup
+apply_board_connection -board_interface "reset" -ip_intf "clk_wiz_0/reset" -diagram "design_1" 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports reset] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_ports reset] [get_bd_pins AXI4Stream_UART_0/rst]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aresetn]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/s00_axis_tx_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/m00_axis_rx_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_UART_0/clk_uart]
+regenerate_bd_layout
+create_bd_cell -type module -reference AXI4Stream_7Segment AXI4Stream_7Segment_0
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_7Segment_0/aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_7Segment_0/clk]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_7Segment_0/digit_select_anode]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_7Segment_0/seven_segment_led]
+endgroup
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_AXI4Stream_7Segment_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+create_bd_cell -type module -reference AXI4Stream_Depacketizer AXI4Stream_Depacketi_0
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_Depacketi_0/aclk]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_Depacketi_0/aresetn]
+delete_bd_objs [get_bd_intf_nets AXI4Stream_UART_0_M00_AXIS_RX]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_UART_0/M00_AXIS_RX] [get_bd_intf_pins AXI4Stream_Depacketi_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_Depacketi_0/m_axis] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+regenerate_bd_layout
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+create_bd_cell -type module -reference AXI4Stream_GPI AXI4Stream_GPI_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_0
+endgroup
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_GPI_0/m_axis] [get_bd_intf_pins axis_switch_0/S00_AXIS]
+delete_bd_objs [get_bd_intf_nets AXI4Stream_Depacketi_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins AXI4Stream_Depacketi_0/m_axis] [get_bd_intf_pins axis_switch_0/S01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M00_AXIS] [get_bd_intf_pins AXI4Stream_7Segment_0/s00_axis]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_GPI_0/gpi]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins AXI4Stream_GPI_0/trigger]
+endgroup
+startgroup
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins AXI4Stream_GPI_0/aresetn]
+endgroup
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins axis_switch_0/aresetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axis_switch_0/aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins AXI4Stream_GPI_0/aclk]
+regenerate_bd_layout
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/ExamSimulation_Template.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+archive_project C:/DESD/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache
+archive_project C:/DESD/Projects/ExamSimulation_Template.xpr.zip -temp_dir C:/DESD/Projects/ExamSimulation_Template_proj.xpr/ExamSimulation_Template/.Xil/Vivado-10556-DESKTOP-0BA32RO -force -include_local_ip_cache

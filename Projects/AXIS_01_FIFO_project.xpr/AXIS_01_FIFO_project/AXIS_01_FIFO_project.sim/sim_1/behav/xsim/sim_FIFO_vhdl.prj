@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../AXIS_01_FIFO_project.srcs/sources_1/imports/new/AXIS_FIFO.vhd" \
+"../../../../AXIS_01_FIFO_project.srcs/sim_1/imports/new/sim_FIFO.vhd" \
+
+# Do not sort compile order
+nosort

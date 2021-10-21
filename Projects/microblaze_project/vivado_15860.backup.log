@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 14 18:59:59 2021
+# Process ID: 15860
+# Current directory: C:/DESD/microblaze_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15624 C:\DESD\microblaze_project\microblaze_project.xpr
+# Log file: C:/DESD/microblaze_project/vivado.log
+# Journal file: C:/DESD/microblaze_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/microblaze_project/microblaze_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_outled_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/DESD/ip_repo/myip_leds_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 1113.320 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd}
+Reading block design file <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:user:myip:1.0 - myip_0
+Successfully read diagram <microblaze_bd> from block design file <C:/DESD/microblaze_project/microblaze_project.srcs/sources_1/bd/microblaze_bd/microblaze_bd.bd>
+open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1241.785 ; gain = 118.895
+close_project
+create_project ublaze_project C:/DESD/ublaze_project -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.2/data/ip'.
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "base_mb_digilent" -mode batch
+Wrote  : <C:\DESD\ublaze_project\ublaze_project.srcs\sources_1\bd\base_mb_digilent\base_mb_digilent.bd> 
+instantiate_example_design -template digilentinc.com:design:base_mb_digilent:1.0 -design base_mb_digilent
+ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+update_compile_order -fileset sources_1
+open_bd_design {C:/DESD/ublaze_project/ublaze_project.srcs/sources_1/bd/base_mb_digilent/base_mb_digilent.bd}
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1403.082 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze_mcs:3.0 microblaze_mcs_0
+endgroup
+delete_bd_objs [get_bd_cells microblaze_mcs_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 14 19:16:11 2021...

@@ -1,0 +1,25 @@
+$date
+        2021-Sep-15 12:48:14
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 10 " audio_bd_i/system_ila_0/U0/probe0_1 [9:0] $end
+$var reg 1 , _TRIGGER $end
+$var reg 1 - _WINDOW $end
+$var reg 1 . _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10001010 "
+0,
+1-
+0.
+$end
+#512
+1,

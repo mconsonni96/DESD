@@ -1,0 +1,1167 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core/ip-repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx_Vitis/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a100tftg256-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tftg256-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22739
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2399.176 ; gain = 0.000 ; free physical = 5876 ; free virtual = 12182
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_0' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:164]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_1' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:171]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_2' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:178]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_3' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:185]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_4' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:192]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_5' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:199]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_6' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:206]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'FT245_data_iobuf_7' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:213]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'I2C_BUS_scl_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:220]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'I2C_BUS_sda_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:227]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'QSPI_MEMORY_IF_io0_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:234]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'QSPI_MEMORY_IF_io1_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:241]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'QSPI_MEMORY_IF_io2_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:248]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'QSPI_MEMORY_IF_io3_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:255]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx_Vitis/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'QSPI_MEMORY_IF_ss_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:262]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8335' bound to instance 'design_1_i' of component 'design_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8391]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_FT245Sync_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_FT245Sync_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_FT245Sync_0' of component 'design_1_AXI4Stream_FT245Sync_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9228]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_FT245Sync_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_FT245Sync_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_LedCounter_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_LedCounter_0_0_stub.vhdl:5' bound to instance 'BeltBus_LedCounter_0' of component 'design_1_BeltBus_LedCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9252]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_LedCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_LedCounter_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCCounter_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCCounter_0' of component 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9264]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_0' of component 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9293]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_1' of component 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9326]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TTM_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:5' bound to instance 'BeltBus_TTM_0' of component 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9359]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:52]
+INFO: [Synth 8-638] synthesizing module 'BitstreamUpdater_QSPI_imp_H27KY3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:66]
+INFO: [Synth 8-3491] module 'design_1_AXI4_BitstreamUpdater_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:5' bound to instance 'AXI4_BitstreamUpdater_0' of component 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:50]
+INFO: [Synth 8-3491] module 'design_1_axi_quad_spi_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:65]
+INFO: [Synth 8-3491] module 'design_1_qspi_programmer_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_qspi_programmer_0_0_stub.vhdl:5' bound to instance 'qspi_programmer_0' of component 'design_1_qspi_programmer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:444]
+INFO: [Synth 8-638] synthesizing module 'design_1_qspi_programmer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_qspi_programmer_0_0_stub.vhdl:49]
+INFO: [Synth 8-256] done synthesizing module 'BitstreamUpdater_QSPI_imp_H27KY3' (2#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'IIC_imp_ABWIMD' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:537]
+INFO: [Synth 8-3491] module 'design_1_AXI4_AXIToIIC_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:5' bound to instance 'AXI4_AXIToIIC_0' of component 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:735]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:796]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'IIC_imp_ABWIMD' (3#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:537]
+INFO: [Synth 8-3491] module 'design_1_MME_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_MME_0_0_stub.vhdl:5' bound to instance 'MME_0' of component 'design_1_MME_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9500]
+INFO: [Synth 8-638] synthesizing module 'design_1_MME_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_MME_0_0_stub.vhdl:74]
+INFO: [Synth 8-638] synthesizing module 'Master_imp_1J78S86' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:873]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1015]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_bram_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram' of component 'design_1_axi_bram_ctrl_0_bram_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1062]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'Master_imp_1J78S86' (4#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:873]
+INFO: [Synth 8-638] synthesizing module 'TDC_Calib_imp_4BAZB9' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8033]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MuxDebugg_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MuxDebugg_0' of component 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8228]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4_TDC_Wrapper_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_TDC_Wrapper_0_0_stub.vhdl:5' bound to instance 'AXI4_TDC_Wrapper_0' of component 'design_1_AXI4_TDC_Wrapper_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8246]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_TDC_Wrapper_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4_TDC_Wrapper_0_0_stub.vhdl:53]
+INFO: [Synth 8-638] synthesizing module 'TDC_imp_1FS8XU8' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7720]
+INFO: [Synth 8-638] synthesizing module 'Ch1_imp_1JE4URC' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4443]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDL_Channel_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1409]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExtensionCore_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExtensionCore_0' of component 'design_1_AXI4Stream_CoarseExtensionCore_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1558]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExtensionCore_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecoder_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecoder_0' of component 'design_1_AXI4Stream_IperDecoder_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1570]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecoder_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCalibrator_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCalibrator_0' of component 'design_1_AXI4Stream_MagicCalibrator_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1579]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCalibrator_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowCounter_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowCounter_0' of component 'design_1_AXI4Stream_OverflowCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1597]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowCounter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchronizer_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_Synchronizer_0' of component 'design_1_AXI4Stream_Synchronizer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1607]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchronizer_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_X7S_VirtualTDL_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_X7S_VirtualTDL_0' of component 'design_1_AXI4Stream_X7S_VirtualTDL_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1618]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_X7S_VirtualTDL_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_0_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1626]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDL_Channel_1_0' (5#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1409]
+INFO: [Synth 8-3491] module 'design_1_InputLogic_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_1_0_stub.vhdl:5' bound to instance 'InputLogic_1' of component 'design_1_InputLogic_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4561]
+INFO: [Synth 8-638] synthesizing module 'design_1_InputLogic_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_1_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_1' of component 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4576]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4593]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b0 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (6#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (7#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4597]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (7#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (8#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Ch1_imp_1JE4URC' (9#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4443]
+INFO: [Synth 8-638] synthesizing module 'Ch2_imp_1YIXUGT' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4629]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDL_Channel_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1671]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExtensionCore_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExtensionCore_0' of component 'design_1_AXI4Stream_CoarseExtensionCore_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1818]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExtensionCore_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecoder_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecoder_0' of component 'design_1_AXI4Stream_IperDecoder_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1830]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecoder_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCalibrator_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCalibrator_0' of component 'design_1_AXI4Stream_MagicCalibrator_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1839]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCalibrator_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_1_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowCounter_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowCounter_0' of component 'design_1_AXI4Stream_OverflowCounter_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1857]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowCounter_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchronizer_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_Synchronizer_0' of component 'design_1_AXI4Stream_Synchronizer_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1867]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchronizer_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_1_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_X7S_VirtualTDL_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_X7S_VirtualTDL_0' of component 'design_1_AXI4Stream_X7S_VirtualTDL_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1878]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_X7S_VirtualTDL_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_1_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_1_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDL_Channel_2_0' (10#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1671]
+INFO: [Synth 8-3491] module 'design_1_InputLogic_2_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_2_0_stub.vhdl:5' bound to instance 'InputLogic_2' of component 'design_1_InputLogic_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4744]
+INFO: [Synth 8-638] synthesizing module 'design_1_InputLogic_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_2_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_2_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_2' of component 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4759]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4776]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (11#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4780]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_1' (12#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Ch2_imp_1YIXUGT' (13#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4629]
+INFO: [Synth 8-3491] module 'design_1_CoarseTreeDistributor_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:5' bound to instance 'CoarseTreeDistributor_0' of component 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7899]
+INFO: [Synth 8-638] synthesizing module 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_StartStopGenerator_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:5' bound to instance 'StartStopGenerator_0' of component 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7907]
+INFO: [Synth 8-638] synthesizing module 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:15]
+INFO: [Synth 8-638] synthesizing module 'Sync_imp_ZFT08U' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4813]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_PeriodMet_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_PeriodMet_0' of component 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4939]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDL_Channel_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1107]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExtensionCore_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExtensionCore_0' of component 'design_1_AXI4Stream_CoarseExtensionCore_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1262]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExtensionCore_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_CoarseExtensionCore_0_2_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecoder_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecoder_0' of component 'design_1_AXI4Stream_IperDecoder_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1274]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecoder_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_IperDecoder_0_2_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCalibrator_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCalibrator_0' of component 'design_1_AXI4Stream_MagicCalibrator_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1283]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCalibrator_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_MagicCalibrator_0_2_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowCounter_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowCounter_0' of component 'design_1_AXI4Stream_OverflowCounter_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1301]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowCounter_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_OverflowCounter_0_2_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchronizer_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_Synchronizer_0' of component 'design_1_AXI4Stream_Synchronizer_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1311]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchronizer_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_Synchronizer_0_2_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_X7S_VirtualTDL_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_X7S_VirtualTDL_0' of component 'design_1_AXI4Stream_X7S_VirtualTDL_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1322]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_X7S_VirtualTDL_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_AXI4Stream_X7S_VirtualTDL_0_2_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_2_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1330]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_BeltBus_NodeInserter_0_2_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDL_Channel_0_0' (14#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1107]
+INFO: [Synth 8-3491] module 'design_1_InputLogic_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_0_0_stub.vhdl:5' bound to instance 'InputLogic_0' of component 'design_1_InputLogic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4976]
+INFO: [Synth 8-638] synthesizing module 'design_1_InputLogic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_InputLogic_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_0' of component 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4991]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5008]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_0_0_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5019]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5024]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (15#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5028]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_2' (16#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_2/synth/design_1_xlconstant_1_2.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Sync_imp_ZFT08U' (17#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4813]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_0_1_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7936]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_1_0_stub.vhdl:5' bound to instance 'util_vector_logic_1' of component 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7942]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_vector_logic_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7948]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 65 - type: integer 
+	Parameter IN1_WIDTH bound to: 65 - type: integer 
+	Parameter IN2_WIDTH bound to: 65 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 195 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (18#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (19#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_3' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7955]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_3' (20#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7959]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 57 - type: integer 
+	Parameter DIN_FROM bound to: 18 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (21#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (22#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7964]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 57 - type: integer 
+	Parameter DIN_FROM bound to: 37 - type: integer 
+	Parameter DIN_TO bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (22#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (23#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7969]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 57 - type: integer 
+	Parameter DIN_FROM bound to: 56 - type: integer 
+	Parameter DIN_TO bound to: 38 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (23#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (24#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'TDC_imp_1FS8XU8' (25#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7720]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_3_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_ds_buf_3_0_stub.vhdl:5' bound to instance 'util_ds_buf_3' of component 'design_1_util_ds_buf_3_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8319]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_3_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_ds_buf_3_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_4_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_ds_buf_4_0_stub.vhdl:5' bound to instance 'util_ds_buf_4' of component 'design_1_util_ds_buf_4_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8325]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_4_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_util_ds_buf_4_0_stub.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'TDC_Calib_imp_4BAZB9' (26#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8033]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5323]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1983]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CA5Z32' (27#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:1983]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2226]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2410]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_I4GRPB' (28#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2226]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BOGR4T' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2543]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2727]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_1_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BOGR4T' (29#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2543]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_J0G1J0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2860]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_2' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3044]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_2_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_J0G1J0' (30#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2860]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_19YU2FS' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3179]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_19YU2FS' (31#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3179]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_KSVY9L' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3350]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_KSVY9L' (32#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3350]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_18J6S0R' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3526]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_18J6S0R' (33#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3526]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_LYVHKQ' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3685]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_3' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3869]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_pc_3_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_LYVHKQ' (34#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:3685]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1FF5BKI' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4004]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1FF5BKI' (35#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4004]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_O7FAN0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4168]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_O7FAN0' (36#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4168]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1F69D31' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4265]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1F69D31' (37#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4265]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7020]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xbar_0_stub.vhdl:93]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_0_0' (38#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:5323]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9942]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:5' bound to instance 'axis_broadcaster_1' of component 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:9959]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_interconnect_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7483]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_F63VTB' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2111]
+INFO: [Synth 8-3491] module 'design_1_auto_ss_slidr_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_ss_slidr_0_stub.vhdl:5' bound to instance 'auto_ss_slidr' of component 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2144]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_auto_ss_slidr_0_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_F63VTB' (39#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:2111]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1LLE45P' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4113]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1LLE45P' (40#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4113]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_935C30' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4341]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_935C30' (41#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4341]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1K4H9FY' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4372]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1K4H9FY' (42#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4372]
+INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_AAD7FZ' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4403]
+INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_AAD7FZ' (43#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:4403]
+INFO: [Synth 8-3491] module 'design_1_s_arb_req_suppress_concat_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60' bound to instance 's_arb_req_suppress_concat' of component 'design_1_s_arb_req_suppress_concat_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7655]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s_arb_req_suppress_concat_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (43#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s_arb_req_suppress_concat_0' (44#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60]
+INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7663]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xbar_1_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_interconnect_0_0' (45#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:7483]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10005]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10013]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_clk_wiz_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_dlconstant_gpio_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_0_0_stub.vhdl:5' bound to instance 'dlconstant_gpio_0' of component 'design_1_dlconstant_gpio_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10018]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlconstant_gpio_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_0_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_dlconstant_gpio_1_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_1_0_stub.vhdl:5' bound to instance 'dlconstant_gpio_1' of component 'design_1_dlconstant_gpio_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10022]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlconstant_gpio_1_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_1_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_dlconstant_gpio_2_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_2_0_stub.vhdl:5' bound to instance 'dlconstant_gpio_2' of component 'design_1_dlconstant_gpio_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10026]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlconstant_gpio_2_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_2_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_dlconstant_gpio_3_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_3_0_stub.vhdl:5' bound to instance 'dlconstant_gpio_3' of component 'design_1_dlconstant_gpio_3_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10030]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlconstant_gpio_3_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_dlconstant_gpio_3_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'proc_sys_reset_0' of component 'design_1_proc_sys_reset_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10034]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xadc_wiz_0_0_stub.vhdl:5' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10047]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/.Xil/Vivado-22692-mconsonni-HP-ProBook-440-G7/realtime/design_1_xadc_wiz_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_4' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_4/synth/design_1_xlconstant_0_4.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_4' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10077]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_4' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_4/synth/design_1_xlconstant_0_4.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_4' (46#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_4/synth/design_1_xlconstant_0_4.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_3' declared at '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_3/synth/design_1_xlconstant_1_3.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:10081]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_3' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_3/synth/design_1_xlconstant_1_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (46#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_3' (47#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_3/synth/design_1_xlconstant_1_3.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (48#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/synth/design_1.vhd:8391]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (49#1) [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2462.066 ; gain = 62.891 ; free physical = 6649 ; free virtual = 12956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2476.910 ; gain = 77.734 ; free physical = 6650 ; free virtual = 12958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2476.910 ; gain = 77.734 ; free physical = 6650 ; free virtual = 12958
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2488.816 ; gain = 0.000 ; free physical = 6641 ; free virtual = 12948
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_FT245Sync_0_0/design_1_AXI4Stream_FT245Sync_0_0/design_1_AXI4Stream_FT245Sync_0_0_in_context.xdc] for cell 'design_1_i/AXI4Stream_FT245Sync_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_FT245Sync_0_0/design_1_AXI4Stream_FT245Sync_0_0/design_1_AXI4Stream_FT245Sync_0_0_in_context.xdc] for cell 'design_1_i/AXI4Stream_FT245Sync_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_LedCounter_0_0/design_1_BeltBus_LedCounter_0_0/design_1_BeltBus_LedCounter_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_LedCounter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_LedCounter_0_0/design_1_BeltBus_LedCounter_0_0/design_1_BeltBus_LedCounter_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_LedCounter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/design_1_BeltBus_TDCCounter_0_0/design_1_BeltBus_TDCCounter_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCCounter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/design_1_BeltBus_TDCCounter_0_0/design_1_BeltBus_TDCCounter_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCCounter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_0_0/design_1_BeltBus_TDCHistogrammer_0_0/design_1_BeltBus_TDCHistogrammer_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCHistogrammer_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_0_0/design_1_BeltBus_TDCHistogrammer_0_0/design_1_BeltBus_TDCHistogrammer_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCHistogrammer_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCHistogrammer_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCHistogrammer_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TTM_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TTM_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_BitstreamUpdater_0_0/design_1_AXI4_BitstreamUpdater_0_0/design_1_AXI4_BitstreamUpdater_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/AXI4_BitstreamUpdater_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_BitstreamUpdater_0_0/design_1_AXI4_BitstreamUpdater_0_0/design_1_AXI4_BitstreamUpdater_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/AXI4_BitstreamUpdater_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/axi_quad_spi_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/axi_quad_spi_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_qspi_programmer_0_0/design_1_qspi_programmer_0_0/design_1_qspi_programmer_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/qspi_programmer_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_qspi_programmer_0_0/design_1_qspi_programmer_0_0/design_1_qspi_programmer_0_0_in_context.xdc] for cell 'design_1_i/BitstreamUpdater_QSPI/qspi_programmer_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_AXIToIIC_0_0/design_1_AXI4_AXIToIIC_0_0/design_1_AXI4_AXIToIIC_0_0_in_context.xdc] for cell 'design_1_i/IIC/AXI4_AXIToIIC_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_AXIToIIC_0_0/design_1_AXI4_AXIToIIC_0_0/design_1_AXI4_AXIToIIC_0_0_in_context.xdc] for cell 'design_1_i/IIC/AXI4_AXIToIIC_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/IIC/axi_iic_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/IIC/axi_iic_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_MME_0_0/design_1_MME_0_0/design_1_MME_0_0_in_context.xdc] for cell 'design_1_i/MME_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_MME_0_0/design_1_MME_0_0/design_1_MME_0_0_in_context.xdc] for cell 'design_1_i/MME_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/Master/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/Master/axi_bram_ctrl_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/Master/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/Master/axi_bram_ctrl_0_bram'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MuxDebugg_0_0/design_1_AXI4Stream_MuxDebugg_0_0/design_1_AXI4Stream_MuxDebugg_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/AXI4Stream_MuxDebugg_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MuxDebugg_0_0/design_1_AXI4Stream_MuxDebugg_0_0/design_1_AXI4Stream_MuxDebugg_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/AXI4Stream_MuxDebugg_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_0/design_1_AXI4_TDC_Wrapper_0_0/design_1_AXI4_TDC_Wrapper_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_0/design_1_AXI4_TDC_Wrapper_0_0/design_1_AXI4_TDC_Wrapper_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_0/design_1_AXI4Stream_X7S_VirtualTDL_0_0/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_X7S_VirtualTDL_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_0/design_1_AXI4Stream_X7S_VirtualTDL_0_0/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_X7S_VirtualTDL_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_0/design_1_AXI4Stream_IperDecoder_0_0/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_IperDecoder_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_0/design_1_AXI4Stream_IperDecoder_0_0/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_IperDecoder_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_0/design_1_AXI4Stream_CoarseExtensionCore_0_0/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_CoarseExtensionCore_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_0/design_1_AXI4Stream_CoarseExtensionCore_0_0/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_CoarseExtensionCore_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_0/design_1_AXI4Stream_MagicCalibrator_0_0/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_MagicCalibrator_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_0/design_1_AXI4Stream_MagicCalibrator_0_0/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_MagicCalibrator_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_0/design_1_AXI4Stream_OverflowCounter_0_0/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_OverflowCounter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_0/design_1_AXI4Stream_OverflowCounter_0_0/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_OverflowCounter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_0/design_1_AXI4Stream_Synchronizer_0_0/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_Synchronizer_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_0/design_1_AXI4Stream_Synchronizer_0_0/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_Synchronizer_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_0/design_1_BeltBus_NodeInserter_0_0/design_1_BeltBus_NodeInserter_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/BeltBus_NodeInserter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_0/design_1_BeltBus_NodeInserter_0_0/design_1_BeltBus_NodeInserter_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/BeltBus_NodeInserter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/InputLogic_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/InputLogic_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_1_0/design_1_TDCChannelSlice_1_0/design_1_TDCChannelSlice_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_1_0/design_1_TDCChannelSlice_1_0/design_1_TDCChannelSlice_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_1/design_1_AXI4Stream_X7S_VirtualTDL_0_1/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_X7S_VirtualTDL_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_1/design_1_AXI4Stream_X7S_VirtualTDL_0_1/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_X7S_VirtualTDL_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_1/design_1_AXI4Stream_IperDecoder_0_1/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_IperDecoder_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_1/design_1_AXI4Stream_IperDecoder_0_1/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_IperDecoder_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_1/design_1_AXI4Stream_CoarseExtensionCore_0_1/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_CoarseExtensionCore_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_1/design_1_AXI4Stream_CoarseExtensionCore_0_1/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_CoarseExtensionCore_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_1/design_1_AXI4Stream_MagicCalibrator_0_1/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_MagicCalibrator_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_1/design_1_AXI4Stream_MagicCalibrator_0_1/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_MagicCalibrator_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_1/design_1_AXI4Stream_OverflowCounter_0_1/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_OverflowCounter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_1/design_1_AXI4Stream_OverflowCounter_0_1/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_OverflowCounter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_1/design_1_AXI4Stream_Synchronizer_0_1/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_Synchronizer_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_1/design_1_AXI4Stream_Synchronizer_0_1/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_Synchronizer_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_1/design_1_BeltBus_NodeInserter_0_1/design_1_BeltBus_NodeInserter_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/BeltBus_NodeInserter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_1/design_1_BeltBus_NodeInserter_0_1/design_1_BeltBus_NodeInserter_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/BeltBus_NodeInserter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/InputLogic_2'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/InputLogic_2'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_2_0/design_1_TDCChannelSlice_2_0/design_1_TDCChannelSlice_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_2_0/design_1_TDCChannelSlice_2_0/design_1_TDCChannelSlice_1_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_CoarseTreeDistributor_0_0/design_1_CoarseTreeDistributor_0_0/design_1_CoarseTreeDistributor_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/CoarseTreeDistributor_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_CoarseTreeDistributor_0_0/design_1_CoarseTreeDistributor_0_0/design_1_CoarseTreeDistributor_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/CoarseTreeDistributor_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_StartStopGenerator_0_0/design_1_StartStopGenerator_0_0/design_1_StartStopGenerator_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/StartStopGenerator_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_StartStopGenerator_0_0/design_1_StartStopGenerator_0_0/design_1_StartStopGenerator_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/StartStopGenerator_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/design_1_AXI4Stream_PeriodMet_0_0/design_1_AXI4Stream_PeriodMet_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/design_1_AXI4Stream_PeriodMet_0_0/design_1_AXI4Stream_PeriodMet_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_2/design_1_AXI4Stream_X7S_VirtualTDL_0_2/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_X7S_VirtualTDL_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_X7S_VirtualTDL_0_2/design_1_AXI4Stream_X7S_VirtualTDL_0_2/design_1_AXI4Stream_X7S_VirtualTDL_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_X7S_VirtualTDL_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_2/design_1_AXI4Stream_IperDecoder_0_2/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_IperDecoder_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_IperDecoder_0_2/design_1_AXI4Stream_IperDecoder_0_2/design_1_AXI4Stream_IperDecoder_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_IperDecoder_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_2/design_1_AXI4Stream_CoarseExtensionCore_0_2/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_CoarseExtensionCore_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExtensionCore_0_2/design_1_AXI4Stream_CoarseExtensionCore_0_2/design_1_AXI4Stream_CoarseExtensionCore_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_CoarseExtensionCore_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_2/design_1_AXI4Stream_MagicCalibrator_0_2/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_MagicCalibrator_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCalibrator_0_2/design_1_AXI4Stream_MagicCalibrator_0_2/design_1_AXI4Stream_MagicCalibrator_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_MagicCalibrator_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_2/design_1_AXI4Stream_OverflowCounter_0_2/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_OverflowCounter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowCounter_0_2/design_1_AXI4Stream_OverflowCounter_0_2/design_1_AXI4Stream_OverflowCounter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_OverflowCounter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_2/design_1_AXI4Stream_Synchronizer_0_2/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_Synchronizer_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_Synchronizer_0_2/design_1_AXI4Stream_Synchronizer_0_2/design_1_AXI4Stream_Synchronizer_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_Synchronizer_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_2/design_1_BeltBus_NodeInserter_0_2/design_1_BeltBus_NodeInserter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/BeltBus_NodeInserter_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_2/design_1_BeltBus_NodeInserter_0_2/design_1_BeltBus_NodeInserter_0_2_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/BeltBus_NodeInserter_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/InputLogic_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/InputLogic_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_0_0/design_1_TDCChannelSlice_0_0/design_1_TDCChannelSlice_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_0_0/design_1_TDCChannelSlice_0_0/design_1_TDCChannelSlice_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/axis_broadcaster_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/axis_broadcaster_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/util_vector_logic_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/Sync/util_vector_logic_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/util_vector_logic_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/util_vector_logic_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/util_vector_logic_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_0_1_in_context.xdc] for cell 'design_1_i/TDC_Calib/TDC/util_vector_logic_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/util_ds_buf_3'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/util_ds_buf_3'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/util_ds_buf_4'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0_in_context.xdc] for cell 'design_1_i/TDC_Calib/util_ds_buf_4'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m01_couplers/auto_pc'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m02_couplers/auto_pc'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m03_couplers/auto_pc'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m07_couplers/auto_pc'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/m07_couplers/auto_pc'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_1/design_1_axis_broadcaster_0_1/design_1_axis_broadcaster_0_1_in_context.xdc] for cell 'design_1_i/axis_broadcaster_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_1/design_1_axis_broadcaster_0_1/design_1_axis_broadcaster_0_1_in_context.xdc] for cell 'design_1_i/axis_broadcaster_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_1_0/design_1_axis_broadcaster_1_0/design_1_axis_broadcaster_1_0_in_context.xdc] for cell 'design_1_i/axis_broadcaster_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_1_0/design_1_axis_broadcaster_1_0/design_1_axis_broadcaster_1_0_in_context.xdc] for cell 'design_1_i/axis_broadcaster_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axis_interconnect_0/xbar'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axis_interconnect_0/xbar'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_ss_slidr_0/design_1_auto_ss_slidr_0/design_1_auto_ss_slidr_0_in_context.xdc] for cell 'design_1_i/axis_interconnect_0/m00_couplers/auto_ss_slidr'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_auto_ss_slidr_0/design_1_auto_ss_slidr_0/design_1_auto_ss_slidr_0_in_context.xdc] for cell 'design_1_i/axis_interconnect_0/m00_couplers/auto_ss_slidr'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_0_0/design_1_dlconstant_gpio_0_0/design_1_dlconstant_gpio_0_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_0_0/design_1_dlconstant_gpio_0_0/design_1_dlconstant_gpio_0_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_1_0/design_1_dlconstant_gpio_1_0/design_1_dlconstant_gpio_1_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_1'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_1_0/design_1_dlconstant_gpio_1_0/design_1_dlconstant_gpio_1_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_1'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_2_0/design_1_dlconstant_gpio_2_0/design_1_dlconstant_gpio_2_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_2'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_2_0/design_1_dlconstant_gpio_2_0/design_1_dlconstant_gpio_2_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_2'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_3_0/design_1_dlconstant_gpio_3_0/design_1_dlconstant_gpio_3_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_3'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_dlconstant_gpio_3_0/design_1_dlconstant_gpio_3_0/design_1_dlconstant_gpio_3_0_in_context.xdc] for cell 'design_1_i/dlconstant_gpio_3'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [/home/mconsonni/Desktop/xdc/FTDI.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/clk_wiz_1/inst/*clk_in*design*'. [/home/mconsonni/Desktop/xdc/FTDI.xdc:19]
+Finished Parsing XDC File [/home/mconsonni/Desktop/xdc/FTDI.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/mconsonni/Desktop/xdc/FTDI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [/home/mconsonni/Desktop/xdc/QSPI.xdc]
+WARNING: [Vivado 12-508] No pins matched '*USRCCLKO'. [/home/mconsonni/Desktop/xdc/QSPI.xdc:3]
+WARNING: [Vivado 12-508] No pins matched '*USRCCLKO'. [/home/mconsonni/Desktop/xdc/QSPI.xdc:4]
+WARNING: [Vivado 12-646] clock 'clk_sck' not found. [/home/mconsonni/Desktop/xdc/QSPI.xdc:5]
+WARNING: [Vivado 12-646] clock 'clk_sck' not found. [/home/mconsonni/Desktop/xdc/QSPI.xdc:6]
+WARNING: [Vivado 12-1580] clock, cell, port or pin 'clk_sck' not found. [/home/mconsonni/Desktop/xdc/QSPI.xdc:7]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/mconsonni/Desktop/xdc/QSPI.xdc:8]
+Finished Parsing XDC File [/home/mconsonni/Desktop/xdc/QSPI.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/mconsonni/Desktop/xdc/QSPI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mconsonni/Desktop/xdc/QSPI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2645.660 ; gain = 0.000 ; free physical = 6550 ; free virtual = 12859
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 15 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2645.660 ; gain = 0.000 ; free physical = 6550 ; free virtual = 12859
+WARNING: [Timing 38-316] Clock period '125.000' specified during out-of-context synthesis of instance 'design_1_i/xadc_wiz_0' at clock pin 's_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/BitstreamUpdater_QSPI/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/Master/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_Synchronizer_0' at clock pin 'm00_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_Synchronizer_0' at clock pin 'm00_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_Synchronizer_0' at clock pin 'm00_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_interconnect_0/xbar' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6633 ; free virtual = 12942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tftg256-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6633 ; free virtual = 12942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ch1_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch1_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ch1_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch1_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_1_0/design_1_InputLogic_1_0/design_1_InputLogic_1_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ch2_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch2_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ch2_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch2_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_2_0/design_1_InputLogic_2_0/design_1_InputLogic_2_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sync_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sync_diff_ch_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for sync_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sync_diff_ch_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_InputLogic_0_0/design_1_InputLogic_0_0/design_1_InputLogic_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for tdc_diff_clock_clk_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tdc_diff_clock_clk_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for tdc_diff_clock_clk_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tdc_diff_clock_clk_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0/design_1_util_ds_buf_3_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ftdi_clock. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ftdi_clock. (constraint file  /home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI4Stream_FT245Sync_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_LedCounter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCCounter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCHistogrammer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCHistogrammer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TTM_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BitstreamUpdater_QSPI/AXI4_BitstreamUpdater_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BitstreamUpdater_QSPI/axi_quad_spi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BitstreamUpdater_QSPI/qspi_programmer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/IIC/AXI4_AXIToIIC_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/IIC/axi_iic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/MME_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Master/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/Master/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/AXI4Stream_MuxDebugg_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_X7S_VirtualTDL_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_IperDecoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_CoarseExtensionCore_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_MagicCalibrator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_OverflowCounter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/AXI4Stream_Synchronizer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1/BeltBus_NodeInserter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/BeltBus_TDL_Channel_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/InputLogic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch1/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_X7S_VirtualTDL_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_IperDecoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_CoarseExtensionCore_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_MagicCalibrator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_OverflowCounter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_Synchronizer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/BeltBus_NodeInserter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/InputLogic_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Ch2/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/CoarseTreeDistributor_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/StartStopGenerator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_X7S_VirtualTDL_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_IperDecoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_CoarseExtensionCore_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_MagicCalibrator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_OverflowCounter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/AXI4Stream_Synchronizer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0/BeltBus_NodeInserter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/BeltBus_TDL_Channel_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/InputLogic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/axis_broadcaster_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/Sync/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/util_vector_logic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/TDC/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/util_ds_buf_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/TDC_Calib/util_ds_buf_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/m01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/m03_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/m07_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_broadcaster_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_broadcaster_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_interconnect_0/s_arb_req_suppress_concat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_interconnect_0/m00_couplers/auto_ss_slidr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dlconstant_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dlconstant_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dlconstant_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dlconstant_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6633 ; free virtual = 12942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6629 ; free virtual = 12939
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6624 ; free virtual = 12940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6508 ; free virtual = 12824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6507 ; free virtual = 12823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6505 ; free virtual = 12821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------------+----------+
+|      |BlackBox name                               |Instances |
++------+--------------------------------------------+----------+
+|1     |design_1_xbar_0                             |         1|
+|2     |design_1_auto_pc_0                          |         1|
+|3     |design_1_auto_pc_1                          |         1|
+|4     |design_1_auto_pc_2                          |         1|
+|5     |design_1_auto_pc_3                          |         1|
+|6     |design_1_xbar_1                             |         1|
+|7     |design_1_auto_ss_slidr_0                    |         1|
+|8     |design_1_AXI4Stream_FT245Sync_0_0           |         1|
+|9     |design_1_BeltBus_LedCounter_0_0             |         1|
+|10    |design_1_BeltBus_TDCCounter_0_0             |         1|
+|11    |design_1_BeltBus_TDCHistogrammer_0_0        |         1|
+|12    |design_1_BeltBus_TDCHistogrammer_1_0        |         1|
+|13    |design_1_BeltBus_TTM_0_0                    |         1|
+|14    |design_1_MME_0_0                            |         1|
+|15    |design_1_axis_broadcaster_0_1               |         1|
+|16    |design_1_axis_broadcaster_1_0               |         1|
+|17    |design_1_clk_wiz_0_0                        |         1|
+|18    |design_1_clk_wiz_1_0                        |         1|
+|19    |design_1_dlconstant_gpio_0_0                |         1|
+|20    |design_1_dlconstant_gpio_1_0                |         1|
+|21    |design_1_dlconstant_gpio_2_0                |         1|
+|22    |design_1_dlconstant_gpio_3_0                |         1|
+|23    |design_1_proc_sys_reset_0_0                 |         1|
+|24    |design_1_xadc_wiz_0_0                       |         1|
+|25    |design_1_AXI4_BitstreamUpdater_0_0          |         1|
+|26    |design_1_axi_quad_spi_0_0                   |         1|
+|27    |design_1_qspi_programmer_0_0                |         1|
+|28    |design_1_AXI4_AXIToIIC_0_0                  |         1|
+|29    |design_1_axi_iic_0_0                        |         1|
+|30    |design_1_axi_bram_ctrl_0_0                  |         1|
+|31    |design_1_axi_bram_ctrl_0_bram_0             |         1|
+|32    |design_1_AXI4Stream_MuxDebugg_0_0           |         1|
+|33    |design_1_AXI4_TDC_Wrapper_0_0               |         1|
+|34    |design_1_util_ds_buf_3_0                    |         1|
+|35    |design_1_util_ds_buf_4_0                    |         1|
+|36    |design_1_CoarseTreeDistributor_0_0          |         1|
+|37    |design_1_StartStopGenerator_0_0             |         1|
+|38    |design_1_util_vector_logic_0_1              |         1|
+|39    |design_1_util_vector_logic_1_0              |         1|
+|40    |design_1_AXI4Stream_CoarseExtensionCore_0_0 |         1|
+|41    |design_1_AXI4Stream_IperDecoder_0_0         |         1|
+|42    |design_1_AXI4Stream_MagicCalibrator_0_0     |         1|
+|43    |design_1_AXI4Stream_OverflowCounter_0_0     |         1|
+|44    |design_1_AXI4Stream_Synchronizer_0_0        |         1|
+|45    |design_1_AXI4Stream_X7S_VirtualTDL_0_0      |         1|
+|46    |design_1_BeltBus_NodeInserter_0_0           |         1|
+|47    |design_1_InputLogic_1_0                     |         1|
+|48    |design_1_TDCChannelSlice_1_0                |         1|
+|49    |design_1_AXI4Stream_CoarseExtensionCore_0_1 |         1|
+|50    |design_1_AXI4Stream_IperDecoder_0_1         |         1|
+|51    |design_1_AXI4Stream_MagicCalibrator_0_1     |         1|
+|52    |design_1_AXI4Stream_OverflowCounter_0_1     |         1|
+|53    |design_1_AXI4Stream_Synchronizer_0_1        |         1|
+|54    |design_1_AXI4Stream_X7S_VirtualTDL_0_1      |         1|
+|55    |design_1_BeltBus_NodeInserter_0_1           |         1|
+|56    |design_1_InputLogic_2_0                     |         1|
+|57    |design_1_TDCChannelSlice_2_0                |         1|
+|58    |design_1_AXI4Stream_CoarseExtensionCore_0_2 |         1|
+|59    |design_1_AXI4Stream_IperDecoder_0_2         |         1|
+|60    |design_1_AXI4Stream_MagicCalibrator_0_2     |         1|
+|61    |design_1_AXI4Stream_OverflowCounter_0_2     |         1|
+|62    |design_1_AXI4Stream_Synchronizer_0_2        |         1|
+|63    |design_1_AXI4Stream_X7S_VirtualTDL_0_2      |         1|
+|64    |design_1_BeltBus_NodeInserter_0_2           |         1|
+|65    |design_1_AXI4Stream_PeriodMet_0_0           |         1|
+|66    |design_1_InputLogic_0_0                     |         1|
+|67    |design_1_TDCChannelSlice_0_0                |         1|
+|68    |design_1_axis_broadcaster_0_0               |         1|
+|69    |design_1_util_vector_logic_0_0              |         1|
++------+--------------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------------------+------+
+|      |Cell                                             |Count |
++------+-------------------------------------------------+------+
+|1     |design_1_AXI4Stream_CoarseExtensionCore_0_0_bbox |     1|
+|2     |design_1_AXI4Stream_CoarseExtensionCore_0_1_bbox |     1|
+|3     |design_1_AXI4Stream_CoarseExtensionCore_0_2_bbox |     1|
+|4     |design_1_AXI4Stream_FT245Sync_0_0_bbox           |     1|
+|5     |design_1_AXI4Stream_IperDecoder_0_0_bbox         |     1|
+|6     |design_1_AXI4Stream_IperDecoder_0_1_bbox         |     1|
+|7     |design_1_AXI4Stream_IperDecoder_0_2_bbox         |     1|
+|8     |design_1_AXI4Stream_MagicCalibrator_0_0_bbox     |     1|
+|9     |design_1_AXI4Stream_MagicCalibrator_0_1_bbox     |     1|
+|10    |design_1_AXI4Stream_MagicCalibrator_0_2_bbox     |     1|
+|11    |design_1_AXI4Stream_MuxDebugg_0_0_bbox           |     1|
+|12    |design_1_AXI4Stream_OverflowCounter_0_0_bbox     |     1|
+|13    |design_1_AXI4Stream_OverflowCounter_0_1_bbox     |     1|
+|14    |design_1_AXI4Stream_OverflowCounter_0_2_bbox     |     1|
+|15    |design_1_AXI4Stream_PeriodMet_0_0_bbox           |     1|
+|16    |design_1_AXI4Stream_Synchronizer_0_0_bbox        |     1|
+|17    |design_1_AXI4Stream_Synchronizer_0_1_bbox        |     1|
+|18    |design_1_AXI4Stream_Synchronizer_0_2_bbox        |     1|
+|19    |design_1_AXI4Stream_X7S_VirtualTDL_0_0_bbox      |     1|
+|20    |design_1_AXI4Stream_X7S_VirtualTDL_0_1_bbox      |     1|
+|21    |design_1_AXI4Stream_X7S_VirtualTDL_0_2_bbox      |     1|
+|22    |design_1_AXI4_AXIToIIC_0_0_bbox                  |     1|
+|23    |design_1_AXI4_BitstreamUpdater_0_0_bbox          |     1|
+|24    |design_1_AXI4_TDC_Wrapper_0_0_bbox               |     1|
+|25    |design_1_BeltBus_LedCounter_0_0_bbox             |     1|
+|26    |design_1_BeltBus_NodeInserter_0_0_bbox           |     1|
+|27    |design_1_BeltBus_NodeInserter_0_1_bbox           |     1|
+|28    |design_1_BeltBus_NodeInserter_0_2_bbox           |     1|
+|29    |design_1_BeltBus_TDCCounter_0_0_bbox             |     1|
+|30    |design_1_BeltBus_TDCHistogrammer_0_0_bbox        |     1|
+|31    |design_1_BeltBus_TDCHistogrammer_1_0_bbox        |     1|
+|32    |design_1_BeltBus_TTM_0_0_bbox                    |     1|
+|33    |design_1_CoarseTreeDistributor_0_0_bbox          |     1|
+|34    |design_1_InputLogic_0_0_bbox                     |     1|
+|35    |design_1_InputLogic_1_0_bbox                     |     1|
+|36    |design_1_InputLogic_2_0_bbox                     |     1|
+|37    |design_1_MME_0_0_bbox                            |     1|
+|38    |design_1_StartStopGenerator_0_0_bbox             |     1|
+|39    |design_1_TDCChannelSlice_0_0_bbox                |     1|
+|40    |design_1_TDCChannelSlice_1_0_bbox                |     1|
+|41    |design_1_TDCChannelSlice_2_0_bbox                |     1|
+|42    |design_1_auto_pc_0_bbox                          |     1|
+|43    |design_1_auto_pc_1_bbox                          |     1|
+|44    |design_1_auto_pc_2_bbox                          |     1|
+|45    |design_1_auto_pc_3_bbox                          |     1|
+|46    |design_1_auto_ss_slidr_0_bbox                    |     1|
+|47    |design_1_axi_bram_ctrl_0_0_bbox                  |     1|
+|48    |design_1_axi_bram_ctrl_0_bram_0_bbox             |     1|
+|49    |design_1_axi_iic_0_0_bbox                        |     1|
+|50    |design_1_axi_quad_spi_0_0_bbox                   |     1|
+|51    |design_1_axis_broadcaster_0_0_bbox               |     1|
+|52    |design_1_axis_broadcaster_0_1_bbox               |     1|
+|53    |design_1_axis_broadcaster_1_0_bbox               |     1|
+|54    |design_1_clk_wiz_0_0_bbox                        |     1|
+|55    |design_1_clk_wiz_1_0_bbox                        |     1|
+|56    |design_1_dlconstant_gpio_0_0_bbox                |     1|
+|57    |design_1_dlconstant_gpio_1_0_bbox                |     1|
+|58    |design_1_dlconstant_gpio_2_0_bbox                |     1|
+|59    |design_1_dlconstant_gpio_3_0_bbox                |     1|
+|60    |design_1_proc_sys_reset_0_0_bbox                 |     1|
+|61    |design_1_qspi_programmer_0_0_bbox                |     1|
+|62    |design_1_util_ds_buf_3_0_bbox                    |     1|
+|63    |design_1_util_ds_buf_4_0_bbox                    |     1|
+|64    |design_1_util_vector_logic_0_0_bbox              |     1|
+|65    |design_1_util_vector_logic_0_1_bbox              |     1|
+|66    |design_1_util_vector_logic_1_0_bbox              |     1|
+|67    |design_1_xadc_wiz_0_0_bbox                       |     1|
+|68    |design_1_xbar_0_bbox                             |     1|
+|69    |design_1_xbar_1_bbox                             |     1|
+|70    |IBUF                                             |     2|
+|71    |IOBUF                                            |    15|
+|72    |OBUF                                             |    14|
++------+-------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6528 ; free virtual = 12820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2648.629 ; gain = 77.734 ; free physical = 6582 ; free virtual = 12874
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2648.629 ; gain = 249.453 ; free physical = 6582 ; free virtual = 12874
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2648.629 ; gain = 0.000 ; free physical = 6668 ; free virtual = 12960
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2648.629 ; gain = 0.000 ; free physical = 6608 ; free virtual = 12899
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 15 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+296 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2648.629 ; gain = 249.531 ; free physical = 6743 ; free virtual = 13034
+INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/DESD/Projects/TDC_Measurement_Setup/TDC_Measurement_Setup.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 15 15:31:42 2021...

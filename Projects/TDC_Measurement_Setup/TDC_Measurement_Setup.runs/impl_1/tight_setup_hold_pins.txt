@@ -1,0 +1,605 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[21]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[15]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[20]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[12]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[11]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[19]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tvalid_reg/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[23]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[16]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[22]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[14]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[24]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[13]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[28]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[26]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[27]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[25]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[32]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[30]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[18]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[31]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[29]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[36]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[34]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[10]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[35]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[17]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[33]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[9]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[39]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[37]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[7]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[4]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[13]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[38]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[8]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[9]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[15]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[11]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[7]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[12]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[6]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[14]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[5]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[3]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[8]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[17]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[4]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[1]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[16]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[12]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[14]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[21]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[20]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[2]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[18]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[7]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[22]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[5]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[6]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[3]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[1]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[9]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[2]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[23]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[0]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[5]/D|
+|                      clk |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[6]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[2]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[8]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[10]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[11]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[3]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[19]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[4]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[13]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_25/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_26/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[15]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tvalid_reg/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[1]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[8]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[13]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[5]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[10]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[9]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[2]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[0]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[1]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[4]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[3]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[10]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[37]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[35]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[32]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[24]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[25]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[26]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[27]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[18]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[7]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[15]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[11]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/buff_overflow_reg[12]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[27]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[25]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[24]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[26]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[0]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[38]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[39]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][20]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[34]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[17]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[18]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[22]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_13/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_6/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_7/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_8/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_9/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_10/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_12/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_11/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[39]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_29/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_28/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_27/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[16]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[19]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[18]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[17]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[18]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[22]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[23]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[20]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[22]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[20]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[23]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[21]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[23]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[22]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[21]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[20]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][31]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][23]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[16]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[17]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[27]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[25]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[24]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[26]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[23]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[28]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[29]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[31]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[20]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[31]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[30]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[30]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[22]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[29]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[28]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[20]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[23]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[22]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[21]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[32]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[35]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[33]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[34]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[36]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[33]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[29]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[28]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[30]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[31]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[33]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[32]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[35]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[34]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[42]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[40]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[43]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[41]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[21]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[19]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[16]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[19]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[28]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[28]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[29]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[30]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[31]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[30]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[31]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[29]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[44]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[47]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[46]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[45]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[35]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[33]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[32]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[36]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[33]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[34]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[39]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[38]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[37]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[36]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[27]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[25]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[24]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[26]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_24/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][26]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[16]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[19]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[21]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[19]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[48]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[27]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[30]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][36]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_0/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_1/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_2/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[37]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[36]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[39]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[17]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[35]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[25]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[26]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[27]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[24]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[18]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[32]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[37]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[35]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[19]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[24]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][34]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][38]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[0]/D|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[38]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[39]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[36]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[37]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[20]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[26]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[9]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[15]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[12]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[14]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[11]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[5]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[10]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_3/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_4/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_5/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][12]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[38]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[39]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[38]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][37]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[1]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[8]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[9]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[1]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[5]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[3]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[0]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[10]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[7]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[6]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[12]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[4]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[2]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[0]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[4]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[7]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[13]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[15]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[32]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[37]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[23]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][24]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_22/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_18/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_19/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_23/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[5]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_21/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_20/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_14/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_15/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_16/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg_r_17/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[34]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[17]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[8]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[13]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][11]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][7]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[21]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[34]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][19]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][16]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][25]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[13]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[14]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][18]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/sum_reg[3]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[10]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][21]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][22]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][27]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[3]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[18]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[33]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[6]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[8]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[28]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[15]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[16]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][17]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][28]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[11]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[2]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[25]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[17]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/measure_reg[16]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[1]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[36]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[31]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/inst_delta/m00_axis_tdata_reg[9]/CE|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][35]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][39]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[38]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][32]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][33]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][29]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/p_moving_average_reg[31][30]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[29]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/m00_axis_tdata_reg[0]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[2]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[4]/R|
+| clk_out1_design_1_clk_wiz_0_0 |                      clk |design_1_i/TDC_Calib/TDC/Sync/AXI4Stream_PeriodMet_0/U0/Inst_BeltBus_PeriodMeter_Wrapper/IF_GEN_MA.Inst_moving_average/count_reg[3]/R|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][21]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][8]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][26]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][26]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][26]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][29]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][2]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][15]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][29]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][8]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][8]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][14]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][11]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][24]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][21]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][24]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][21]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][18]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][18]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][18]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][24]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][13]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][13]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][13]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][2]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][19]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][6]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][0]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][22]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][0]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][22]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][19]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][15]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][6]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[31]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[13]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][19]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][6]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][16]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][34]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][16]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][28]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][16]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][2]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][29]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][22]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][20]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][0]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[8]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[29]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][20]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[0]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][9]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][4]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[26]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][14]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][9]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][28]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][28]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[6]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][20]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][25]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][15]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][5]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[24]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][11]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][14]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][11]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][3]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][4]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][23]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][4]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][23]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[11]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][1]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[21]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[18]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][17]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][1]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][5]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][12]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][5]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][9]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[19]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][17]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][12]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][12]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][3]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][23]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][10]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][1]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][3]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[9]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][10]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[14]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][10]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[4]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][7]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][7]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][17]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][34]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][34]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[2]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[16]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][25]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[22]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[1]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][25]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[28]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][7]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][30]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[27]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][30]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[5]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][32]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][33]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][30]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][33]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[15]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][27]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[25]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[7]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][32]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[17]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[10]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][32]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][33]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[30]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[3]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[20]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][27]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[12]/D|
+|                     aclk |                     aclk |            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[23]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][27]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][31]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][31]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][31]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][37]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][37]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][37]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][39]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][36]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][39]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][38]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][39]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][36]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][62]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][62]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][62]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][35]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][38]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][40]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][42]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][53]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][50]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][49]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][57]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][52]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][63]/D|
+|     tdc_diff_clock_clk_p |     tdc_diff_clock_clk_p |design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_IperDecoder_0/U0/Inst_AXI4Stream_IperDecoderWrapper/GenMD.Inst_AXI4Stream_MacroDecoderWrapper/Inst_MacroDecoderWrapper_MD/GenDecoders[0].DecoT2B.Inst_ThermoToBinWrapper_T2B/Gen_Step_T2B[2].Inst_Step_T2B/Gen_Full[9].Inst_Engine/SumOut_reg[3]/D|
+|     tdc_diff_clock_clk_p |     tdc_diff_clock_clk_p |design_1_i/TDC_Calib/TDC/Ch2/BeltBus_TDL_Channel_2/AXI4Stream_IperDecoder_0/U0/Inst_AXI4Stream_IperDecoderWrapper/GenMD.Inst_AXI4Stream_MacroDecoderWrapper/Inst_MacroDecoderWrapper_MD/GenDecoders[0].DecoT2B.Inst_ThermoToBinWrapper_T2B/Gen_Step_T2B[2].Inst_Step_T2B/Gen_Full[9].Inst_Engine/SumOut_reg[4]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

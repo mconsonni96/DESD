@@ -1,0 +1,19 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd" into library xil_defaultlib
+WARNING: [VRFC 10-393] cannot access 'file_path_name_co_o_delay_tmp' from inside pure function 'co_o_extractdelayfromfile'. [/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd:674]
+WARNING: [VRFC 10-393] cannot access 'file_path_name_co_o_delay_tmp' from inside pure function 'co_o_extractdelayfromfile'. [/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd:678]
+WARNING: [VRFC 10-393] cannot access 'file_path_name_co_o_delay_tmp' from inside pure function 'co_o_extractdelayfromfile'. [/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd:681]
+WARNING: [VRFC 10-393] cannot access 'file_path_name_co_o_delay_tmp' from inside pure function 'co_o_extractdelayfromfile'. [/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/LocalPackage_TDL.vhd:742]
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/AXI4Stream_XUS_VirtualTDLWrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AXI4Stream_XUS_VirtualTDLWrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Sampler_TDL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sampler_TDL'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/Simulated_TappedDelayLine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Simulated_TappedDelayLine'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ipshared/fbb3/hdl/XUS_TappedDelayLine_CARRY8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XUS_TappedDelayLine_CARRY8'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/sim/design_1_AXI4Stream_XUS_Virtu_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_AXI4Stream_XUS_Virtu_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mconsonni/Desktop/DESD/Projects/test_XUS/test_XUS.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

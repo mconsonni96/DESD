@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 16 09:08:07 2021
+# Process ID: 7220
+# Current directory: C:/DESD/audio_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5776 C:\DESD\audio_project\audio_project.xpr
+# Log file: C:/DESD/audio_project/vivado.log
+# Journal file: C:/DESD/audio_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/audio_project/audio_project.xpr
+update_compile_order -fileset sources_1
+update_module_reference {audio_bd_edge_detector_0_0 audio_bd_edge_detector_1_0}
+delete_bd_objs [get_bd_nets edge_detector_1_edge_detected] [get_bd_nets mute_controller_0_muted] [get_bd_intf_nets mute_controller_0_m_axis] [get_bd_intf_nets pmod_i2s2_0_M_AXIS] [get_bd_cells mute_controller_0]
+connect_bd_intf_net [get_bd_intf_pins pmod_i2s2_0/M_AXIS] [get_bd_intf_pins moving_average_0/s_axis]
+save_bd_design
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+create_bd_cell -type module -reference mute_controller mute_controller_0
+delete_bd_objs [get_bd_intf_nets moving_average_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins moving_average_0/m_axis] [get_bd_intf_pins mute_controller_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins mute_controller_0/m_axis] [get_bd_intf_pins pmod_i2s2_0/S_AXIS]
+connect_bd_net [get_bd_pins mute_controller_0/muted] [get_bd_pins LED_controller_0/enable_mute]
+connect_bd_net [get_bd_pins edge_detector_1/edge_detected] [get_bd_pins mute_controller_0/enable_mute]
+connect_bd_net [get_bd_pins mute_controller_0/aresetn] [get_bd_pins util_vector_logic_0/Res]
+connect_bd_net [get_bd_pins mute_controller_0/aclk] [get_bd_pins clk_wiz_0/clk_out2]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/DESD/audio_project/audio_project.runs/impl_1/audio_bd_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+update_module_reference audio_bd_LED_controller_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager

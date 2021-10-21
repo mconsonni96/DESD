@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 26 13:04:56 2020
+# Process ID: 10892
+# Current directory: C:/DESD/Projects/axi4lite_serial.xpr/axi4lite_serial1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10168 C:\DESD\Projects\axi4lite_serial.xpr\axi4lite_serial1\axi4lite_serial1.xpr
+# Log file: C:/DESD/Projects/axi4lite_serial.xpr/axi4lite_serial1/vivado.log
+# Journal file: C:/DESD/Projects/axi4lite_serial.xpr/axi4lite_serial1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/DESD/Projects/axi4lite_serial.xpr/axi4lite_serial1/axi4lite_serial1.xpr
+INFO: [Project 1-313] Project file moved from '/home/nicola/Documents/vivado/logs/.Xil/Vivado-38472-debianDesktop/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/../ip_repo/myip_1.0', nor could it be found using path 'C:/home/nicola/Documents/vivado/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:ip_repo/myip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 872.023 ; gain = 201.277
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 13:11:03 2020...

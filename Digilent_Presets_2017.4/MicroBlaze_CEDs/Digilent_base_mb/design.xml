@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExampleDesign>
+<Vendor>digilentinc.com</Vendor>
+<Library>design</Library>
+<Name>base_mb_digilent</Name>
+<Version>1.0</Version> 
+<Design>init.tcl</Design>
+<DisplayName>Digilent Base MicroBlaze</DisplayName>
+<Description>Simple MicroBlaze system with peripherals including GPIO and UART.</Description>
+<Image>base_mb_digilent.png</Image>
+</ExampleDesign>
